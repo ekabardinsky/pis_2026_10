@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T08:49:28.857438+00:00",
+  "generated_at": "2026-10-16T09:15:14.402746+00:00",
   "groups": [
     {
       "id": "group01",
@@ -41,7 +41,8 @@
             "application_source_present": false,
             "video_report_present": false,
             "code_style_consistent": false
-          }
+          },
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group01",
@@ -79,7 +80,8 @@
             "application_source_present": false,
             "video_report_present": false,
             "code_style_consistent": false
-          }
+          },
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group01",
@@ -96,7 +98,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "90dd9133849c27ffa04860369064f3d9f47d929a6486188aa7903ac0cda392b6",
-          "commit": "b1b2647f2e265ef344a7b2930e2e9405395d898f"
+          "commit": "b1b2647f2e265ef344a7b2930e2e9405395d898f",
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group01",
@@ -113,7 +116,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "769cc2582d9d188b8eb567e2c6b81445d55d9fb2590fdbacf90ac34ca0f6d088",
-          "commit": "b1b2647f2e265ef344a7b2930e2e9405395d898f"
+          "commit": "b1b2647f2e265ef344a7b2930e2e9405395d898f",
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group01",
@@ -130,7 +134,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "999a6c55bd9bf07bbad673a3db004ab7961884d919d7e7bc756a36951830e966",
-          "commit": "b1b2647f2e265ef344a7b2930e2e9405395d898f"
+          "commit": "b1b2647f2e265ef344a7b2930e2e9405395d898f",
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group01",
@@ -147,7 +152,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "26e00417b4f3153fd082fe656d414b75598dce65545b09ea088439f502667a7d",
-          "commit": "b1b2647f2e265ef344a7b2930e2e9405395d898f"
+          "commit": "b1b2647f2e265ef344a7b2930e2e9405395d898f",
+          "skip_reason": "unchanged"
         }
       ]
     },
