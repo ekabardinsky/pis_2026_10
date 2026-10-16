@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["status", "major_errors", "minor_comments", "summary", "application_source_present", "video_report_present", "code_style_consistent"],
+  "properties": {
+    "status": { "type": "string", "enum": ["checked", "error"] },
+    "major_errors": { "type": "array", "items": { "type": "string" } },
+    "minor_comments": { "type": "array", "items": { "type": "string" } },
+    "summary": { "type": "string" },
+    "application_source_present": { "type": "boolean" },
+    "video_report_present": { "type": "boolean" },
+    "code_style_consistent": { "type": "boolean" }
+  }
+}

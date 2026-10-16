@@ -1,0 +1,17 @@
+{
+  "group_id": "group01",
+  "lab_id": "lab05",
+  "title": "Диаграмма классов приложения",
+  "deadline": "2026-12-18T23:59:59+05:00",
+  "status": "not_submitted",
+  "base_grade": null,
+  "late_penalty": 0,
+  "grade": null,
+  "comments": [
+    "Файлы лабораторной отсутствуют."
+  ],
+  "submitted_at": null,
+  "checked_at": null,
+  "fingerprint": "999a6c55bd9bf07bbad673a3db004ab7961884d919d7e7bc756a36951830e966",
+  "commit": "b1b2647f2e265ef344a7b2930e2e9405395d898f"
+}

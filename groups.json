@@ -1,0 +1,46 @@
+{
+  "groups": [
+    {
+      "id": "group01",
+      "name": "Остеохондроз",
+      "assignment_number": 1,
+      "repository": "https://github.com/Alex-Faradzhullaeva/deportator"
+    },
+    {
+      "id": "group02",
+      "name": "ААА",
+      "assignment_number": 5,
+      "repository": null
+    },
+    {
+      "id": "group03",
+      "name": "Dragon",
+      "assignment_number": 2,
+      "repository": "https://github.com/Ahmetlev/LBPIS.git"
+    },
+    {
+      "id": "group04",
+      "name": "67",
+      "assignment_number": 3,
+      "repository": null
+    },
+    {
+      "id": "group05",
+      "name": "P2P Micro-SaaS Pro Max 15ТБ 100 кв/м 5G 4.7GHz(в разгоне) M3-competition черного цвета.",
+      "assignment_number": 6,
+      "repository": "https://github.com/westbee-dev/Patentator.git"
+    },
+    {
+      "id": "group06",
+      "name": "1",
+      "assignment_number": 11,
+      "repository": null
+    },
+    {
+      "id": "group07",
+      "name": "ПИСMAKER (миротворец)",
+      "assignment_number": 4,
+      "repository": null
+    }
+  ]
+}

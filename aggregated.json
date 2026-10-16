@@ -1,0 +1,779 @@
+{
+  "generated_at": "2026-10-16T08:49:28.857438+00:00",
+  "groups": [
+    {
+      "id": "group01",
+      "name": "Остеохондроз",
+      "assignment_number": 1,
+      "repository": "https://github.com/Alex-Faradzhullaeva/deportator",
+      "labs": [
+        {
+          "group_id": "group01",
+          "lab_id": "lab01",
+          "title": "Диаграмма прецедентов",
+          "deadline": "2026-10-30T23:59:59+05:00",
+          "status": "checked",
+          "base_grade": 3,
+          "late_penalty": 0,
+          "grade": 3,
+          "comments": [
+            "Тема миграционного учёта соблюдена, роли и граница системы обозначены. Основной процесс подачи и рассмотрения уведомления представлен. Нужно добавить доработку по запросу сотрудника, просмотр истории и пояснения к диаграмме.",
+            "student/use_case.md:9–19 — отсутствует процесс доработки уведомления по запросу сотрудника: запрос дополнительных документов и исправлений, предоставление документов и исправление заявления пользователем.",
+            "student/use_case.md:14,25 — предусмотрено отслеживание статуса уведомления, но отсутствует просмотр истории статусов и ранее полученных услуг.",
+            "student/use_case.md:1–36 — нет текстовых пояснений к диаграмме, обязательных по заданию.",
+            "student/use_case.md:10–11,31 — уточните, что подтверждение телефона выполняется по SMS и используется также при входе."
+          ],
+          "submitted_at": "2026-10-15T22:57:04+05:00",
+          "checked_at": "2026-10-16T08:49:05.911995+00:00",
+          "fingerprint": "25e44dd74172b997db5752856cae2438c44d9b343a4c4d2cd81785402973c834",
+          "commit": "b1b2647f2e265ef344a7b2930e2e9405395d898f",
+          "review": {
+            "status": "checked",
+            "major_errors": [
+              "student/use_case.md:9–19 — отсутствует процесс доработки уведомления по запросу сотрудника: запрос дополнительных документов и исправлений, предоставление документов и исправление заявления пользователем.",
+              "student/use_case.md:14,25 — предусмотрено отслеживание статуса уведомления, но отсутствует просмотр истории статусов и ранее полученных услуг."
+            ],
+            "minor_comments": [
+              "student/use_case.md:1–36 — нет текстовых пояснений к диаграмме, обязательных по заданию.",
+              "student/use_case.md:10–11,31 — уточните, что подтверждение телефона выполняется по SMS и используется также при входе."
+            ],
+            "summary": "Тема миграционного учёта соблюдена, роли и граница системы обозначены. Основной процесс подачи и рассмотрения уведомления представлен. Нужно добавить доработку по запросу сотрудника, просмотр истории и пояснения к диаграмме.",
+            "application_source_present": false,
+            "video_report_present": false,
+            "code_style_consistent": false
+          }
+        },
+        {
+          "group_id": "group01",
+          "lab_id": "lab02",
+          "title": "ER-диаграмма предметной области",
+          "deadline": "2026-11-13T23:59:59+05:00",
+          "status": "checked",
+          "base_grade": 3,
+          "late_penalty": 0,
+          "grade": 3,
+          "comments": [
+            "ER-диаграмма соответствует теме миграционного учёта и содержит основные сущности подачи уведомления и получения результата. Необходимо дополнить модель историей статусов и запросами сотрудника, согласовать ссылки на страны и добавить пояснения.",
+            "er.md:37–51: NOTIFICATION хранит только текущий статус; история изменений статусов отсутствует. Добавьте связанные записи со статусом и временем изменения.",
+            "er.md:37–67: не представлены запросы сотрудника на дополнительные документы и исправление заявления. Добавьте данные о содержании запроса и его связи с уведомлением.",
+            "er.md: после блока Mermaid отсутствуют обязательные пояснения к модели.",
+            "er.md:29,44: ссылки на COUNTRY.iso_code имеют тип int, тогда как ключ COUNTRY.iso_code объявлен как string. Согласуйте типы.",
+            "er.md:44,69–75: для citizenship_iso_code указана пометка FK, но связь NOTIFICATION с COUNTRY не показана."
+          ],
+          "submitted_at": "2026-10-15T23:02:58+05:00",
+          "checked_at": "2026-10-16T08:49:28.024176+00:00",
+          "fingerprint": "169ab734d5b4535aa6cd64094b5abf11ea1c68c7432108298a0d310a29be3716",
+          "commit": "b1b2647f2e265ef344a7b2930e2e9405395d898f",
+          "review": {
+            "status": "checked",
+            "major_errors": [
+              "er.md:37–51: NOTIFICATION хранит только текущий статус; история изменений статусов отсутствует. Добавьте связанные записи со статусом и временем изменения.",
+              "er.md:37–67: не представлены запросы сотрудника на дополнительные документы и исправление заявления. Добавьте данные о содержании запроса и его связи с уведомлением."
+            ],
+            "minor_comments": [
+              "er.md: после блока Mermaid отсутствуют обязательные пояснения к модели.",
+              "er.md:29,44: ссылки на COUNTRY.iso_code имеют тип int, тогда как ключ COUNTRY.iso_code объявлен как string. Согласуйте типы.",
+              "er.md:44,69–75: для citizenship_iso_code указана пометка FK, но связь NOTIFICATION с COUNTRY не показана."
+            ],
+            "summary": "ER-диаграмма соответствует теме миграционного учёта и содержит основные сущности подачи уведомления и получения результата. Необходимо дополнить модель историей статусов и запросами сотрудника, согласовать ссылки на страны и добавить пояснения.",
+            "application_source_present": false,
+            "video_report_present": false,
+            "code_style_consistent": false
+          }
+        },
+        {
+          "group_id": "group01",
+          "lab_id": "lab03",
+          "title": "Системная диаграмма последовательностей",
+          "deadline": "2026-11-27T23:59:59+05:00",
+          "status": "not_submitted",
+          "base_grade": null,
+          "late_penalty": 0,
+          "grade": null,
+          "comments": [
+            "Файлы лабораторной отсутствуют."
+          ],
+          "submitted_at": null,
+          "checked_at": null,
+          "fingerprint": "90dd9133849c27ffa04860369064f3d9f47d929a6486188aa7903ac0cda392b6",
+          "commit": "b1b2647f2e265ef344a7b2930e2e9405395d898f"
+        },
+        {
+          "group_id": "group01",
+          "lab_id": "lab04",
+          "title": "Диаграмма последовательностей на уровне классов",
+          "deadline": "2026-12-11T23:59:59+05:00",
+          "status": "not_submitted",
+          "base_grade": null,
+          "late_penalty": 0,
+          "grade": null,
+          "comments": [
+            "Файлы лабораторной отсутствуют."
+          ],
+          "submitted_at": null,
+          "checked_at": null,
+          "fingerprint": "769cc2582d9d188b8eb567e2c6b81445d55d9fb2590fdbacf90ac34ca0f6d088",
+          "commit": "b1b2647f2e265ef344a7b2930e2e9405395d898f"
+        },
+        {
+          "group_id": "group01",
+          "lab_id": "lab05",
+          "title": "Диаграмма классов приложения",
+          "deadline": "2026-12-18T23:59:59+05:00",
+          "status": "not_submitted",
+          "base_grade": null,
+          "late_penalty": 0,
+          "grade": null,
+          "comments": [
+            "Файлы лабораторной отсутствуют."
+          ],
+          "submitted_at": null,
+          "checked_at": null,
+          "fingerprint": "999a6c55bd9bf07bbad673a3db004ab7961884d919d7e7bc756a36951830e966",
+          "commit": "b1b2647f2e265ef344a7b2930e2e9405395d898f"
+        },
+        {
+          "group_id": "group01",
+          "lab_id": "lab06",
+          "title": "Работающее приложение и видеоотчёт",
+          "deadline": "2026-12-25T23:59:59+05:00",
+          "status": "not_submitted",
+          "base_grade": null,
+          "late_penalty": 0,
+          "grade": null,
+          "comments": [
+            "Файлы лабораторной отсутствуют."
+          ],
+          "submitted_at": null,
+          "checked_at": null,
+          "fingerprint": "26e00417b4f3153fd082fe656d414b75598dce65545b09ea088439f502667a7d",
+          "commit": "b1b2647f2e265ef344a7b2930e2e9405395d898f"
+        }
+      ]
+    },
+    {
+      "id": "group02",
+      "name": "ААА",
+      "assignment_number": 5,
+      "repository": null,
+      "labs": [
+        {
+          "group_id": "group02",
+          "lab_id": "lab01",
+          "title": "Диаграмма прецедентов",
+          "deadline": "2026-10-30T23:59:59+05:00",
+          "status": "no_repository",
+          "base_grade": null,
+          "late_penalty": 0,
+          "grade": null,
+          "comments": [
+            "Репозиторий команды не указан."
+          ],
+          "submitted_at": null,
+          "checked_at": null,
+          "fingerprint": null
+        },
+        {
+          "group_id": "group02",
+          "lab_id": "lab02",
+          "title": "ER-диаграмма предметной области",
+          "deadline": "2026-11-13T23:59:59+05:00",
+          "status": "no_repository",
+          "base_grade": null,
+          "late_penalty": 0,
+          "grade": null,
+          "comments": [
+            "Репозиторий команды не указан."
+          ],
+          "submitted_at": null,
+          "checked_at": null,
+          "fingerprint": null
+        },
+        {
+          "group_id": "group02",
+          "lab_id": "lab03",
+          "title": "Системная диаграмма последовательностей",
+          "deadline": "2026-11-27T23:59:59+05:00",
+          "status": "no_repository",
+          "base_grade": null,
+          "late_penalty": 0,
+          "grade": null,
+          "comments": [
+            "Репозиторий команды не указан."
+          ],
+          "submitted_at": null,
+          "checked_at": null,
+          "fingerprint": null
+        },
+        {
+          "group_id": "group02",
+          "lab_id": "lab04",
+          "title": "Диаграмма последовательностей на уровне классов",
+          "deadline": "2026-12-11T23:59:59+05:00",
+          "status": "no_repository",
+          "base_grade": null,
+          "late_penalty": 0,
+          "grade": null,
+          "comments": [
+            "Репозиторий команды не указан."
+          ],
+          "submitted_at": null,
+          "checked_at": null,
+          "fingerprint": null
+        },
+        {
+          "group_id": "group02",
+          "lab_id": "lab05",
+          "title": "Диаграмма классов приложения",
+          "deadline": "2026-12-18T23:59:59+05:00",
+          "status": "no_repository",
+          "base_grade": null,
+          "late_penalty": 0,
+          "grade": null,
+          "comments": [
+            "Репозиторий команды не указан."
+          ],
+          "submitted_at": null,
+          "checked_at": null,
+          "fingerprint": null
+        },
+        {
+          "group_id": "group02",
+          "lab_id": "lab06",
+          "title": "Работающее приложение и видеоотчёт",
+          "deadline": "2026-12-25T23:59:59+05:00",
+          "status": "no_repository",
+          "base_grade": null,
+          "late_penalty": 0,
+          "grade": null,
+          "comments": [
+            "Репозиторий команды не указан."
+          ],
+          "submitted_at": null,
+          "checked_at": null,
+          "fingerprint": null
+        }
+      ]
+    },
+    {
+      "id": "group03",
+      "name": "Dragon",
+      "assignment_number": 2,
+      "repository": "https://github.com/Ahmetlev/LBPIS.git",
+      "labs": [
+        {
+          "group_id": "group03",
+          "lab_id": "lab01",
+          "title": "Диаграмма прецедентов",
+          "deadline": "2026-10-30T23:59:59+05:00",
+          "status": "empty_repository",
+          "base_grade": null,
+          "late_penalty": 0,
+          "grade": null,
+          "comments": [
+            "В репозитории пока нет коммитов; работа не сдана."
+          ],
+          "submitted_at": null,
+          "checked_at": null,
+          "fingerprint": null
+        },
+        {
+          "group_id": "group03",
+          "lab_id": "lab02",
+          "title": "ER-диаграмма предметной области",
+          "deadline": "2026-11-13T23:59:59+05:00",
+          "status": "empty_repository",
+          "base_grade": null,
+          "late_penalty": 0,
+          "grade": null,
+          "comments": [
+            "В репозитории пока нет коммитов; работа не сдана."
+          ],
+          "submitted_at": null,
+          "checked_at": null,
+          "fingerprint": null
+        },
+        {
+          "group_id": "group03",
+          "lab_id": "lab03",
+          "title": "Системная диаграмма последовательностей",
+          "deadline": "2026-11-27T23:59:59+05:00",
+          "status": "empty_repository",
+          "base_grade": null,
+          "late_penalty": 0,
+          "grade": null,
+          "comments": [
+            "В репозитории пока нет коммитов; работа не сдана."
+          ],
+          "submitted_at": null,
+          "checked_at": null,
+          "fingerprint": null
+        },
+        {
+          "group_id": "group03",
+          "lab_id": "lab04",
+          "title": "Диаграмма последовательностей на уровне классов",
+          "deadline": "2026-12-11T23:59:59+05:00",
+          "status": "empty_repository",
+          "base_grade": null,
+          "late_penalty": 0,
+          "grade": null,
+          "comments": [
+            "В репозитории пока нет коммитов; работа не сдана."
+          ],
+          "submitted_at": null,
+          "checked_at": null,
+          "fingerprint": null
+        },
+        {
+          "group_id": "group03",
+          "lab_id": "lab05",
+          "title": "Диаграмма классов приложения",
+          "deadline": "2026-12-18T23:59:59+05:00",
+          "status": "empty_repository",
+          "base_grade": null,
+          "late_penalty": 0,
+          "grade": null,
+          "comments": [
+            "В репозитории пока нет коммитов; работа не сдана."
+          ],
+          "submitted_at": null,
+          "checked_at": null,
+          "fingerprint": null
+        },
+        {
+          "group_id": "group03",
+          "lab_id": "lab06",
+          "title": "Работающее приложение и видеоотчёт",
+          "deadline": "2026-12-25T23:59:59+05:00",
+          "status": "empty_repository",
+          "base_grade": null,
+          "late_penalty": 0,
+          "grade": null,
+          "comments": [
+            "В репозитории пока нет коммитов; работа не сдана."
+          ],
+          "submitted_at": null,
+          "checked_at": null,
+          "fingerprint": null
+        }
+      ]
+    },
+    {
+      "id": "group04",
+      "name": "67",
+      "assignment_number": 3,
+      "repository": null,
+      "labs": [
+        {
+          "group_id": "group04",
+          "lab_id": "lab01",
+          "title": "Диаграмма прецедентов",
+          "deadline": "2026-10-30T23:59:59+05:00",
+          "status": "no_repository",
+          "base_grade": null,
+          "late_penalty": 0,
+          "grade": null,
+          "comments": [
+            "Репозиторий команды не указан."
+          ],
+          "submitted_at": null,
+          "checked_at": null,
+          "fingerprint": null
+        },
+        {
+          "group_id": "group04",
+          "lab_id": "lab02",
+          "title": "ER-диаграмма предметной области",
+          "deadline": "2026-11-13T23:59:59+05:00",
+          "status": "no_repository",
+          "base_grade": null,
+          "late_penalty": 0,
+          "grade": null,
+          "comments": [
+            "Репозиторий команды не указан."
+          ],
+          "submitted_at": null,
+          "checked_at": null,
+          "fingerprint": null
+        },
+        {
+          "group_id": "group04",
+          "lab_id": "lab03",
+          "title": "Системная диаграмма последовательностей",
+          "deadline": "2026-11-27T23:59:59+05:00",
+          "status": "no_repository",
+          "base_grade": null,
+          "late_penalty": 0,
+          "grade": null,
+          "comments": [
+            "Репозиторий команды не указан."
+          ],
+          "submitted_at": null,
+          "checked_at": null,
+          "fingerprint": null
+        },
+        {
+          "group_id": "group04",
+          "lab_id": "lab04",
+          "title": "Диаграмма последовательностей на уровне классов",
+          "deadline": "2026-12-11T23:59:59+05:00",
+          "status": "no_repository",
+          "base_grade": null,
+          "late_penalty": 0,
+          "grade": null,
+          "comments": [
+            "Репозиторий команды не указан."
+          ],
+          "submitted_at": null,
+          "checked_at": null,
+          "fingerprint": null
+        },
+        {
+          "group_id": "group04",
+          "lab_id": "lab05",
+          "title": "Диаграмма классов приложения",
+          "deadline": "2026-12-18T23:59:59+05:00",
+          "status": "no_repository",
+          "base_grade": null,
+          "late_penalty": 0,
+          "grade": null,
+          "comments": [
+            "Репозиторий команды не указан."
+          ],
+          "submitted_at": null,
+          "checked_at": null,
+          "fingerprint": null
+        },
+        {
+          "group_id": "group04",
+          "lab_id": "lab06",
+          "title": "Работающее приложение и видеоотчёт",
+          "deadline": "2026-12-25T23:59:59+05:00",
+          "status": "no_repository",
+          "base_grade": null,
+          "late_penalty": 0,
+          "grade": null,
+          "comments": [
+            "Репозиторий команды не указан."
+          ],
+          "submitted_at": null,
+          "checked_at": null,
+          "fingerprint": null
+        }
+      ]
+    },
+    {
+      "id": "group05",
+      "name": "P2P Micro-SaaS Pro Max 15ТБ 100 кв/м 5G 4.7GHz(в разгоне) M3-competition черного цвета.",
+      "assignment_number": 6,
+      "repository": "https://github.com/westbee-dev/Patentator.git",
+      "labs": [
+        {
+          "group_id": "group05",
+          "lab_id": "lab01",
+          "title": "Диаграмма прецедентов",
+          "deadline": "2026-10-30T23:59:59+05:00",
+          "status": "empty_repository",
+          "base_grade": null,
+          "late_penalty": 0,
+          "grade": null,
+          "comments": [
+            "В репозитории пока нет коммитов; работа не сдана."
+          ],
+          "submitted_at": null,
+          "checked_at": null,
+          "fingerprint": null
+        },
+        {
+          "group_id": "group05",
+          "lab_id": "lab02",
+          "title": "ER-диаграмма предметной области",
+          "deadline": "2026-11-13T23:59:59+05:00",
+          "status": "empty_repository",
+          "base_grade": null,
+          "late_penalty": 0,
+          "grade": null,
+          "comments": [
+            "В репозитории пока нет коммитов; работа не сдана."
+          ],
+          "submitted_at": null,
+          "checked_at": null,
+          "fingerprint": null
+        },
+        {
+          "group_id": "group05",
+          "lab_id": "lab03",
+          "title": "Системная диаграмма последовательностей",
+          "deadline": "2026-11-27T23:59:59+05:00",
+          "status": "empty_repository",
+          "base_grade": null,
+          "late_penalty": 0,
+          "grade": null,
+          "comments": [
+            "В репозитории пока нет коммитов; работа не сдана."
+          ],
+          "submitted_at": null,
+          "checked_at": null,
+          "fingerprint": null
+        },
+        {
+          "group_id": "group05",
+          "lab_id": "lab04",
+          "title": "Диаграмма последовательностей на уровне классов",
+          "deadline": "2026-12-11T23:59:59+05:00",
+          "status": "empty_repository",
+          "base_grade": null,
+          "late_penalty": 0,
+          "grade": null,
+          "comments": [
+            "В репозитории пока нет коммитов; работа не сдана."
+          ],
+          "submitted_at": null,
+          "checked_at": null,
+          "fingerprint": null
+        },
+        {
+          "group_id": "group05",
+          "lab_id": "lab05",
+          "title": "Диаграмма классов приложения",
+          "deadline": "2026-12-18T23:59:59+05:00",
+          "status": "empty_repository",
+          "base_grade": null,
+          "late_penalty": 0,
+          "grade": null,
+          "comments": [
+            "В репозитории пока нет коммитов; работа не сдана."
+          ],
+          "submitted_at": null,
+          "checked_at": null,
+          "fingerprint": null
+        },
+        {
+          "group_id": "group05",
+          "lab_id": "lab06",
+          "title": "Работающее приложение и видеоотчёт",
+          "deadline": "2026-12-25T23:59:59+05:00",
+          "status": "empty_repository",
+          "base_grade": null,
+          "late_penalty": 0,
+          "grade": null,
+          "comments": [
+            "В репозитории пока нет коммитов; работа не сдана."
+          ],
+          "submitted_at": null,
+          "checked_at": null,
+          "fingerprint": null
+        }
+      ]
+    },
+    {
+      "id": "group06",
+      "name": "1",
+      "assignment_number": 11,
+      "repository": null,
+      "labs": [
+        {
+          "group_id": "group06",
+          "lab_id": "lab01",
+          "title": "Диаграмма прецедентов",
+          "deadline": "2026-10-30T23:59:59+05:00",
+          "status": "no_repository",
+          "base_grade": null,
+          "late_penalty": 0,
+          "grade": null,
+          "comments": [
+            "Репозиторий команды не указан."
+          ],
+          "submitted_at": null,
+          "checked_at": null,
+          "fingerprint": null
+        },
+        {
+          "group_id": "group06",
+          "lab_id": "lab02",
+          "title": "ER-диаграмма предметной области",
+          "deadline": "2026-11-13T23:59:59+05:00",
+          "status": "no_repository",
+          "base_grade": null,
+          "late_penalty": 0,
+          "grade": null,
+          "comments": [
+            "Репозиторий команды не указан."
+          ],
+          "submitted_at": null,
+          "checked_at": null,
+          "fingerprint": null
+        },
+        {
+          "group_id": "group06",
+          "lab_id": "lab03",
+          "title": "Системная диаграмма последовательностей",
+          "deadline": "2026-11-27T23:59:59+05:00",
+          "status": "no_repository",
+          "base_grade": null,
+          "late_penalty": 0,
+          "grade": null,
+          "comments": [
+            "Репозиторий команды не указан."
+          ],
+          "submitted_at": null,
+          "checked_at": null,
+          "fingerprint": null
+        },
+        {
+          "group_id": "group06",
+          "lab_id": "lab04",
+          "title": "Диаграмма последовательностей на уровне классов",
+          "deadline": "2026-12-11T23:59:59+05:00",
+          "status": "no_repository",
+          "base_grade": null,
+          "late_penalty": 0,
+          "grade": null,
+          "comments": [
+            "Репозиторий команды не указан."
+          ],
+          "submitted_at": null,
+          "checked_at": null,
+          "fingerprint": null
+        },
+        {
+          "group_id": "group06",
+          "lab_id": "lab05",
+          "title": "Диаграмма классов приложения",
+          "deadline": "2026-12-18T23:59:59+05:00",
+          "status": "no_repository",
+          "base_grade": null,
+          "late_penalty": 0,
+          "grade": null,
+          "comments": [
+            "Репозиторий команды не указан."
+          ],
+          "submitted_at": null,
+          "checked_at": null,
+          "fingerprint": null
+        },
+        {
+          "group_id": "group06",
+          "lab_id": "lab06",
+          "title": "Работающее приложение и видеоотчёт",
+          "deadline": "2026-12-25T23:59:59+05:00",
+          "status": "no_repository",
+          "base_grade": null,
+          "late_penalty": 0,
+          "grade": null,
+          "comments": [
+            "Репозиторий команды не указан."
+          ],
+          "submitted_at": null,
+          "checked_at": null,
+          "fingerprint": null
+        }
+      ]
+    },
+    {
+      "id": "group07",
+      "name": "ПИСMAKER (миротворец)",
+      "assignment_number": 4,
+      "repository": null,
+      "labs": [
+        {
+          "group_id": "group07",
+          "lab_id": "lab01",
+          "title": "Диаграмма прецедентов",
+          "deadline": "2026-10-30T23:59:59+05:00",
+          "status": "no_repository",
+          "base_grade": null,
+          "late_penalty": 0,
+          "grade": null,
+          "comments": [
+            "Репозиторий команды не указан."
+          ],
+          "submitted_at": null,
+          "checked_at": null,
+          "fingerprint": null
+        },
+        {
+          "group_id": "group07",
+          "lab_id": "lab02",
+          "title": "ER-диаграмма предметной области",
+          "deadline": "2026-11-13T23:59:59+05:00",
+          "status": "no_repository",
+          "base_grade": null,
+          "late_penalty": 0,
+          "grade": null,
+          "comments": [
+            "Репозиторий команды не указан."
+          ],
+          "submitted_at": null,
+          "checked_at": null,
+          "fingerprint": null
+        },
+        {
+          "group_id": "group07",
+          "lab_id": "lab03",
+          "title": "Системная диаграмма последовательностей",
+          "deadline": "2026-11-27T23:59:59+05:00",
+          "status": "no_repository",
+          "base_grade": null,
+          "late_penalty": 0,
+          "grade": null,
+          "comments": [
+            "Репозиторий команды не указан."
+          ],
+          "submitted_at": null,
+          "checked_at": null,
+          "fingerprint": null
+        },
+        {
+          "group_id": "group07",
+          "lab_id": "lab04",
+          "title": "Диаграмма последовательностей на уровне классов",
+          "deadline": "2026-12-11T23:59:59+05:00",
+          "status": "no_repository",
+          "base_grade": null,
+          "late_penalty": 0,
+          "grade": null,
+          "comments": [
+            "Репозиторий команды не указан."
+          ],
+          "submitted_at": null,
+          "checked_at": null,
+          "fingerprint": null
+        },
+        {
+          "group_id": "group07",
+          "lab_id": "lab05",
+          "title": "Диаграмма классов приложения",
+          "deadline": "2026-12-18T23:59:59+05:00",
+          "status": "no_repository",
+          "base_grade": null,
+          "late_penalty": 0,
+          "grade": null,
+          "comments": [
+            "Репозиторий команды не указан."
+          ],
+          "submitted_at": null,
+          "checked_at": null,
+          "fingerprint": null
+        },
+        {
+          "group_id": "group07",
+          "lab_id": "lab06",
+          "title": "Работающее приложение и видеоотчёт",
+          "deadline": "2026-12-25T23:59:59+05:00",
+          "status": "no_repository",
+          "base_grade": null,
+          "late_penalty": 0,
+          "grade": null,
+          "comments": [
+            "Репозиторий команды не указан."
+          ],
+          "submitted_at": null,
+          "checked_at": null,
+          "fingerprint": null
+        }
+      ]
+    }
+  ]
+}

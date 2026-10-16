@@ -1,0 +1,17 @@
+{
+  "group_id": "group01",
+  "lab_id": "lab04",
+  "title": "Диаграмма последовательностей на уровне классов",
+  "deadline": "2026-12-11T23:59:59+05:00",
+  "status": "not_submitted",
+  "base_grade": null,
+  "late_penalty": 0,
+  "grade": null,
+  "comments": [
+    "Файлы лабораторной отсутствуют."
+  ],
+  "submitted_at": null,
+  "checked_at": null,
+  "fingerprint": "769cc2582d9d188b8eb567e2c6b81445d55d9fb2590fdbacf90ac34ca0f6d088",
+  "commit": "b1b2647f2e265ef344a7b2930e2e9405395d898f"
+}

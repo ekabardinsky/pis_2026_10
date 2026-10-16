@@ -1,0 +1,84 @@
+{
+  "course": "ПИС",
+  "year": 2026,
+  "timezone": "Asia/Yekaterinburg",
+  "labs": [
+    {
+      "id": "lab01",
+      "title": "Диаграмма прецедентов",
+      "required": true,
+      "deadline": "2026-10-30T23:59:59+05:00",
+      "artifacts": [
+        { "path": "use_case.md", "type": "mermaid", "diagram_type": "usecase-beta", "description_required": true }
+      ]
+    },
+    {
+      "id": "lab02",
+      "title": "ER-диаграмма предметной области",
+      "required": true,
+      "deadline": "2026-11-13T23:59:59+05:00",
+      "artifacts": [
+        { "path": "er.md", "type": "mermaid", "diagram_type": "erDiagram", "description_required": true }
+      ]
+    },
+    {
+      "id": "lab03",
+      "title": "Системная диаграмма последовательностей",
+      "description": "Выберите любой один юзкейс и покажите взаимодействие внешних участников и систем при его выполнении. Укажите выбранный юзкейс в пояснениях. Диаграмма не обязана охватывать остальные юзкейсы; взаимодействие внутренних классов здесь не требуется.",
+      "required": true,
+      "deadline": "2026-11-27T23:59:59+05:00",
+      "artifacts": [
+        { "path": "system_sequence.md", "type": "mermaid", "diagram_type": "sequenceDiagram", "description_required": true }
+      ]
+    },
+    {
+      "id": "lab04",
+      "title": "Диаграмма последовательностей на уровне классов",
+      "description": "Выберите любой один юзкейс и покажите взаимодействие классов приложения при его выполнении: объекты-участники и сообщения между ними. Укажите выбранный юзкейс в пояснениях. Диаграмма не обязана охватывать остальные юзкейсы или наиболее сложную операцию.",
+      "required": true,
+      "deadline": "2026-12-11T23:59:59+05:00",
+      "artifacts": [
+        { "path": "class_sequence.md", "type": "mermaid", "diagram_type": "sequenceDiagram", "description_required": true }
+      ]
+    },
+    {
+      "id": "lab05",
+      "title": "Диаграмма классов приложения",
+      "required": true,
+      "deadline": "2026-12-18T23:59:59+05:00",
+      "artifacts": [
+        { "path": "classes.md", "type": "mermaid", "diagram_type": "classDiagram", "description_required": true }
+      ]
+    },
+    {
+      "id": "lab06",
+      "title": "Работающее приложение и видеоотчёт",
+      "description": "Обязательны видеоотчёт в report/ и исходный код приложения в solution/. Базовая оценка — 3 при наличии обоих результатов, 4 — если дополнительно в коде нет грубых ошибок, 5 — если дополнительно соблюдён кодстайл. Наличие пустых папок не считается наличием кода или видео.",
+      "grading": {
+        "type": "cumulative",
+        "levels": [
+          {
+            "score": 3,
+            "requirements": ["video_report_present", "application_source_present"]
+          },
+          {
+            "score": 4,
+            "requirements": ["video_report_present", "application_source_present", "no_major_code_errors"]
+          },
+          {
+            "score": 5,
+            "requirements": ["video_report_present", "application_source_present", "no_major_code_errors", "code_style_consistent"]
+          }
+        ],
+        "missing_required_artifacts_status": "not_submitted"
+      },
+      "required": true,
+      "deadline": "2026-12-25T23:59:59+05:00",
+      "artifacts": [
+        { "path": "solution/", "type": "source_code" },
+        { "path": "report/", "type": "video_report" },
+        { "path": "README.md", "type": "project_description", "required_sections": ["Состав команды", "Инструкция по запуску"] }
+      ]
+    }
+  ]
+}
