@@ -10,7 +10,7 @@
       "id": "group02",
       "name": "ААА",
       "assignment_number": 5,
-      "repository": null
+      "repository": "https://github.com/AntonMasharov/pis-labs"
     },
     {
       "id": "group03",
@@ -22,7 +22,7 @@
       "id": "group04",
       "name": "67",
       "assignment_number": 3,
-      "repository": null
+      "repository": "https://github.com/NastyaRomanchenko/PIS-LB"
     },
     {
       "id": "group05",

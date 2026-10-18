@@ -3,14 +3,24 @@
   "lab_id": "lab01",
   "title": "Диаграмма прецедентов",
   "deadline": "2026-10-30T23:59:59+05:00",
-  "status": "no_repository",
-  "base_grade": null,
+  "status": "checked",
+  "base_grade": 5,
   "late_penalty": 0,
-  "grade": null,
+  "grade": 5,
   "comments": [
-    "Репозиторий команды не указан."
+    "Диаграмма соответствует lab01 и разделу 5 дорожной карты. Представлены роли, граница системы, основные прецеденты и связи include/extend. Пояснения раскрывают подачу заявки, исправления, получение результата и просмотр истории. Существенных ошибок не выявлено."
   ],
-  "submitted_at": null,
-  "checked_at": null,
-  "fingerprint": null
+  "submitted_at": "2026-10-17T09:53:15+05:00",
+  "checked_at": "2026-10-18T06:45:23.402239+00:00",
+  "fingerprint": "cb155f66dc34b83b11b2d920f8ce045549cba5f74da46ff37234ea818ddf48fd",
+  "commit": "d592d773cf0268ac2ed7896e113dac4f46a70acf",
+  "review": {
+    "status": "checked",
+    "major_errors": [],
+    "minor_comments": [],
+    "summary": "Диаграмма соответствует lab01 и разделу 5 дорожной карты. Представлены роли, граница системы, основные прецеденты и связи include/extend. Пояснения раскрывают подачу заявки, исправления, получение результата и просмотр истории. Существенных ошибок не выявлено.",
+    "application_source_present": false,
+    "video_report_present": false,
+    "code_style_consistent": false
+  }
 }

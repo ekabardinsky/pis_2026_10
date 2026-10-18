@@ -3,14 +3,15 @@
   "lab_id": "lab02",
   "title": "ER-диаграмма предметной области",
   "deadline": "2026-11-13T23:59:59+05:00",
-  "status": "no_repository",
+  "status": "not_submitted",
   "base_grade": null,
   "late_penalty": 0,
   "grade": null,
   "comments": [
-    "Репозиторий команды не указан."
+    "Файлы лабораторной отсутствуют."
   ],
   "submitted_at": null,
   "checked_at": null,
-  "fingerprint": null
+  "fingerprint": "cec9d1e034283f6e1926d91b79642ab97f698ff7ac7805b09f0123e4bf2963bf",
+  "commit": "dc2720be89a0e7e857fc32a925b92a7fda747f64"
 }
