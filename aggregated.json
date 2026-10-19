@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T06:45:39.813565+00:00",
+  "generated_at": "2026-10-19T03:49:31.995130+00:00",
   "groups": [
     {
       "id": "group01",
@@ -187,7 +187,8 @@
             "application_source_present": false,
             "video_report_present": false,
             "code_style_consistent": false
-          }
+          },
+          "skip_reason": "grade_5"
         },
         {
           "group_id": "group02",
@@ -204,7 +205,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "07f1d261b17d2f703d7313ac8758ea7bed64f78b455b93bc5f3dd72e16c6ad95",
-          "commit": "d592d773cf0268ac2ed7896e113dac4f46a70acf"
+          "commit": "d592d773cf0268ac2ed7896e113dac4f46a70acf",
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group02",
@@ -221,7 +223,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "9219be053f717210af4c557fe0c17f27db7174c1dd2c95e27a157cbc7e26d055",
-          "commit": "d592d773cf0268ac2ed7896e113dac4f46a70acf"
+          "commit": "d592d773cf0268ac2ed7896e113dac4f46a70acf",
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group02",
@@ -238,7 +241,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "a2391af50581f53dd4385afb02a6151b2f6f1a011c5cc90d6522edd228481e4a",
-          "commit": "d592d773cf0268ac2ed7896e113dac4f46a70acf"
+          "commit": "d592d773cf0268ac2ed7896e113dac4f46a70acf",
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group02",
@@ -255,7 +259,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "f29842dc7335648d50ba47c23f891968f9d33a6ae838d7703f8df8e806398b26",
-          "commit": "d592d773cf0268ac2ed7896e113dac4f46a70acf"
+          "commit": "d592d773cf0268ac2ed7896e113dac4f46a70acf",
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group02",
@@ -272,7 +277,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "70bd3d485207123e1d618219598d12c20ee257fd22a48b50ac32b6c9b52bf12f",
-          "commit": "d592d773cf0268ac2ed7896e113dac4f46a70acf"
+          "commit": "d592d773cf0268ac2ed7896e113dac4f46a70acf",
+          "skip_reason": "unchanged"
         }
       ]
     },
@@ -391,17 +397,34 @@
           "lab_id": "lab01",
           "title": "Диаграмма прецедентов",
           "deadline": "2026-10-30T23:59:59+05:00",
-          "status": "not_submitted",
-          "base_grade": null,
+          "status": "checked",
+          "base_grade": 4,
           "late_penalty": 0,
-          "grade": null,
+          "grade": 4,
           "comments": [
-            "Файлы лабораторной отсутствуют."
+            "Тема соответствует разделу 3. Представлены три роли, граница системы, подача заявок, оформление результатов и просмотр истории. Необходимо добавить взаимодействие при запросе дополнительных документов и исправлений.",
+            "student/use_case.md, блок mermaid: отсутствует процесс доработки заявления по запросу сотрудника — запрос дополнительных документов или исправлений и предоставление их гражданином. Он применим к заявкам на медосвидетельствование и страхование и обязателен по заданию.",
+            "student/use_case.md, UC2 и UC8: уточните, что вход выполняется по телефону и SMS-коду; сейчас подтверждение телефона указано только для регистрации.",
+            "student/use_case.md, UC10: оформление полиса сотрудником показано, но получение готового полиса гражданином явно не отражено."
           ],
-          "submitted_at": null,
-          "checked_at": null,
-          "fingerprint": "3a0b5f8323f6718127c7733ba83ec350ad3f940c488a2b4716dbca23f7d7ae7c",
-          "commit": "dc2720be89a0e7e857fc32a925b92a7fda747f64"
+          "submitted_at": "2026-10-18T19:12:46+05:00",
+          "checked_at": "2026-10-19T03:49:18.785687+00:00",
+          "fingerprint": "7f7d9dac1b7dc5f9c4431796ecae469aa58b560c1936b8d73747a2dd44640ffd",
+          "commit": "a964a9e4b949e25ef2cc24427b5c8bccbc6d86bf",
+          "review": {
+            "status": "checked",
+            "major_errors": [
+              "student/use_case.md, блок mermaid: отсутствует процесс доработки заявления по запросу сотрудника — запрос дополнительных документов или исправлений и предоставление их гражданином. Он применим к заявкам на медосвидетельствование и страхование и обязателен по заданию."
+            ],
+            "minor_comments": [
+              "student/use_case.md, UC2 и UC8: уточните, что вход выполняется по телефону и SMS-коду; сейчас подтверждение телефона указано только для регистрации.",
+              "student/use_case.md, UC10: оформление полиса сотрудником показано, но получение готового полиса гражданином явно не отражено."
+            ],
+            "summary": "Тема соответствует разделу 3. Представлены три роли, граница системы, подача заявок, оформление результатов и просмотр истории. Необходимо добавить взаимодействие при запросе дополнительных документов и исправлений.",
+            "application_source_present": false,
+            "video_report_present": false,
+            "code_style_consistent": false
+          }
         },
         {
           "group_id": "group04",
@@ -417,8 +440,8 @@
           ],
           "submitted_at": null,
           "checked_at": null,
-          "fingerprint": "cec9d1e034283f6e1926d91b79642ab97f698ff7ac7805b09f0123e4bf2963bf",
-          "commit": "dc2720be89a0e7e857fc32a925b92a7fda747f64"
+          "fingerprint": "97aa7ea903b4c8bc86e22366995b404629a8ed42aa9a6959e46bbeeafbf36b4f",
+          "commit": "a964a9e4b949e25ef2cc24427b5c8bccbc6d86bf"
         },
         {
           "group_id": "group04",
@@ -434,8 +457,8 @@
           ],
           "submitted_at": null,
           "checked_at": null,
-          "fingerprint": "9994c207f7af5ff08a01715bce675c85d26615ba24dcf12ac047d47f1b7d4157",
-          "commit": "dc2720be89a0e7e857fc32a925b92a7fda747f64"
+          "fingerprint": "bc262c5e1346eecff78769c6d6588301e055d68f23823bc127856ae4dbeb10bc",
+          "commit": "a964a9e4b949e25ef2cc24427b5c8bccbc6d86bf"
         },
         {
           "group_id": "group04",
@@ -451,8 +474,8 @@
           ],
           "submitted_at": null,
           "checked_at": null,
-          "fingerprint": "cb24342f6dda828f4fef464adcbaab6b6efaf068019c8013b17891820a714df9",
-          "commit": "dc2720be89a0e7e857fc32a925b92a7fda747f64"
+          "fingerprint": "812e5fe4c3dbb474f08e8f2238f6a4a376cb7f8f1b308016793060f162be9cab",
+          "commit": "a964a9e4b949e25ef2cc24427b5c8bccbc6d86bf"
         },
         {
           "group_id": "group04",
@@ -468,8 +491,8 @@
           ],
           "submitted_at": null,
           "checked_at": null,
-          "fingerprint": "b7023214aea1384fae544bdbbfea4c637068f4ed4729aa053c326b0a1c28d239",
-          "commit": "dc2720be89a0e7e857fc32a925b92a7fda747f64"
+          "fingerprint": "a334a6217fbfea33fc25b0c7d2afdb0c038972db0e27701e0e0b740e6e0d869a",
+          "commit": "a964a9e4b949e25ef2cc24427b5c8bccbc6d86bf"
         },
         {
           "group_id": "group04",
@@ -481,30 +504,30 @@
           "late_penalty": 0,
           "grade": null,
           "comments": [
-            "В представленном коммите есть только краткое описание темы в README.md. Для lab06 необходимо добавить исходники приложения в solution/ и непустой видеофайл в report/.",
-            "solution/: отсутствует исходный код приложения; в коммите есть только README.md.",
-            "report/: отсутствует обязательный видеоотчёт; в context.json список video_files пуст.",
-            "README.md: отсутствуют разделы «Состав команды» и «Инструкция по запуску».",
-            "Видеоотчёт проверяется только на наличие; его содержание не оценивается.",
-            "Кодстайл оценить невозможно: исходники приложения отсутствуют.",
+            "Для lab06 представлены описание темы и диаграмма прецедентов. Обязательные исходники приложения и видеоотчёт отсутствуют.",
+            "solution/: отсутствует исходный код приложения; представлены только README.md и диаграмма use_case.md.",
+            "report/: отсутствует обязательный видеоотчёт.",
+            "README.md: отсутствуют состав команды и инструкция по запуску приложения.",
+            "Видеоотчёт проверяется только на наличие; содержание видео не оценивается.",
+            "Оценить кодстайл невозможно: исходный код приложения отсутствует.",
             "Для сдачи обязательны и код приложения, и видеоотчёт."
           ],
           "submitted_at": "2026-10-17T19:23:05+05:00",
-          "checked_at": "2026-10-18T06:45:39.306215+00:00",
-          "fingerprint": "2f7e0197fbcac4e8001fef847db4ec63b47d8960be7363437eae6626d7c2076f",
-          "commit": "dc2720be89a0e7e857fc32a925b92a7fda747f64",
+          "checked_at": "2026-10-19T03:49:31.650285+00:00",
+          "fingerprint": "8f3c2c59d6e2dafb44d72421bc216de90065b62ed17d01e748b1e8148b7b7e23",
+          "commit": "a964a9e4b949e25ef2cc24427b5c8bccbc6d86bf",
           "review": {
             "status": "checked",
             "major_errors": [
-              "solution/: отсутствует исходный код приложения; в коммите есть только README.md.",
-              "report/: отсутствует обязательный видеоотчёт; в context.json список video_files пуст."
+              "solution/: отсутствует исходный код приложения; представлены только README.md и диаграмма use_case.md.",
+              "report/: отсутствует обязательный видеоотчёт."
             ],
             "minor_comments": [
-              "README.md: отсутствуют разделы «Состав команды» и «Инструкция по запуску».",
-              "Видеоотчёт проверяется только на наличие; его содержание не оценивается.",
-              "Кодстайл оценить невозможно: исходники приложения отсутствуют."
+              "README.md: отсутствуют состав команды и инструкция по запуску приложения.",
+              "Видеоотчёт проверяется только на наличие; содержание видео не оценивается.",
+              "Оценить кодстайл невозможно: исходный код приложения отсутствует."
             ],
-            "summary": "В представленном коммите есть только краткое описание темы в README.md. Для lab06 необходимо добавить исходники приложения в solution/ и непустой видеофайл в report/.",
+            "summary": "Для lab06 представлены описание темы и диаграмма прецедентов. Обязательные исходники приложения и видеоотчёт отсутствуют.",
             "application_source_present": false,
             "video_report_present": false,
             "code_style_consistent": false
