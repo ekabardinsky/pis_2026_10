@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-19T03:49:31.995130+00:00",
+  "generated_at": "2026-10-20T04:11:34.693381+00:00",
   "groups": [
     {
       "id": "group01",
@@ -195,18 +195,29 @@
           "lab_id": "lab02",
           "title": "ER-диаграмма предметной области",
           "deadline": "2026-11-13T23:59:59+05:00",
-          "status": "not_submitted",
-          "base_grade": null,
+          "status": "checked",
+          "base_grade": 5,
           "late_penalty": 0,
-          "grade": null,
+          "grade": 5,
           "comments": [
-            "Файлы лабораторной отсутствуют."
+            "ER-диаграмма соответствует разделу 5: представлены заявки, версии, документы, проверки, запросы дополнений, результаты и история статусов. Связи и ограничения пояснены. Грубых ошибок не выявлено.",
+            "student/er.md, таблицы «Сущности и атрибуты» и «Связи и кратности»: разделители заголовков записаны как «..-». Замените их на «---», чтобы таблицы отображались корректно."
           ],
-          "submitted_at": null,
-          "checked_at": null,
-          "fingerprint": "07f1d261b17d2f703d7313ac8758ea7bed64f78b455b93bc5f3dd72e16c6ad95",
-          "commit": "d592d773cf0268ac2ed7896e113dac4f46a70acf",
-          "skip_reason": "unchanged"
+          "submitted_at": "2026-10-19T19:06:31+05:00",
+          "checked_at": "2026-10-20T04:11:33.279096+00:00",
+          "fingerprint": "39ef17250ecb2002106a150ab245e72ab1a9381524768ede5a332e91be909588",
+          "commit": "e42ff203a46855a7446eade144d43509c062dba0",
+          "review": {
+            "status": "checked",
+            "major_errors": [],
+            "minor_comments": [
+              "student/er.md, таблицы «Сущности и атрибуты» и «Связи и кратности»: разделители заголовков записаны как «..-». Замените их на «---», чтобы таблицы отображались корректно."
+            ],
+            "summary": "ER-диаграмма соответствует разделу 5: представлены заявки, версии, документы, проверки, запросы дополнений, результаты и история статусов. Связи и ограничения пояснены. Грубых ошибок не выявлено.",
+            "application_source_present": false,
+            "video_report_present": false,
+            "code_style_consistent": false
+          }
         },
         {
           "group_id": "group02",
@@ -222,9 +233,8 @@
           ],
           "submitted_at": null,
           "checked_at": null,
-          "fingerprint": "9219be053f717210af4c557fe0c17f27db7174c1dd2c95e27a157cbc7e26d055",
-          "commit": "d592d773cf0268ac2ed7896e113dac4f46a70acf",
-          "skip_reason": "unchanged"
+          "fingerprint": "c9b77b15565e9a5d8b0b2bbc04bc233dccb27051245cf5117d3a484fae3916d8",
+          "commit": "e42ff203a46855a7446eade144d43509c062dba0"
         },
         {
           "group_id": "group02",
@@ -240,9 +250,8 @@
           ],
           "submitted_at": null,
           "checked_at": null,
-          "fingerprint": "a2391af50581f53dd4385afb02a6151b2f6f1a011c5cc90d6522edd228481e4a",
-          "commit": "d592d773cf0268ac2ed7896e113dac4f46a70acf",
-          "skip_reason": "unchanged"
+          "fingerprint": "2741079e38eb62ed847916c638ef708ed471f9924b2bef31599d704148b57f48",
+          "commit": "e42ff203a46855a7446eade144d43509c062dba0"
         },
         {
           "group_id": "group02",
@@ -258,9 +267,8 @@
           ],
           "submitted_at": null,
           "checked_at": null,
-          "fingerprint": "f29842dc7335648d50ba47c23f891968f9d33a6ae838d7703f8df8e806398b26",
-          "commit": "d592d773cf0268ac2ed7896e113dac4f46a70acf",
-          "skip_reason": "unchanged"
+          "fingerprint": "1ede68eab582fd4b1695981f27fa644ffce636b551767f6f73a965a37d8f2cd0",
+          "commit": "e42ff203a46855a7446eade144d43509c062dba0"
         },
         {
           "group_id": "group02",
@@ -276,9 +284,8 @@
           ],
           "submitted_at": null,
           "checked_at": null,
-          "fingerprint": "70bd3d485207123e1d618219598d12c20ee257fd22a48b50ac32b6c9b52bf12f",
-          "commit": "d592d773cf0268ac2ed7896e113dac4f46a70acf",
-          "skip_reason": "unchanged"
+          "fingerprint": "b3a84c214dc9f29e00415a0b4e5e8ceb7557587a7f94f2742ae07e1ff7c8f6e1",
+          "commit": "e42ff203a46855a7446eade144d43509c062dba0"
         }
       ]
     },
@@ -424,7 +431,8 @@
             "application_source_present": false,
             "video_report_present": false,
             "code_style_consistent": false
-          }
+          },
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group04",
@@ -441,7 +449,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "97aa7ea903b4c8bc86e22366995b404629a8ed42aa9a6959e46bbeeafbf36b4f",
-          "commit": "a964a9e4b949e25ef2cc24427b5c8bccbc6d86bf"
+          "commit": "a964a9e4b949e25ef2cc24427b5c8bccbc6d86bf",
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group04",
@@ -458,7 +467,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "bc262c5e1346eecff78769c6d6588301e055d68f23823bc127856ae4dbeb10bc",
-          "commit": "a964a9e4b949e25ef2cc24427b5c8bccbc6d86bf"
+          "commit": "a964a9e4b949e25ef2cc24427b5c8bccbc6d86bf",
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group04",
@@ -475,7 +485,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "812e5fe4c3dbb474f08e8f2238f6a4a376cb7f8f1b308016793060f162be9cab",
-          "commit": "a964a9e4b949e25ef2cc24427b5c8bccbc6d86bf"
+          "commit": "a964a9e4b949e25ef2cc24427b5c8bccbc6d86bf",
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group04",
@@ -492,7 +503,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "a334a6217fbfea33fc25b0c7d2afdb0c038972db0e27701e0e0b740e6e0d869a",
-          "commit": "a964a9e4b949e25ef2cc24427b5c8bccbc6d86bf"
+          "commit": "a964a9e4b949e25ef2cc24427b5c8bccbc6d86bf",
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group04",
@@ -531,7 +543,8 @@
             "application_source_present": false,
             "video_report_present": false,
             "code_style_consistent": false
-          }
+          },
+          "skip_reason": "unchanged"
         }
       ]
     },
