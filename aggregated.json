@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T04:11:34.693381+00:00",
+  "generated_at": "2026-10-20T15:01:48.966011+00:00",
   "groups": [
     {
       "id": "group01",
@@ -217,7 +217,8 @@
             "application_source_present": false,
             "video_report_present": false,
             "code_style_consistent": false
-          }
+          },
+          "skip_reason": "grade_5"
         },
         {
           "group_id": "group02",
@@ -234,7 +235,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "c9b77b15565e9a5d8b0b2bbc04bc233dccb27051245cf5117d3a484fae3916d8",
-          "commit": "e42ff203a46855a7446eade144d43509c062dba0"
+          "commit": "e42ff203a46855a7446eade144d43509c062dba0",
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group02",
@@ -251,7 +253,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "2741079e38eb62ed847916c638ef708ed471f9924b2bef31599d704148b57f48",
-          "commit": "e42ff203a46855a7446eade144d43509c062dba0"
+          "commit": "e42ff203a46855a7446eade144d43509c062dba0",
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group02",
@@ -268,7 +271,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "1ede68eab582fd4b1695981f27fa644ffce636b551767f6f73a965a37d8f2cd0",
-          "commit": "e42ff203a46855a7446eade144d43509c062dba0"
+          "commit": "e42ff203a46855a7446eade144d43509c062dba0",
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group02",
@@ -285,7 +289,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "b3a84c214dc9f29e00415a0b4e5e8ceb7557587a7f94f2742ae07e1ff7c8f6e1",
-          "commit": "e42ff203a46855a7446eade144d43509c062dba0"
+          "commit": "e42ff203a46855a7446eade144d43509c062dba0",
+          "skip_reason": "unchanged"
         }
       ]
     },
@@ -559,96 +564,136 @@
           "lab_id": "lab01",
           "title": "Диаграмма прецедентов",
           "deadline": "2026-10-30T23:59:59+05:00",
-          "status": "empty_repository",
-          "base_grade": null,
+          "status": "checked",
+          "base_grade": 4,
           "late_penalty": 0,
-          "grade": null,
+          "grade": 4,
           "comments": [
-            "В репозитории пока нет коммитов; работа не сдана."
+            "Диаграмма соответствует теме №6, содержит границу системы, роли, основные прецеденты и пояснения. Требуемые действия представлены. Нужно исправить смысл связи между запросом сотрудника и доработкой заявления.",
+            "use_case.md: связь «UC_RequestFix ..> : extend UC_FixApp» ошибочно делает запрос сотрудника расширением исправления заявления. Запрос возникает при рассмотрении и служит условием последующего исправления заявителем; удалите эту связь, сохранив расширение UC_Review."
           ],
-          "submitted_at": null,
-          "checked_at": null,
-          "fingerprint": null
+          "submitted_at": "2026-10-18T20:00:03+05:00",
+          "checked_at": "2026-10-20T15:01:30.004618+00:00",
+          "fingerprint": "d4bf29e1adaf109dd85a03a7552bc06f5ae62f5c0f1b644386550782a7b5bb51",
+          "commit": "e267b9195d9b97ff85216720cdb3d266313e5351",
+          "review": {
+            "status": "checked",
+            "major_errors": [
+              "use_case.md: связь «UC_RequestFix ..> : extend UC_FixApp» ошибочно делает запрос сотрудника расширением исправления заявления. Запрос возникает при рассмотрении и служит условием последующего исправления заявителем; удалите эту связь, сохранив расширение UC_Review."
+            ],
+            "minor_comments": [],
+            "summary": "Диаграмма соответствует теме №6, содержит границу системы, роли, основные прецеденты и пояснения. Требуемые действия представлены. Нужно исправить смысл связи между запросом сотрудника и доработкой заявления.",
+            "application_source_present": false,
+            "video_report_present": false,
+            "code_style_consistent": false
+          }
         },
         {
           "group_id": "group05",
           "lab_id": "lab02",
           "title": "ER-диаграмма предметной области",
           "deadline": "2026-11-13T23:59:59+05:00",
-          "status": "empty_repository",
+          "status": "not_submitted",
           "base_grade": null,
           "late_penalty": 0,
           "grade": null,
           "comments": [
-            "В репозитории пока нет коммитов; работа не сдана."
+            "Файлы лабораторной отсутствуют."
           ],
           "submitted_at": null,
           "checked_at": null,
-          "fingerprint": null
+          "fingerprint": "05ee7b1801d4943c11fcc6afab4e1946cf2b69628935cc126d99b116858aa78b",
+          "commit": "e267b9195d9b97ff85216720cdb3d266313e5351"
         },
         {
           "group_id": "group05",
           "lab_id": "lab03",
           "title": "Системная диаграмма последовательностей",
           "deadline": "2026-11-27T23:59:59+05:00",
-          "status": "empty_repository",
+          "status": "not_submitted",
           "base_grade": null,
           "late_penalty": 0,
           "grade": null,
           "comments": [
-            "В репозитории пока нет коммитов; работа не сдана."
+            "Файлы лабораторной отсутствуют."
           ],
           "submitted_at": null,
           "checked_at": null,
-          "fingerprint": null
+          "fingerprint": "205be1cd3d46f2d16f562626c2f2b0321d4d09de05daab37629f62c92fd24f7a",
+          "commit": "e267b9195d9b97ff85216720cdb3d266313e5351"
         },
         {
           "group_id": "group05",
           "lab_id": "lab04",
           "title": "Диаграмма последовательностей на уровне классов",
           "deadline": "2026-12-11T23:59:59+05:00",
-          "status": "empty_repository",
+          "status": "not_submitted",
           "base_grade": null,
           "late_penalty": 0,
           "grade": null,
           "comments": [
-            "В репозитории пока нет коммитов; работа не сдана."
+            "Файлы лабораторной отсутствуют."
           ],
           "submitted_at": null,
           "checked_at": null,
-          "fingerprint": null
+          "fingerprint": "7f77e1d6e8a91fe2f649fe352b1cc75c3f80c9f49f24ec07e78d0cea89d5f4a4",
+          "commit": "e267b9195d9b97ff85216720cdb3d266313e5351"
         },
         {
           "group_id": "group05",
           "lab_id": "lab05",
           "title": "Диаграмма классов приложения",
           "deadline": "2026-12-18T23:59:59+05:00",
-          "status": "empty_repository",
+          "status": "not_submitted",
           "base_grade": null,
           "late_penalty": 0,
           "grade": null,
           "comments": [
-            "В репозитории пока нет коммитов; работа не сдана."
+            "Файлы лабораторной отсутствуют."
           ],
           "submitted_at": null,
           "checked_at": null,
-          "fingerprint": null
+          "fingerprint": "c5f27ec343e4cf145e290944c0dc42e3f752228343441ffd26fc4b4eb96ae569",
+          "commit": "e267b9195d9b97ff85216720cdb3d266313e5351"
         },
         {
           "group_id": "group05",
           "lab_id": "lab06",
           "title": "Работающее приложение и видеоотчёт",
           "deadline": "2026-12-25T23:59:59+05:00",
-          "status": "empty_repository",
+          "status": "not_submitted",
           "base_grade": null,
           "late_penalty": 0,
           "grade": null,
           "comments": [
-            "В репозитории пока нет коммитов; работа не сдана."
+            "Для lab06 представлены описание команды и диаграмма из lab01. Обязательные исходники приложения и видеоотчёт отсутствуют. Добавьте код в solution/, видео в report/ и инструкцию по запуску в README.md.",
+            "solution/: исходный код приложения отсутствует в manifest и student/. Представлена только диаграмма прецедентов, поэтому обязательное приложение для lab06 не сдано.",
+            "report/: видеоотчёт отсутствует; в context.json список video_files пуст.",
+            "README.md: отсутствует обязательная инструкция по запуску приложения.",
+            "Видео проверяется только на наличие по context.json; содержание видео не оценивается.",
+            "Кодстайл оценить невозможно: исходный код приложения отсутствует.",
+            "Для сдачи обязательны и код приложения, и видеоотчёт."
           ],
-          "submitted_at": null,
-          "checked_at": null,
-          "fingerprint": null
+          "submitted_at": "2026-10-18T18:41:24+05:00",
+          "checked_at": "2026-10-20T15:01:48.918042+00:00",
+          "fingerprint": "c7b6b0e6eba4e9d6a0a3781d279b01243ec2091e237449408dc0a5fa3a8bf8bf",
+          "commit": "e267b9195d9b97ff85216720cdb3d266313e5351",
+          "review": {
+            "status": "checked",
+            "major_errors": [
+              "solution/: исходный код приложения отсутствует в manifest и student/. Представлена только диаграмма прецедентов, поэтому обязательное приложение для lab06 не сдано.",
+              "report/: видеоотчёт отсутствует; в context.json список video_files пуст."
+            ],
+            "minor_comments": [
+              "README.md: отсутствует обязательная инструкция по запуску приложения.",
+              "Видео проверяется только на наличие по context.json; содержание видео не оценивается.",
+              "Кодстайл оценить невозможно: исходный код приложения отсутствует."
+            ],
+            "summary": "Для lab06 представлены описание команды и диаграмма из lab01. Обязательные исходники приложения и видеоотчёт отсутствуют. Добавьте код в solution/, видео в report/ и инструкцию по запуску в README.md.",
+            "application_source_present": false,
+            "video_report_present": false,
+            "code_style_consistent": false
+          }
         }
       ]
     },
