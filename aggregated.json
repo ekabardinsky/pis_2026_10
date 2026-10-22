@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T04:17:52.320524+00:00",
+  "generated_at": "2026-10-22T03:22:51.650332+00:00",
   "groups": [
     {
       "id": "group01",
@@ -583,7 +583,8 @@
             "application_source_present": false,
             "video_report_present": false,
             "code_style_consistent": false
-          }
+          },
+          "skip_reason": "grade_5"
         },
         {
           "group_id": "group05",
@@ -600,7 +601,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "db2f7c032c74f026a45f03c232aeb05a9aeb76a37b27d0248b3f4ac46c5a216f",
-          "commit": "24000dbded34a29fc81fecff9759a8c3fc9416cd"
+          "commit": "24000dbded34a29fc81fecff9759a8c3fc9416cd",
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group05",
@@ -617,7 +619,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "588f46cbfe67615509f26be78f34819fe38369797b3be589d0fff0f3ffa16664",
-          "commit": "24000dbded34a29fc81fecff9759a8c3fc9416cd"
+          "commit": "24000dbded34a29fc81fecff9759a8c3fc9416cd",
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group05",
@@ -634,7 +637,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "1952de870cb6ab4cdb1cf550228614631db04d664f0a40682811d9f5f56e42e5",
-          "commit": "24000dbded34a29fc81fecff9759a8c3fc9416cd"
+          "commit": "24000dbded34a29fc81fecff9759a8c3fc9416cd",
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group05",
@@ -651,7 +655,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "084ac3a267a7532ffda65e7b5e020bf6a7e395c0cb87a9fd85ff0975843d6c12",
-          "commit": "24000dbded34a29fc81fecff9759a8c3fc9416cd"
+          "commit": "24000dbded34a29fc81fecff9759a8c3fc9416cd",
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group05",
@@ -688,7 +693,8 @@
             "application_source_present": false,
             "video_report_present": false,
             "code_style_consistent": false
-          }
+          },
+          "skip_reason": "unchanged"
         }
       ]
     },
