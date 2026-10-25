@@ -3,16 +3,24 @@
   "lab_id": "lab03",
   "title": "Системная диаграмма последовательностей",
   "deadline": "2026-11-27T23:59:59+05:00",
-  "status": "not_submitted",
-  "base_grade": null,
+  "status": "checked",
+  "base_grade": 5,
   "late_penalty": 0,
-  "grade": null,
+  "grade": 5,
   "comments": [
-    "Файлы лабораторной отсутствуют."
+    "В system_sequence.md представлен один прецедент дополнения заявки: показаны взаимодействия заявителя с системой, основной сценарий и альтернативы. Диаграмма и пояснения соответствуют требованиям lab03 и выбранной теме. Грубых ошибок не обнаружено."
   ],
-  "submitted_at": null,
-  "checked_at": null,
-  "fingerprint": "c9b77b15565e9a5d8b0b2bbc04bc233dccb27051245cf5117d3a484fae3916d8",
-  "commit": "e42ff203a46855a7446eade144d43509c062dba0",
-  "skip_reason": "unchanged"
+  "submitted_at": "2026-10-23T19:51:47+05:00",
+  "checked_at": "2026-10-25T10:20:56.281084+00:00",
+  "fingerprint": "f70f479174200463d5bee55029dc685205faf47f8481de1b940395588674fb04",
+  "commit": "a00a9d42a6c0a8b9b069981fc06977a1faa23ef7",
+  "review": {
+    "status": "checked",
+    "major_errors": [],
+    "minor_comments": [],
+    "summary": "В system_sequence.md представлен один прецедент дополнения заявки: показаны взаимодействия заявителя с системой, основной сценарий и альтернативы. Диаграмма и пояснения соответствуют требованиям lab03 и выбранной теме. Грубых ошибок не обнаружено.",
+    "application_source_present": false,
+    "video_report_present": false,
+    "code_style_consistent": false
+  }
 }
