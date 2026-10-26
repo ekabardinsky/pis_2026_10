@@ -55,6 +55,37 @@ def load_groups() -> list[dict]:
     return groups
 
 
+def restore_unborn_branch(target: Path) -> None:
+    """Восстанавливает checkout клона, созданного до первого push в репозиторий."""
+    try:
+        run_git("-C", str(target), "rev-parse", "--verify", "--quiet", "HEAD^{commit}")
+    except RuntimeError:
+        branch = run_git("-C", str(target), "symbolic-ref", "--quiet", "HEAD")
+        if run_git("-C", str(target), "for-each-ref", "--format=%(refname)", branch):
+            raise RuntimeError("HEAD не указывает на коммит; проверьте локальный клон")
+    else:
+        return
+    run_git("-C", str(target), "fetch", "origin")
+    advertised = run_git("-C", str(target), "ls-remote", "--symref", "origin")
+    branches = set()
+    default = None
+    for line in advertised.splitlines():
+        value, ref = line.split("\t", 1)
+        if ref == "HEAD" and value.startswith("ref: refs/heads/"):
+            default = value.removeprefix("ref: refs/heads/")
+        elif ref.startswith("refs/heads/"):
+            branches.add(ref.removeprefix("refs/heads/"))
+    if not branches:
+        return  # Удалённый репозиторий пока пуст.
+    if default not in branches:
+        default = next((name for name in ("main", "master") if name in branches), None)
+        if default is None:
+            if len(branches) != 1:
+                raise RuntimeError("Не удалось определить основную ветку origin")
+            default = next(iter(branches))
+    run_git("-C", str(target), "checkout", "-b", default, "--track", f"origin/{default}")
+
+
 def sync_repository(group: dict) -> str:
     target = REPOS_DIR / group["id"]
     repository = group["repository"]
@@ -62,6 +93,7 @@ def sync_repository(group: dict) -> str:
         raise RuntimeError(f"{target} является символической ссылкой")
     if not target.exists():
         run_git("clone", "--", repository, str(target))
+        restore_unborn_branch(target)
         return "склонирован"
     if not (target / ".git").is_dir():
         raise RuntimeError(f"{target} существует, но не является клоном Git")
@@ -70,6 +102,9 @@ def sync_repository(group: dict) -> str:
         raise RuntimeError("origin отличается от groups.json; проверьте ссылку и локальный клон")
     if run_git("-C", str(target), "status", "--porcelain"):
         raise RuntimeError("есть локальные изменения; обновление пропущено")
+    restore_unborn_branch(target)
+    if not run_git("-C", str(target), "for-each-ref", "refs/remotes/origin"):
+        return "обновлён (репозиторий пока пуст)"
     run_git("-C", str(target), "pull", "--ff-only")
     return "обновлён"
 

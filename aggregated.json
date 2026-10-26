@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T03:55:00.144791+00:00",
+  "generated_at": "2026-10-26T08:11:42.463479+00:00",
   "groups": [
     {
       "id": "group01",
@@ -252,18 +252,27 @@
           "lab_id": "lab04",
           "title": "Диаграмма последовательностей на уровне классов",
           "deadline": "2026-12-11T23:59:59+05:00",
-          "status": "not_submitted",
-          "base_grade": null,
+          "status": "checked",
+          "base_grade": 5,
           "late_penalty": 0,
-          "grade": null,
+          "grade": 5,
           "comments": [
-            "Файлы лабораторной отсутствуют."
+            "В class_sequence.md представлен один блок sequenceDiagram и пояснения к выбранному прецеденту дополнения заявки. Показаны объекты классов, вызовы методов, возвраты и альтернативные ветви. Существенных ошибок не обнаружено."
           ],
-          "submitted_at": null,
-          "checked_at": null,
-          "fingerprint": "cd6d0dda111c6f9a31aef986f2b86a1621466e6826e2880acf7405185c12fb11",
-          "commit": "a00a9d42a6c0a8b9b069981fc06977a1faa23ef7",
-          "skip_reason": "unchanged"
+          "submitted_at": "2026-10-26T12:14:03+05:00",
+          "checked_at": "2026-10-26T08:05:50.361057+00:00",
+          "fingerprint": "499d4124b1b1cb6ad88381d191d863f50972350f1a777ce71aeda341a2aeeef7",
+          "commit": "561946f8201d1bb5bb53f21fc8705fc5a317f3cd",
+          "review": {
+            "status": "checked",
+            "major_errors": [],
+            "minor_comments": [],
+            "summary": "В class_sequence.md представлен один блок sequenceDiagram и пояснения к выбранному прецеденту дополнения заявки. Показаны объекты классов, вызовы методов, возвраты и альтернативные ветви. Существенных ошибок не обнаружено.",
+            "application_source_present": false,
+            "video_report_present": false,
+            "code_style_consistent": false
+          },
+          "skip_reason": "grade_5"
         },
         {
           "group_id": "group02",
@@ -279,8 +288,8 @@
           ],
           "submitted_at": null,
           "checked_at": null,
-          "fingerprint": "aa92506257a2a60a311dd1721d0750292ba19bd1cdcaf930b5ef5da62c2dc818",
-          "commit": "a00a9d42a6c0a8b9b069981fc06977a1faa23ef7",
+          "fingerprint": "0957673297436fa66c7057848c169851fdf58709198233a5fad9f4d35dfafa95",
+          "commit": "561946f8201d1bb5bb53f21fc8705fc5a317f3cd",
           "skip_reason": "unchanged"
         },
         {
@@ -297,8 +306,8 @@
           ],
           "submitted_at": null,
           "checked_at": null,
-          "fingerprint": "92957fda4ce3bd95c6c9299ffd6ebc14d58c6e24e90c6db8217908e863d1dd02",
-          "commit": "a00a9d42a6c0a8b9b069981fc06977a1faa23ef7",
+          "fingerprint": "fa67df717592c6fd523fb6d4aeec73a825e1d93dc4ee2bc22d705b74e131d1ab",
+          "commit": "561946f8201d1bb5bb53f21fc8705fc5a317f3cd",
           "skip_reason": "unchanged"
         }
       ]
@@ -314,96 +323,121 @@
           "lab_id": "lab01",
           "title": "Диаграмма прецедентов",
           "deadline": "2026-10-30T23:59:59+05:00",
-          "status": "empty_repository",
-          "base_grade": null,
+          "status": "checked",
+          "base_grade": 3,
           "late_penalty": 0,
-          "grade": null,
+          "grade": 3,
           "comments": [
-            "В репозитории пока нет коммитов; работа не сдана."
+            "Основные роли и действия по выбранной услуге описаны, включая SMS-вход, дополнение заявления, результат и историю. Требуется перейти на заданную нотацию usecase-beta и исправить моделирование офлайн-процедуры.",
+            "student/use_case.md:178: использована нотация flowchart вместо обязательной usecase-beta. Перенесите роли, прецеденты и границу приложения в usecase-beta с actor и systemBoundary.",
+            "student/use_case.md:209,260: офлайн-процедура помещена внутрь приложения и включена через include в отметку о прохождении. Приложение лишь фиксирует результат; прохождение процедуры должно быть предусловием, а не выполняемым им прецедентом.",
+            "student/use_case.md:67–70: пояснения перечисляют include-связи со справочником, слотами и просмотром заявлений, которых нет на диаграмме. Согласуйте текст и схему.",
+            "student/use_case.md:121,155: длительное пребывание трактуется как уже прожитые более 90 суток, хотя процедура должна проходиться в первые 90 дней. Уточните, что имеется в виду планируемая длительность пребывания."
           ],
-          "submitted_at": null,
-          "checked_at": null,
-          "fingerprint": null
+          "submitted_at": "2026-10-25T05:18:55+00:00",
+          "checked_at": "2026-10-26T08:11:41.574108+00:00",
+          "fingerprint": "46cfb281046f5fd24da16979cebddc4f6f3df4c945de4cd44c1a37bd80fb26ea",
+          "commit": "b8052145934aa5f1740481d72bf736cceb94886b",
+          "review": {
+            "status": "checked",
+            "major_errors": [
+              "student/use_case.md:178: использована нотация flowchart вместо обязательной usecase-beta. Перенесите роли, прецеденты и границу приложения в usecase-beta с actor и systemBoundary.",
+              "student/use_case.md:209,260: офлайн-процедура помещена внутрь приложения и включена через include в отметку о прохождении. Приложение лишь фиксирует результат; прохождение процедуры должно быть предусловием, а не выполняемым им прецедентом."
+            ],
+            "minor_comments": [
+              "student/use_case.md:67–70: пояснения перечисляют include-связи со справочником, слотами и просмотром заявлений, которых нет на диаграмме. Согласуйте текст и схему.",
+              "student/use_case.md:121,155: длительное пребывание трактуется как уже прожитые более 90 суток, хотя процедура должна проходиться в первые 90 дней. Уточните, что имеется в виду планируемая длительность пребывания."
+            ],
+            "summary": "Основные роли и действия по выбранной услуге описаны, включая SMS-вход, дополнение заявления, результат и историю. Требуется перейти на заданную нотацию usecase-beta и исправить моделирование офлайн-процедуры.",
+            "application_source_present": false,
+            "video_report_present": false,
+            "code_style_consistent": false
+          }
         },
         {
           "group_id": "group03",
           "lab_id": "lab02",
           "title": "ER-диаграмма предметной области",
           "deadline": "2026-11-13T23:59:59+05:00",
-          "status": "empty_repository",
+          "status": "not_submitted",
           "base_grade": null,
           "late_penalty": 0,
           "grade": null,
           "comments": [
-            "В репозитории пока нет коммитов; работа не сдана."
+            "Файлы лабораторной отсутствуют."
           ],
           "submitted_at": null,
           "checked_at": null,
-          "fingerprint": null
+          "fingerprint": "b76f67c1ca386a48d4d0072192ac546a6a480124b7b45c075f361b3a1448dc49",
+          "commit": "b8052145934aa5f1740481d72bf736cceb94886b"
         },
         {
           "group_id": "group03",
           "lab_id": "lab03",
           "title": "Системная диаграмма последовательностей",
           "deadline": "2026-11-27T23:59:59+05:00",
-          "status": "empty_repository",
+          "status": "not_submitted",
           "base_grade": null,
           "late_penalty": 0,
           "grade": null,
           "comments": [
-            "В репозитории пока нет коммитов; работа не сдана."
+            "Файлы лабораторной отсутствуют."
           ],
           "submitted_at": null,
           "checked_at": null,
-          "fingerprint": null
+          "fingerprint": "cd4148399cc4e54a6f8618e4f79d589b0dd6046417defb8cf0ae849d155236aa",
+          "commit": "b8052145934aa5f1740481d72bf736cceb94886b"
         },
         {
           "group_id": "group03",
           "lab_id": "lab04",
           "title": "Диаграмма последовательностей на уровне классов",
           "deadline": "2026-12-11T23:59:59+05:00",
-          "status": "empty_repository",
+          "status": "not_submitted",
           "base_grade": null,
           "late_penalty": 0,
           "grade": null,
           "comments": [
-            "В репозитории пока нет коммитов; работа не сдана."
+            "Файлы лабораторной отсутствуют."
           ],
           "submitted_at": null,
           "checked_at": null,
-          "fingerprint": null
+          "fingerprint": "17f7bdd89c790e10e920f5d4b6c551a8200008317f4350f3c600f3677bbdb255",
+          "commit": "b8052145934aa5f1740481d72bf736cceb94886b"
         },
         {
           "group_id": "group03",
           "lab_id": "lab05",
           "title": "Диаграмма классов приложения",
           "deadline": "2026-12-18T23:59:59+05:00",
-          "status": "empty_repository",
+          "status": "not_submitted",
           "base_grade": null,
           "late_penalty": 0,
           "grade": null,
           "comments": [
-            "В репозитории пока нет коммитов; работа не сдана."
+            "Файлы лабораторной отсутствуют."
           ],
           "submitted_at": null,
           "checked_at": null,
-          "fingerprint": null
+          "fingerprint": "910a5362c294d9f70086d119119b78dcf4c76d44534fe7455f15da852a574b88",
+          "commit": "b8052145934aa5f1740481d72bf736cceb94886b"
         },
         {
           "group_id": "group03",
           "lab_id": "lab06",
           "title": "Работающее приложение и видеоотчёт",
           "deadline": "2026-12-25T23:59:59+05:00",
-          "status": "empty_repository",
+          "status": "not_submitted",
           "base_grade": null,
           "late_penalty": 0,
           "grade": null,
           "comments": [
-            "В репозитории пока нет коммитов; работа не сдана."
+            "Файлы лабораторной отсутствуют."
           ],
           "submitted_at": null,
           "checked_at": null,
-          "fingerprint": null
+          "fingerprint": "9852baebd41eb1869e86fb71d4bafdc920e44cb9ee66b17d3305a9c3d45cca8a",
+          "commit": "b8052145934aa5f1740481d72bf736cceb94886b"
         }
       ]
     },

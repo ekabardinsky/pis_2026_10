@@ -3,16 +3,25 @@
   "lab_id": "lab04",
   "title": "Диаграмма последовательностей на уровне классов",
   "deadline": "2026-12-11T23:59:59+05:00",
-  "status": "not_submitted",
-  "base_grade": null,
+  "status": "checked",
+  "base_grade": 5,
   "late_penalty": 0,
-  "grade": null,
+  "grade": 5,
   "comments": [
-    "Файлы лабораторной отсутствуют."
+    "В class_sequence.md представлен один блок sequenceDiagram и пояснения к выбранному прецеденту дополнения заявки. Показаны объекты классов, вызовы методов, возвраты и альтернативные ветви. Существенных ошибок не обнаружено."
   ],
-  "submitted_at": null,
-  "checked_at": null,
-  "fingerprint": "cd6d0dda111c6f9a31aef986f2b86a1621466e6826e2880acf7405185c12fb11",
-  "commit": "a00a9d42a6c0a8b9b069981fc06977a1faa23ef7",
-  "skip_reason": "unchanged"
+  "submitted_at": "2026-10-26T12:14:03+05:00",
+  "checked_at": "2026-10-26T08:05:50.361057+00:00",
+  "fingerprint": "499d4124b1b1cb6ad88381d191d863f50972350f1a777ce71aeda341a2aeeef7",
+  "commit": "561946f8201d1bb5bb53f21fc8705fc5a317f3cd",
+  "review": {
+    "status": "checked",
+    "major_errors": [],
+    "minor_comments": [],
+    "summary": "В class_sequence.md представлен один блок sequenceDiagram и пояснения к выбранному прецеденту дополнения заявки. Показаны объекты классов, вызовы методов, возвраты и альтернативные ветви. Существенных ошибок не обнаружено.",
+    "application_source_present": false,
+    "video_report_present": false,
+    "code_style_consistent": false
+  },
+  "skip_reason": "grade_5"
 }
