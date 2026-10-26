@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T10:21:54.048188+00:00",
+  "generated_at": "2026-10-26T03:55:00.144791+00:00",
   "groups": [
     {
       "id": "group01",
@@ -244,7 +244,8 @@
             "application_source_present": false,
             "video_report_present": false,
             "code_style_consistent": false
-          }
+          },
+          "skip_reason": "grade_5"
         },
         {
           "group_id": "group02",
@@ -261,7 +262,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "cd6d0dda111c6f9a31aef986f2b86a1621466e6826e2880acf7405185c12fb11",
-          "commit": "a00a9d42a6c0a8b9b069981fc06977a1faa23ef7"
+          "commit": "a00a9d42a6c0a8b9b069981fc06977a1faa23ef7",
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group02",
@@ -278,7 +280,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "aa92506257a2a60a311dd1721d0750292ba19bd1cdcaf930b5ef5da62c2dc818",
-          "commit": "a00a9d42a6c0a8b9b069981fc06977a1faa23ef7"
+          "commit": "a00a9d42a6c0a8b9b069981fc06977a1faa23ef7",
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group02",
@@ -295,7 +298,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "92957fda4ce3bd95c6c9299ffd6ebc14d58c6e24e90c6db8217908e863d1dd02",
-          "commit": "a00a9d42a6c0a8b9b069981fc06977a1faa23ef7"
+          "commit": "a00a9d42a6c0a8b9b069981fc06977a1faa23ef7",
+          "skip_reason": "unchanged"
         }
       ]
     },
@@ -433,7 +437,8 @@
             "application_source_present": false,
             "video_report_present": false,
             "code_style_consistent": false
-          }
+          },
+          "skip_reason": "grade_5"
         },
         {
           "group_id": "group04",
@@ -467,7 +472,8 @@
             "application_source_present": false,
             "video_report_present": false,
             "code_style_consistent": false
-          }
+          },
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group04",
@@ -484,7 +490,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "5e1b3a0db7cde1a2b037e5b2882ac17886bc1b5dde12613a290fcbe843324f00",
-          "commit": "3afbdf00ba8778712c6f5158308f412781f06f0c"
+          "commit": "3afbdf00ba8778712c6f5158308f412781f06f0c",
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group04",
@@ -501,7 +508,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "2ade9d283547e0181d6bbaf1e2f13c6313be660e9ba0fb42ac86fd0274e8e6ca",
-          "commit": "3afbdf00ba8778712c6f5158308f412781f06f0c"
+          "commit": "3afbdf00ba8778712c6f5158308f412781f06f0c",
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group04",
@@ -518,7 +526,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "280814017977c0b29c30b63983ec23bdce5e6df8ca9356f99439da67530e66d9",
-          "commit": "3afbdf00ba8778712c6f5158308f412781f06f0c"
+          "commit": "3afbdf00ba8778712c6f5158308f412781f06f0c",
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group04",
@@ -557,7 +566,8 @@
             "application_source_present": false,
             "video_report_present": false,
             "code_style_consistent": false
-          }
+          },
+          "skip_reason": "unchanged"
         }
       ]
     },

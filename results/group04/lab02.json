@@ -30,5 +30,6 @@
     "application_source_present": false,
     "video_report_present": false,
     "code_style_consistent": false
-  }
+  },
+  "skip_reason": "unchanged"
 }
