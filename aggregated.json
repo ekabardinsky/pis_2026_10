@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T08:11:42.463479+00:00",
+  "generated_at": "2026-10-27T04:10:02.562336+00:00",
   "groups": [
     {
       "id": "group01",
@@ -352,7 +352,8 @@
             "application_source_present": false,
             "video_report_present": false,
             "code_style_consistent": false
-          }
+          },
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group03",
@@ -369,7 +370,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "b76f67c1ca386a48d4d0072192ac546a6a480124b7b45c075f361b3a1448dc49",
-          "commit": "b8052145934aa5f1740481d72bf736cceb94886b"
+          "commit": "b8052145934aa5f1740481d72bf736cceb94886b",
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group03",
@@ -386,7 +388,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "cd4148399cc4e54a6f8618e4f79d589b0dd6046417defb8cf0ae849d155236aa",
-          "commit": "b8052145934aa5f1740481d72bf736cceb94886b"
+          "commit": "b8052145934aa5f1740481d72bf736cceb94886b",
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group03",
@@ -403,7 +406,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "17f7bdd89c790e10e920f5d4b6c551a8200008317f4350f3c600f3677bbdb255",
-          "commit": "b8052145934aa5f1740481d72bf736cceb94886b"
+          "commit": "b8052145934aa5f1740481d72bf736cceb94886b",
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group03",
@@ -420,7 +424,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "910a5362c294d9f70086d119119b78dcf4c76d44534fe7455f15da852a574b88",
-          "commit": "b8052145934aa5f1740481d72bf736cceb94886b"
+          "commit": "b8052145934aa5f1740481d72bf736cceb94886b",
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group03",
@@ -437,7 +442,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "9852baebd41eb1869e86fb71d4bafdc920e44cb9ee66b17d3305a9c3d45cca8a",
-          "commit": "b8052145934aa5f1740481d72bf736cceb94886b"
+          "commit": "b8052145934aa5f1740481d72bf736cceb94886b",
+          "skip_reason": "unchanged"
         }
       ]
     },
