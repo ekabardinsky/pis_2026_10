@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29T04:01:40.519596+00:00",
+  "generated_at": "2026-10-29T07:42:39.353624+00:00",
   "groups": [
     {
       "id": "group01",
@@ -12,30 +12,35 @@
           "lab_id": "lab01",
           "title": "Диаграмма прецедентов",
           "deadline": "2026-10-30T23:59:59+05:00",
-          "status": "error",
-          "base_grade": null,
+          "status": "checked",
+          "base_grade": 4,
           "late_penalty": 0,
-          "grade": null,
+          "grade": 4,
           "comments": [
-            "Техническая ошибка проверки; требуется повторный запуск."
+            "Показаны граница системы, роли и основные действия по миграционному учёту, есть пояснения. Исправьте обязательную выдачу документа при любом исходе рассмотрения и уточните историю обращений и подтверждение по SMS.",
+            "use_case.md:36, 64–66: связь include делает загрузку документа о постановке на учёт обязательной при каждом рассмотрении, включая отказ и возврат на доработку. Сделайте выдачу документа условной при положительном решении.",
+            "use_case.md:14, 57–59: показано отслеживание статуса, но не обозначен просмотр истории статусов и ранее полученных услуг. Уточните это в диаграмме или пояснениях.",
+            "use_case.md:10, 55: уточните, что подтверждение телефона выполняется кодом из SMS.",
+            "use_case.md:50: уточните роль пользователя: по разделу 1 дорожной карты уведомление направляет собственник помещения."
           ],
           "submitted_at": "2026-10-29T06:03:22+05:00",
-          "checked_at": "2026-10-29T04:01:07.559421+00:00",
+          "checked_at": "2026-10-29T07:41:44.040702+00:00",
           "fingerprint": "075518096f6eedff1140e8f2dcb0c87b0fc8e4081a6e13e2191e410b6e9aa8c4",
           "commit": "0447bd479717e4ed54d446cb33ca4f483e0a75dd",
-          "technical_error": "Codex завершился с кодом 1:           xmlns=\\\"http://www.w3.org/2000/svg\\\"\\n          fill=\\\"none\\\"\\n          width=\\\"24\\\"\\n          height=\\\"24\\\"\\n          viewBox=\\\"0 0 24 24\\\"\\n          stroke-width=\\\"1.5\\\"\\n          stroke=\\\"currentColor\\\"\\n          class=\\\"blocked-icon\\\"\\n        >\\n          <path\\n            stroke-linecap=\\\"round\\\"\\n            stroke-linejoin=\\\"round\\\"\\n            d=\\\"M12 9v3.75m0-10.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.75c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.75h-.152c-3.196 0-6.1-1.249-8.25-3.286zm0 13.036h.008v.008H12v-.008z\\\"\\n          />\\n        </svg>\\n        <p>Unable to load site</p>\\n      </div>\\n      <span class=\\\"explanation\\\">\\n        Please try again later. If you are using a VPN, try turning it off.\\n        Check the\\n        <a href=\\\"https://status.openai.com/\\\" target=\\\"_new\\\">status page</a> for\\n        information on outages.\\n      </span>\\n      <br />\\n      <span class=\\\"explanation\\\"> [IP:92.255.174.57 | Ray ID:a51f46989e65e94f] </span>\\n    </div>\\n  </body>\\n</html>\\n\")\nERROR: Reconnecting... 2/5\nERROR: Reconnecting... 3/5\nERROR: Reconnecting... 4/5\nERROR: Reconnecting... 5/5\nwarning: Falling back from WebSockets to HTTPS transport. workspace routing discovery failed\nERROR: Reconnecting... 1/5\nERROR: Reconnecting... 2/5\nERROR: Reconnecting... 3/5\nERROR: Reconnecting... 4/5\nERROR: Reconnecting... 5/5\nERROR: workspace routing discovery failed\nERROR: workspace routing discovery failed\n",
-          "previous_result": {
-            "grade": 3,
-            "comments": [
-              "Тема миграционного учёта соблюдена, роли и граница системы обозначены. Основной процесс подачи и рассмотрения уведомления представлен. Нужно добавить доработку по запросу сотрудника, просмотр истории и пояснения к диаграмме.",
-              "student/use_case.md:9–19 — отсутствует процесс доработки уведомления по запросу сотрудника: запрос дополнительных документов и исправлений, предоставление документов и исправление заявления пользователем.",
-              "student/use_case.md:14,25 — предусмотрено отслеживание статуса уведомления, но отсутствует просмотр истории статусов и ранее полученных услуг.",
-              "student/use_case.md:1–36 — нет текстовых пояснений к диаграмме, обязательных по заданию.",
-              "student/use_case.md:10–11,31 — уточните, что подтверждение телефона выполняется по SMS и используется также при входе."
+          "review": {
+            "status": "checked",
+            "major_errors": [
+              "use_case.md:36, 64–66: связь include делает загрузку документа о постановке на учёт обязательной при каждом рассмотрении, включая отказ и возврат на доработку. Сделайте выдачу документа условной при положительном решении."
             ],
-            "submitted_at": "2026-10-15T22:57:04+05:00",
-            "checked_at": "2026-10-16T08:49:05.911995+00:00",
-            "commit": "b1b2647f2e265ef344a7b2930e2e9405395d898f"
+            "minor_comments": [
+              "use_case.md:14, 57–59: показано отслеживание статуса, но не обозначен просмотр истории статусов и ранее полученных услуг. Уточните это в диаграмме или пояснениях.",
+              "use_case.md:10, 55: уточните, что подтверждение телефона выполняется кодом из SMS.",
+              "use_case.md:50: уточните роль пользователя: по разделу 1 дорожной карты уведомление направляет собственник помещения."
+            ],
+            "summary": "Показаны граница системы, роли и основные действия по миграционному учёту, есть пояснения. Исправьте обязательную выдачу документа при любом исходе рассмотрения и уточните историю обращений и подтверждение по SMS.",
+            "application_source_present": false,
+            "video_report_present": false,
+            "code_style_consistent": false
           }
         },
         {
@@ -43,31 +48,35 @@
           "lab_id": "lab02",
           "title": "ER-диаграмма предметной области",
           "deadline": "2026-11-13T23:59:59+05:00",
-          "status": "error",
-          "base_grade": null,
+          "status": "checked",
+          "base_grade": 3,
           "late_penalty": 0,
-          "grade": null,
+          "grade": 3,
           "comments": [
-            "Техническая ошибка проверки; требуется повторный запуск."
+            "ER-диаграмма соответствует теме миграционного учёта и содержит основные сущности заявления, документов и результата. Нужно дополнить модель историей статусов и запросами сотрудника на доработку, согласовать ключи страны и добавить пояснения.",
+            "student/er.md: NOTIFICATION хранит только текущий status (строка 49); сущности или атрибутов для истории изменений статусов нет. Обязательная история статусов в модели не представлена.",
+            "student/er.md: модель не представляет запрос сотрудника на дополнительные документы или исправление заявления. ATTACHMENT хранит файлы, но не позволяет сохранить содержание запроса и связать с ним ответ заявителя.",
+            "student/er.md: после блока Mermaid отсутствуют обязательные пояснения к модели.",
+            "student/er.md:29,44: внешние ключи страны имеют тип int, а COUNTRY.iso_code — string. Согласуйте типы; для citizenship_iso_code также добавьте связь с COUNTRY."
           ],
           "submitted_at": "2026-10-15T23:02:58+05:00",
-          "checked_at": "2026-10-29T04:01:23.477609+00:00",
+          "checked_at": "2026-10-29T07:42:07.984427+00:00",
           "fingerprint": "bfa79c2fecfec5dd96eddd69958a14d92e6c10c103b55a18702eaeaef640fe76",
           "commit": "0447bd479717e4ed54d446cb33ca4f483e0a75dd",
-          "technical_error": "Codex завершился с кодом 1:           xmlns=\\\"http://www.w3.org/2000/svg\\\"\\n          fill=\\\"none\\\"\\n          width=\\\"24\\\"\\n          height=\\\"24\\\"\\n          viewBox=\\\"0 0 24 24\\\"\\n          stroke-width=\\\"1.5\\\"\\n          stroke=\\\"currentColor\\\"\\n          class=\\\"blocked-icon\\\"\\n        >\\n          <path\\n            stroke-linecap=\\\"round\\\"\\n            stroke-linejoin=\\\"round\\\"\\n            d=\\\"M12 9v3.75m0-10.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.75c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.75h-.152c-3.196 0-6.1-1.249-8.25-3.286zm0 13.036h.008v.008H12v-.008z\\\"\\n          />\\n        </svg>\\n        <p>Unable to load site</p>\\n      </div>\\n      <span class=\\\"explanation\\\">\\n        Please try again later. If you are using a VPN, try turning it off.\\n        Check the\\n        <a href=\\\"https://status.openai.com/\\\" target=\\\"_new\\\">status page</a> for\\n        information on outages.\\n      </span>\\n      <br />\\n      <span class=\\\"explanation\\\"> [IP:92.255.174.57 | Ray ID:a51f46fe0f469d5b] </span>\\n    </div>\\n  </body>\\n</html>\\n\")\nERROR: Reconnecting... 2/5\nERROR: Reconnecting... 3/5\nERROR: Reconnecting... 4/5\nERROR: Reconnecting... 5/5\nwarning: Falling back from WebSockets to HTTPS transport. workspace routing discovery failed\nERROR: Reconnecting... 1/5\nERROR: Reconnecting... 2/5\nERROR: Reconnecting... 3/5\nERROR: Reconnecting... 4/5\nERROR: Reconnecting... 5/5\nERROR: workspace routing discovery failed\nERROR: workspace routing discovery failed\n",
-          "previous_result": {
-            "grade": 3,
-            "comments": [
-              "ER-диаграмма соответствует теме миграционного учёта и содержит основные сущности подачи уведомления и получения результата. Необходимо дополнить модель историей статусов и запросами сотрудника, согласовать ссылки на страны и добавить пояснения.",
-              "er.md:37–51: NOTIFICATION хранит только текущий статус; история изменений статусов отсутствует. Добавьте связанные записи со статусом и временем изменения.",
-              "er.md:37–67: не представлены запросы сотрудника на дополнительные документы и исправление заявления. Добавьте данные о содержании запроса и его связи с уведомлением.",
-              "er.md: после блока Mermaid отсутствуют обязательные пояснения к модели.",
-              "er.md:29,44: ссылки на COUNTRY.iso_code имеют тип int, тогда как ключ COUNTRY.iso_code объявлен как string. Согласуйте типы.",
-              "er.md:44,69–75: для citizenship_iso_code указана пометка FK, но связь NOTIFICATION с COUNTRY не показана."
+          "review": {
+            "status": "checked",
+            "major_errors": [
+              "student/er.md: NOTIFICATION хранит только текущий status (строка 49); сущности или атрибутов для истории изменений статусов нет. Обязательная история статусов в модели не представлена.",
+              "student/er.md: модель не представляет запрос сотрудника на дополнительные документы или исправление заявления. ATTACHMENT хранит файлы, но не позволяет сохранить содержание запроса и связать с ним ответ заявителя."
             ],
-            "submitted_at": "2026-10-15T23:02:58+05:00",
-            "checked_at": "2026-10-16T08:49:28.024176+00:00",
-            "commit": "b1b2647f2e265ef344a7b2930e2e9405395d898f"
+            "minor_comments": [
+              "student/er.md: после блока Mermaid отсутствуют обязательные пояснения к модели.",
+              "student/er.md:29,44: внешние ключи страны имеют тип int, а COUNTRY.iso_code — string. Согласуйте типы; для citizenship_iso_code также добавьте связь с COUNTRY."
+            ],
+            "summary": "ER-диаграмма соответствует теме миграционного учёта и содержит основные сущности заявления, документов и результата. Нужно дополнить модель историей статусов и запросами сотрудника на доработку, согласовать ключи страны и добавить пояснения.",
+            "application_source_present": false,
+            "video_report_present": false,
+            "code_style_consistent": false
           }
         },
         {
@@ -85,7 +94,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "660cb05f0ca05c452be8166ae4562c6ff1a5b34f3ed6f1c0fa973d3426aa4f71",
-          "commit": "0447bd479717e4ed54d446cb33ca4f483e0a75dd"
+          "commit": "0447bd479717e4ed54d446cb33ca4f483e0a75dd",
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group01",
@@ -102,7 +112,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "876b452cf644e7120c282763dd69f23f8ed6508b6ece8b41d4b1c69fd8255901",
-          "commit": "0447bd479717e4ed54d446cb33ca4f483e0a75dd"
+          "commit": "0447bd479717e4ed54d446cb33ca4f483e0a75dd",
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group01",
@@ -119,7 +130,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "953d4e7f426049351e19e2ad73a1aa6ea5041b5055ac78b1f6be2ec470395d0d",
-          "commit": "0447bd479717e4ed54d446cb33ca4f483e0a75dd"
+          "commit": "0447bd479717e4ed54d446cb33ca4f483e0a75dd",
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group01",
@@ -136,7 +148,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "0e288f8915801a29231020255d885ae357cb083e7da53c3bed00923d1179daf6",
-          "commit": "0447bd479717e4ed54d446cb33ca4f483e0a75dd"
+          "commit": "0447bd479717e4ed54d446cb33ca4f483e0a75dd",
+          "skip_reason": "unchanged"
         }
       ]
     },
@@ -306,30 +319,32 @@
           "lab_id": "lab01",
           "title": "Диаграмма прецедентов",
           "deadline": "2026-10-30T23:59:59+05:00",
-          "status": "error",
-          "base_grade": null,
+          "status": "checked",
+          "base_grade": 5,
           "late_penalty": 0,
-          "grade": null,
+          "grade": 5,
           "comments": [
-            "Техническая ошибка проверки; требуется повторный запуск."
+            "Представлена одна диаграмма usecase-beta с пояснениями. Роли, граница системы и основные действия по выбранной услуге отражены, включая дополнение заявления, результат и историю. Грубых ошибок не выявлено; есть уточнения к семантике связей и описанию правил.",
+            "student/use_case.md, связи UC8 include UC6 и UC11 include UC10: пояснения описывают предусловия, а include означает обязательное выполнение другого прецедента. Уточните связи: заполненное заявление и завершённая заявка могут быть предусловиями.",
+            "student/use_case.md, раздел «Правила услуги»: дорожная карта задаёт сроки прохождения, но не устанавливает отказ в приёме заявления при просрочке. Уточните основание этого ограничения.",
+            "student/use_case.md, раздел «Семантика связей»: обобщение названо пунктирной стрелкой с подписью, хотя на диаграмме используется --|> без подписи. Согласуйте пояснение с диаграммой."
           ],
           "submitted_at": "2026-10-28T22:34:33+03:00",
-          "checked_at": "2026-10-29T04:01:39.398965+00:00",
+          "checked_at": "2026-10-29T07:42:38.198750+00:00",
           "fingerprint": "144fb930f753833065975b46292b0affba03456233da9fb27ab9e35aac153f98",
           "commit": "4f09ad038e3d1dd112f4be8231aa778909c2006a",
-          "technical_error": "Codex завершился с кодом 1:           xmlns=\\\"http://www.w3.org/2000/svg\\\"\\n          fill=\\\"none\\\"\\n          width=\\\"24\\\"\\n          height=\\\"24\\\"\\n          viewBox=\\\"0 0 24 24\\\"\\n          stroke-width=\\\"1.5\\\"\\n          stroke=\\\"currentColor\\\"\\n          class=\\\"blocked-icon\\\"\\n        >\\n          <path\\n            stroke-linecap=\\\"round\\\"\\n            stroke-linejoin=\\\"round\\\"\\n            d=\\\"M12 9v3.75m0-10.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.75c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.75h-.152c-3.196 0-6.1-1.249-8.25-3.286zm0 13.036h.008v.008H12v-.008z\\\"\\n          />\\n        </svg>\\n        <p>Unable to load site</p>\\n      </div>\\n      <span class=\\\"explanation\\\">\\n        Please try again later. If you are using a VPN, try turning it off.\\n        Check the\\n        <a href=\\\"https://status.openai.com/\\\" target=\\\"_new\\\">status page</a> for\\n        information on outages.\\n      </span>\\n      <br />\\n      <span class=\\\"explanation\\\"> [IP:92.255.174.57 | Ray ID:a51f4763bcd3f119] </span>\\n    </div>\\n  </body>\\n</html>\\n\")\nERROR: Reconnecting... 2/5\nERROR: Reconnecting... 3/5\nERROR: Reconnecting... 4/5\nERROR: Reconnecting... 5/5\nwarning: Falling back from WebSockets to HTTPS transport. workspace routing discovery failed\nERROR: Reconnecting... 1/5\nERROR: Reconnecting... 2/5\nERROR: Reconnecting... 3/5\nERROR: Reconnecting... 4/5\nERROR: Reconnecting... 5/5\nERROR: workspace routing discovery failed\nERROR: workspace routing discovery failed\n",
-          "previous_result": {
-            "grade": 3,
-            "comments": [
-              "Основные роли и действия по выбранной услуге описаны, включая SMS-вход, дополнение заявления, результат и историю. Требуется перейти на заданную нотацию usecase-beta и исправить моделирование офлайн-процедуры.",
-              "student/use_case.md:178: использована нотация flowchart вместо обязательной usecase-beta. Перенесите роли, прецеденты и границу приложения в usecase-beta с actor и systemBoundary.",
-              "student/use_case.md:209,260: офлайн-процедура помещена внутрь приложения и включена через include в отметку о прохождении. Приложение лишь фиксирует результат; прохождение процедуры должно быть предусловием, а не выполняемым им прецедентом.",
-              "student/use_case.md:67–70: пояснения перечисляют include-связи со справочником, слотами и просмотром заявлений, которых нет на диаграмме. Согласуйте текст и схему.",
-              "student/use_case.md:121,155: длительное пребывание трактуется как уже прожитые более 90 суток, хотя процедура должна проходиться в первые 90 дней. Уточните, что имеется в виду планируемая длительность пребывания."
+          "review": {
+            "status": "checked",
+            "major_errors": [],
+            "minor_comments": [
+              "student/use_case.md, связи UC8 include UC6 и UC11 include UC10: пояснения описывают предусловия, а include означает обязательное выполнение другого прецедента. Уточните связи: заполненное заявление и завершённая заявка могут быть предусловиями.",
+              "student/use_case.md, раздел «Правила услуги»: дорожная карта задаёт сроки прохождения, но не устанавливает отказ в приёме заявления при просрочке. Уточните основание этого ограничения.",
+              "student/use_case.md, раздел «Семантика связей»: обобщение названо пунктирной стрелкой с подписью, хотя на диаграмме используется --|> без подписи. Согласуйте пояснение с диаграммой."
             ],
-            "submitted_at": "2026-10-25T05:18:55+00:00",
-            "checked_at": "2026-10-26T08:11:41.574108+00:00",
-            "commit": "b8052145934aa5f1740481d72bf736cceb94886b"
+            "summary": "Представлена одна диаграмма usecase-beta с пояснениями. Роли, граница системы и основные действия по выбранной услуге отражены, включая дополнение заявления, результат и историю. Грубых ошибок не выявлено; есть уточнения к семантике связей и описанию правил.",
+            "application_source_present": false,
+            "video_report_present": false,
+            "code_style_consistent": false
           }
         },
         {
@@ -347,7 +362,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "8c49b7864a989cf910843aa1b8e8308dc19ecc19ddadd2cf50cbcbab00fd1c8f",
-          "commit": "4f09ad038e3d1dd112f4be8231aa778909c2006a"
+          "commit": "4f09ad038e3d1dd112f4be8231aa778909c2006a",
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group03",
@@ -364,7 +380,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "c1f3c846dd564715425b390cb8684d24af3c98350f7adb468dcf719a3a165cfe",
-          "commit": "4f09ad038e3d1dd112f4be8231aa778909c2006a"
+          "commit": "4f09ad038e3d1dd112f4be8231aa778909c2006a",
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group03",
@@ -381,7 +398,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "d87b4dab191036828e2bf4639707e0fd5647095fca5b28153992f8a29d91a208",
-          "commit": "4f09ad038e3d1dd112f4be8231aa778909c2006a"
+          "commit": "4f09ad038e3d1dd112f4be8231aa778909c2006a",
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group03",
@@ -398,7 +416,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "8db84a148b2a2d233e0e070469a660d78978b5c1434429ef7755ea25f91521a2",
-          "commit": "4f09ad038e3d1dd112f4be8231aa778909c2006a"
+          "commit": "4f09ad038e3d1dd112f4be8231aa778909c2006a",
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group03",
@@ -415,7 +434,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "406e1dba370e50b45c314245dbc8b9157f7004317af8b5b219bffc363abf3be4",
-          "commit": "4f09ad038e3d1dd112f4be8231aa778909c2006a"
+          "commit": "4f09ad038e3d1dd112f4be8231aa778909c2006a",
+          "skip_reason": "unchanged"
         }
       ]
     },

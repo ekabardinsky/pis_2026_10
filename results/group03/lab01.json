@@ -3,29 +3,31 @@
   "lab_id": "lab01",
   "title": "Диаграмма прецедентов",
   "deadline": "2026-10-30T23:59:59+05:00",
-  "status": "error",
-  "base_grade": null,
+  "status": "checked",
+  "base_grade": 5,
   "late_penalty": 0,
-  "grade": null,
+  "grade": 5,
   "comments": [
-    "Техническая ошибка проверки; требуется повторный запуск."
+    "Представлена одна диаграмма usecase-beta с пояснениями. Роли, граница системы и основные действия по выбранной услуге отражены, включая дополнение заявления, результат и историю. Грубых ошибок не выявлено; есть уточнения к семантике связей и описанию правил.",
+    "student/use_case.md, связи UC8 include UC6 и UC11 include UC10: пояснения описывают предусловия, а include означает обязательное выполнение другого прецедента. Уточните связи: заполненное заявление и завершённая заявка могут быть предусловиями.",
+    "student/use_case.md, раздел «Правила услуги»: дорожная карта задаёт сроки прохождения, но не устанавливает отказ в приёме заявления при просрочке. Уточните основание этого ограничения.",
+    "student/use_case.md, раздел «Семантика связей»: обобщение названо пунктирной стрелкой с подписью, хотя на диаграмме используется --|> без подписи. Согласуйте пояснение с диаграммой."
   ],
   "submitted_at": "2026-10-28T22:34:33+03:00",
-  "checked_at": "2026-10-29T04:01:39.398965+00:00",
+  "checked_at": "2026-10-29T07:42:38.198750+00:00",
   "fingerprint": "144fb930f753833065975b46292b0affba03456233da9fb27ab9e35aac153f98",
   "commit": "4f09ad038e3d1dd112f4be8231aa778909c2006a",
-  "technical_error": "Codex завершился с кодом 1:           xmlns=\\\"http://www.w3.org/2000/svg\\\"\\n          fill=\\\"none\\\"\\n          width=\\\"24\\\"\\n          height=\\\"24\\\"\\n          viewBox=\\\"0 0 24 24\\\"\\n          stroke-width=\\\"1.5\\\"\\n          stroke=\\\"currentColor\\\"\\n          class=\\\"blocked-icon\\\"\\n        >\\n          <path\\n            stroke-linecap=\\\"round\\\"\\n            stroke-linejoin=\\\"round\\\"\\n            d=\\\"M12 9v3.75m0-10.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.75c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.75h-.152c-3.196 0-6.1-1.249-8.25-3.286zm0 13.036h.008v.008H12v-.008z\\\"\\n          />\\n        </svg>\\n        <p>Unable to load site</p>\\n      </div>\\n      <span class=\\\"explanation\\\">\\n        Please try again later. If you are using a VPN, try turning it off.\\n        Check the\\n        <a href=\\\"https://status.openai.com/\\\" target=\\\"_new\\\">status page</a> for\\n        information on outages.\\n      </span>\\n      <br />\\n      <span class=\\\"explanation\\\"> [IP:92.255.174.57 | Ray ID:a51f4763bcd3f119] </span>\\n    </div>\\n  </body>\\n</html>\\n\")\nERROR: Reconnecting... 2/5\nERROR: Reconnecting... 3/5\nERROR: Reconnecting... 4/5\nERROR: Reconnecting... 5/5\nwarning: Falling back from WebSockets to HTTPS transport. workspace routing discovery failed\nERROR: Reconnecting... 1/5\nERROR: Reconnecting... 2/5\nERROR: Reconnecting... 3/5\nERROR: Reconnecting... 4/5\nERROR: Reconnecting... 5/5\nERROR: workspace routing discovery failed\nERROR: workspace routing discovery failed\n",
-  "previous_result": {
-    "grade": 3,
-    "comments": [
-      "Основные роли и действия по выбранной услуге описаны, включая SMS-вход, дополнение заявления, результат и историю. Требуется перейти на заданную нотацию usecase-beta и исправить моделирование офлайн-процедуры.",
-      "student/use_case.md:178: использована нотация flowchart вместо обязательной usecase-beta. Перенесите роли, прецеденты и границу приложения в usecase-beta с actor и systemBoundary.",
-      "student/use_case.md:209,260: офлайн-процедура помещена внутрь приложения и включена через include в отметку о прохождении. Приложение лишь фиксирует результат; прохождение процедуры должно быть предусловием, а не выполняемым им прецедентом.",
-      "student/use_case.md:67–70: пояснения перечисляют include-связи со справочником, слотами и просмотром заявлений, которых нет на диаграмме. Согласуйте текст и схему.",
-      "student/use_case.md:121,155: длительное пребывание трактуется как уже прожитые более 90 суток, хотя процедура должна проходиться в первые 90 дней. Уточните, что имеется в виду планируемая длительность пребывания."
+  "review": {
+    "status": "checked",
+    "major_errors": [],
+    "minor_comments": [
+      "student/use_case.md, связи UC8 include UC6 и UC11 include UC10: пояснения описывают предусловия, а include означает обязательное выполнение другого прецедента. Уточните связи: заполненное заявление и завершённая заявка могут быть предусловиями.",
+      "student/use_case.md, раздел «Правила услуги»: дорожная карта задаёт сроки прохождения, но не устанавливает отказ в приёме заявления при просрочке. Уточните основание этого ограничения.",
+      "student/use_case.md, раздел «Семантика связей»: обобщение названо пунктирной стрелкой с подписью, хотя на диаграмме используется --|> без подписи. Согласуйте пояснение с диаграммой."
     ],
-    "submitted_at": "2026-10-25T05:18:55+00:00",
-    "checked_at": "2026-10-26T08:11:41.574108+00:00",
-    "commit": "b8052145934aa5f1740481d72bf736cceb94886b"
+    "summary": "Представлена одна диаграмма usecase-beta с пояснениями. Роли, граница системы и основные действия по выбранной услуге отражены, включая дополнение заявления, результат и историю. Грубых ошибок не выявлено; есть уточнения к семантике связей и описанию правил.",
+    "application_source_present": false,
+    "video_report_present": false,
+    "code_style_consistent": false
   }
 }
