@@ -3,35 +3,29 @@
   "lab_id": "lab01",
   "title": "Диаграмма прецедентов",
   "deadline": "2026-10-30T23:59:59+05:00",
-  "status": "checked",
-  "base_grade": 3,
+  "status": "error",
+  "base_grade": null,
   "late_penalty": 0,
-  "grade": 3,
+  "grade": null,
   "comments": [
-    "Тема миграционного учёта соблюдена, роли и граница системы обозначены. Основной процесс подачи и рассмотрения уведомления представлен. Нужно добавить доработку по запросу сотрудника, просмотр истории и пояснения к диаграмме.",
-    "student/use_case.md:9–19 — отсутствует процесс доработки уведомления по запросу сотрудника: запрос дополнительных документов и исправлений, предоставление документов и исправление заявления пользователем.",
-    "student/use_case.md:14,25 — предусмотрено отслеживание статуса уведомления, но отсутствует просмотр истории статусов и ранее полученных услуг.",
-    "student/use_case.md:1–36 — нет текстовых пояснений к диаграмме, обязательных по заданию.",
-    "student/use_case.md:10–11,31 — уточните, что подтверждение телефона выполняется по SMS и используется также при входе."
+    "Техническая ошибка проверки; требуется повторный запуск."
   ],
-  "submitted_at": "2026-10-15T22:57:04+05:00",
-  "checked_at": "2026-10-16T08:49:05.911995+00:00",
-  "fingerprint": "25e44dd74172b997db5752856cae2438c44d9b343a4c4d2cd81785402973c834",
-  "commit": "b1b2647f2e265ef344a7b2930e2e9405395d898f",
-  "review": {
-    "status": "checked",
-    "major_errors": [
+  "submitted_at": "2026-10-29T06:03:22+05:00",
+  "checked_at": "2026-10-29T04:01:07.559421+00:00",
+  "fingerprint": "075518096f6eedff1140e8f2dcb0c87b0fc8e4081a6e13e2191e410b6e9aa8c4",
+  "commit": "0447bd479717e4ed54d446cb33ca4f483e0a75dd",
+  "technical_error": "Codex завершился с кодом 1:           xmlns=\\\"http://www.w3.org/2000/svg\\\"\\n          fill=\\\"none\\\"\\n          width=\\\"24\\\"\\n          height=\\\"24\\\"\\n          viewBox=\\\"0 0 24 24\\\"\\n          stroke-width=\\\"1.5\\\"\\n          stroke=\\\"currentColor\\\"\\n          class=\\\"blocked-icon\\\"\\n        >\\n          <path\\n            stroke-linecap=\\\"round\\\"\\n            stroke-linejoin=\\\"round\\\"\\n            d=\\\"M12 9v3.75m0-10.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.75c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.75h-.152c-3.196 0-6.1-1.249-8.25-3.286zm0 13.036h.008v.008H12v-.008z\\\"\\n          />\\n        </svg>\\n        <p>Unable to load site</p>\\n      </div>\\n      <span class=\\\"explanation\\\">\\n        Please try again later. If you are using a VPN, try turning it off.\\n        Check the\\n        <a href=\\\"https://status.openai.com/\\\" target=\\\"_new\\\">status page</a> for\\n        information on outages.\\n      </span>\\n      <br />\\n      <span class=\\\"explanation\\\"> [IP:92.255.174.57 | Ray ID:a51f46989e65e94f] </span>\\n    </div>\\n  </body>\\n</html>\\n\")\nERROR: Reconnecting... 2/5\nERROR: Reconnecting... 3/5\nERROR: Reconnecting... 4/5\nERROR: Reconnecting... 5/5\nwarning: Falling back from WebSockets to HTTPS transport. workspace routing discovery failed\nERROR: Reconnecting... 1/5\nERROR: Reconnecting... 2/5\nERROR: Reconnecting... 3/5\nERROR: Reconnecting... 4/5\nERROR: Reconnecting... 5/5\nERROR: workspace routing discovery failed\nERROR: workspace routing discovery failed\n",
+  "previous_result": {
+    "grade": 3,
+    "comments": [
+      "Тема миграционного учёта соблюдена, роли и граница системы обозначены. Основной процесс подачи и рассмотрения уведомления представлен. Нужно добавить доработку по запросу сотрудника, просмотр истории и пояснения к диаграмме.",
       "student/use_case.md:9–19 — отсутствует процесс доработки уведомления по запросу сотрудника: запрос дополнительных документов и исправлений, предоставление документов и исправление заявления пользователем.",
-      "student/use_case.md:14,25 — предусмотрено отслеживание статуса уведомления, но отсутствует просмотр истории статусов и ранее полученных услуг."
-    ],
-    "minor_comments": [
+      "student/use_case.md:14,25 — предусмотрено отслеживание статуса уведомления, но отсутствует просмотр истории статусов и ранее полученных услуг.",
       "student/use_case.md:1–36 — нет текстовых пояснений к диаграмме, обязательных по заданию.",
       "student/use_case.md:10–11,31 — уточните, что подтверждение телефона выполняется по SMS и используется также при входе."
     ],
-    "summary": "Тема миграционного учёта соблюдена, роли и граница системы обозначены. Основной процесс подачи и рассмотрения уведомления представлен. Нужно добавить доработку по запросу сотрудника, просмотр истории и пояснения к диаграмме.",
-    "application_source_present": false,
-    "video_report_present": false,
-    "code_style_consistent": false
-  },
-  "skip_reason": "unchanged"
+    "submitted_at": "2026-10-15T22:57:04+05:00",
+    "checked_at": "2026-10-16T08:49:05.911995+00:00",
+    "commit": "b1b2647f2e265ef344a7b2930e2e9405395d898f"
+  }
 }
