@@ -3,16 +3,24 @@
   "lab_id": "lab05",
   "title": "Диаграмма классов приложения",
   "deadline": "2026-12-18T23:59:59+05:00",
-  "status": "not_submitted",
-  "base_grade": null,
+  "status": "checked",
+  "base_grade": 5,
   "late_penalty": 0,
-  "grade": null,
+  "grade": 5,
   "comments": [
-    "Файлы лабораторной отсутствуют."
+    "В classes.md представлен один блок classDiagram с пояснениями. Классы, атрибуты, методы и отношения отражают подготовку документов для патента, авторизацию, дополнение заявки, проверку, получение результата и историю. Существенных ошибок не выявлено."
   ],
-  "submitted_at": null,
-  "checked_at": null,
-  "fingerprint": "0957673297436fa66c7057848c169851fdf58709198233a5fad9f4d35dfafa95",
-  "commit": "561946f8201d1bb5bb53f21fc8705fc5a317f3cd",
-  "skip_reason": "unchanged"
+  "submitted_at": "2026-10-29T18:18:28+05:00",
+  "checked_at": "2026-10-30T03:42:01.831652+00:00",
+  "fingerprint": "77afc0050b309a8cb01b7be396a7996adc0c77bc5bcfb2e935a92f16e6b076e8",
+  "commit": "e8fd4d31a395e44764c6250ecdf5c69253a03ba5",
+  "review": {
+    "status": "checked",
+    "major_errors": [],
+    "minor_comments": [],
+    "summary": "В classes.md представлен один блок classDiagram с пояснениями. Классы, атрибуты, методы и отношения отражают подготовку документов для патента, авторизацию, дополнение заявки, проверку, получение результата и историю. Существенных ошибок не выявлено.",
+    "application_source_present": false,
+    "video_report_present": false,
+    "code_style_consistent": false
+  }
 }
