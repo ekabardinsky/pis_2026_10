@@ -141,6 +141,21 @@ class CheckerTests(unittest.TestCase):
         self.answer = response(0, style=False)
         self.assertEqual(self.check(lab=self.labs[5])["base_grade"], 4)
 
+    def test_lab06_skips_missing_result_directories_even_with_force(self):
+        self.commit("README.md", "Описание проекта")
+        self.args.force = True
+        for folder in (None, "solution/main.py", "report/.gitkeep"):
+            if folder:
+                self.commit(folder, "placeholder")
+            result = self.check(lab=self.labs[5])
+            self.assertEqual(result["status"], "not_submitted")
+            self.assertIsNone(result["submitted_at"])
+            self.assertIsNone(result["grade"])
+            self.assertEqual(self.calls, 0)
+        self.commit("report/demo.mp4", "video fixture")
+        self.assertEqual(self.check(lab=self.labs[5])["status"], "checked")
+        self.assertEqual(self.calls, 1)
+
     def test_codex_error_or_malformed_response_is_not_grade(self):
         self.commit()
         self.answer = response(0)
@@ -185,6 +200,54 @@ class CheckerTests(unittest.TestCase):
         self.assertEqual(aggregate["groups"][0]["labs"][0], result)
         self.assertEqual(result["grade"], 4)
         self.assertEqual(self.calls, 1)
+
+    def test_start_lab_preserves_first_lab_for_all_groups(self):
+        groups = [self.group, {**self.group, "id": "group02"}]
+        checker.write_json(self.base / "groups.json", {"groups": groups})
+        checker.write_json(self.base / "labs.json", {"labs": self.labs[:3]})
+        (self.base / "domains.md").write_text("Тема", encoding="utf-8")
+        old = {"lab_id": "lab01", "status": "checked", "grade": 4,
+               "base_grade": 5, "late_penalty": 1,
+               "submitted_at": "2026-11-04T12:00:00+05:00",
+               "checked_at": "2026-11-05T12:00:00+05:00"}
+        checker.write_json(self.base / "aggregated.json", {
+            "groups": [{**group, "labs": [old]} for group in groups]})
+        for group in groups:
+            checker.write_json(self.base / "results" / group["id"] / "lab01.json", old)
+        self.args.start_lab = "lab02"
+        self.args.force = True
+        with patch.object(checker, "review_lab", return_value={"status": "checked", "grade": 4}) as review:
+            self.assertEqual(checker.run(self.args), 0)
+        self.assertEqual([(call.args[1]["id"], call.args[2]["id"]) for call in review.call_args_list],
+                         [(group["id"], lab["id"]) for group in groups for lab in self.labs[1:3]])
+        aggregate = checker.read_json(self.base / "aggregated.json")
+        for group in aggregate["groups"]:
+            self.assertEqual(group["labs"][0], old)
+            self.assertEqual(checker.read_json(self.base / "results" / group["id"] / "lab01.json"), old)
+        self.args.start_lab = "missing"
+        with self.assertRaisesRegex(ValueError, "Неизвестная начальная лабораторная"):
+            checker.run(self.args)
+
+    def test_start_group_preserves_previous_results(self):
+        second = {**self.group, "id": "group02"}
+        checker.write_json(self.base / "groups.json", {"groups": [self.group, second]})
+        checker.write_json(self.base / "labs.json", {"labs": [self.lab]})
+        (self.base / "domains.md").write_text("Тема", encoding="utf-8")
+        old = {"lab_id": self.lab["id"], "status": "checked", "grade": 5}
+        checker.write_json(self.base / "aggregated.json", {
+            "groups": [{**self.group, "labs": [old]}]})
+        self.args.start_group = "group02"
+        self.args.force = True
+        with patch.object(checker, "review_lab", return_value={**old, "grade": 4}) as review:
+            self.assertEqual(checker.run(self.args), 0)
+        self.assertEqual(review.call_count, 1)
+        self.assertEqual(review.call_args.args[1]["id"], "group02")
+        aggregate = checker.read_json(self.base / "aggregated.json")
+        self.assertEqual(aggregate["groups"][0]["labs"], [old])
+        self.assertFalse((self.base / "results/group01/lab01.json").exists())
+        self.args.start_group = "missing"
+        with self.assertRaisesRegex(ValueError, "Неизвестная начальная группа"):
+            checker.run(self.args)
 
     def test_results_updated_before_next_lab_and_after_interruption(self):
         checker.write_json(self.base / "groups.json", {"groups": [self.group]})

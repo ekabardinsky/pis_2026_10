@@ -8,10 +8,10 @@
   "late_penalty": 0,
   "grade": null,
   "comments": [
-    "Файлы лабораторной отсутствуют."
+    "Проверка задания 6 пропущена: нет файлов результатов в solution/, report/."
   ],
   "submitted_at": null,
   "checked_at": null,
-  "fingerprint": "ced4040f82329d04f2fad0472eb6537ddfbecc7733660d5b6d73ff5df54078a2",
+  "fingerprint": "e9f65f0aaab39e18632d8767e52d149ea86522573103ff2629b51219449b09b5",
   "commit": "25da0acdeb77a23d18a7d2c8a476f472b1de02ca"
 }

@@ -222,6 +222,17 @@ def review_lab(base, group, lab, previous, domains, prompt, schema, args):
             result["skip_reason"] = "grade_5" if previous.get("grade") == 5 else "unchanged"
             return result
         result.update(commit=commit, submitted_at=submitted_at, fingerprint=current)
+        if lab["id"] == "lab06":
+            missing = [folder for folder in ("solution/", "report/")
+                       if not any(entry["path"].startswith(folder) and entry["kind"] == "blob"
+                                  and entry["mode"] in {"100644", "100755"}
+                                  and PurePosixPath(entry["path"]).name != ".gitkeep"
+                                  for entry in primary)]
+            if missing:
+                result.update(status="not_submitted", submitted_at=None,
+                              comments=["Проверка задания 6 пропущена: нет файлов результатов в "
+                                        + ", ".join(missing) + "."])
+                return result
         if not primary:
             result.update(status="not_submitted", submitted_at=None,
                           comments=["Файлы лабораторной отсутствуют."])
@@ -275,6 +286,16 @@ def run(args):
     groups = read_json(base / "groups.json")["groups"]
     labs = read_json(base / "labs.json")["labs"]
     validate_config(groups, labs)
+    start_group = getattr(args, "start_group", None)
+    group_ids = [group["id"] for group in groups]
+    if start_group is not None and start_group not in group_ids:
+        raise ValueError(f"Неизвестная начальная группа: {start_group}")
+    start_index = group_ids.index(start_group) if start_group is not None else 0
+    start_lab = getattr(args, "start_lab", None)
+    lab_ids = [lab["id"] for lab in labs]
+    if start_lab is not None and start_lab not in lab_ids:
+        raise ValueError(f"Неизвестная начальная лабораторная: {start_lab}")
+    start_lab_index = lab_ids.index(start_lab) if start_lab is not None else 0
     domains = (base / "domains.md").read_text(encoding="utf-8")
     prompt = (SCRIPTS_DIR / "review_prompt.txt").read_text(encoding="utf-8")
     schema = read_json(SCRIPTS_DIR / "review.schema.json")
@@ -293,8 +314,8 @@ def run(args):
             })
         aggregate["groups"].append({**group, "labs": pending})
     failures = 0
-    for group, output_group in zip(groups, aggregate["groups"]):
-        for index, lab in enumerate(labs):
+    for group, output_group in list(zip(groups, aggregate["groups"]))[start_index:]:
+        for index, lab in list(enumerate(labs))[start_lab_index:]:
             print(f"{group['id']} / {lab['id']}...", flush=True)
             old = cache.get((group["id"], lab["id"]))
             result = review_lab(base, group, lab, old, domains, prompt, schema, args)
@@ -317,6 +338,8 @@ def main():
     parser.add_argument("--model", help="Модель; по умолчанию из настроек Codex CLI")
     parser.add_argument("--timeout", type=int, default=600, help="Таймаут одной проверки, секунды")
     parser.add_argument("--force", action="store_true", help="Перепроверить также пятёрки и неизменившиеся работы")
+    parser.add_argument("--start-group", help="Начать с указанной группы (например, group02), сохранив предыдущие")
+    parser.add_argument("--start-lab", help="Начать с указанной лабораторной (например, lab02), сохранив предыдущие")
     args = parser.parse_args()
     if args.timeout <= 0:
         parser.error("--timeout должен быть положительным")

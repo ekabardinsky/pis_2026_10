@@ -3,25 +3,25 @@
   "lab_id": "lab01",
   "title": "Диаграмма прецедентов",
   "deadline": "2026-10-30T23:59:59+05:00",
-  "status": "checked",
-  "base_grade": 5,
+  "status": "error",
+  "base_grade": null,
   "late_penalty": 0,
-  "grade": 5,
+  "grade": null,
   "comments": [
-    "Лабораторная №1 соответствует требованиям: в use_case.md представлен один блок usecase-beta с ролями, границей системы, связями include/extend и пояснениями. Основные действия по подаче заявления и получению патента отражены."
+    "Техническая ошибка проверки; требуется повторный запуск."
   ],
   "submitted_at": "2026-10-20T16:02:05+00:00",
-  "checked_at": "2026-10-21T04:17:39.173321+00:00",
-  "fingerprint": "3abe36749e9ff535d2e1655db87096d15544d9d193c7667ac9cca42368ee78e5",
+  "checked_at": "2026-11-01T11:39:29.250755+00:00",
+  "fingerprint": "385344e0d62b3d0e1f8566de614e6288fa0460fc8f684bbba13b2bdbd0ee849e",
   "commit": "24000dbded34a29fc81fecff9759a8c3fc9416cd",
-  "review": {
-    "status": "checked",
-    "major_errors": [],
-    "minor_comments": [],
-    "summary": "Лабораторная №1 соответствует требованиям: в use_case.md представлен один блок usecase-beta с ролями, границей системы, связями include/extend и пояснениями. Основные действия по подаче заявления и получению патента отражены.",
-    "application_source_present": false,
-    "video_report_present": false,
-    "code_style_consistent": false
-  },
-  "skip_reason": "grade_5"
+  "technical_error": "Codex завершился с кодом 1: WARNING: proceeding, even though we could not create PATH aliases: Operation not permitted (os error 1)\nError: failed to initialize in-process app-server client: Operation not permitted (os error 1)\n",
+  "previous_result": {
+    "grade": 5,
+    "comments": [
+      "Лабораторная №1 соответствует требованиям: в use_case.md представлен один блок usecase-beta с ролями, границей системы, связями include/extend и пояснениями. Основные действия по подаче заявления и получению патента отражены."
+    ],
+    "submitted_at": "2026-10-20T16:02:05+00:00",
+    "checked_at": "2026-10-21T04:17:39.173321+00:00",
+    "commit": "24000dbded34a29fc81fecff9759a8c3fc9416cd"
+  }
 }
