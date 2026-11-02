@@ -25,5 +25,6 @@
     "application_source_present": true,
     "video_report_present": true,
     "code_style_consistent": true
-  }
+  },
+  "skip_reason": "grade_5"
 }

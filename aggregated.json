@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T11:55:06.425367+00:00",
+  "generated_at": "2026-11-02T04:13:39.700709+00:00",
   "groups": [
     {
       "id": "group01",
@@ -31,7 +31,8 @@
             "application_source_present": false,
             "video_report_present": false,
             "code_style_consistent": false
-          }
+          },
+          "skip_reason": "grade_5"
         },
         {
           "group_id": "group01",
@@ -60,7 +61,8 @@
             "application_source_present": false,
             "video_report_present": false,
             "code_style_consistent": false
-          }
+          },
+          "skip_reason": "grade_5"
         },
         {
           "group_id": "group01",
@@ -77,7 +79,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "1a2af6c6217a41885bba3c6700b6a7679028868d8d8d7ebb108a0e1e80bb005e",
-          "commit": "25da0acdeb77a23d18a7d2c8a476f472b1de02ca"
+          "commit": "25da0acdeb77a23d18a7d2c8a476f472b1de02ca",
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group01",
@@ -94,7 +97,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "72d53be4434396632955a79f5e7e2d094d7827421eecd87cc95a88ac695631ac",
-          "commit": "25da0acdeb77a23d18a7d2c8a476f472b1de02ca"
+          "commit": "25da0acdeb77a23d18a7d2c8a476f472b1de02ca",
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group01",
@@ -111,7 +115,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "a6b54b3fb7df4ab75200b7f08a305b00b372f3312e9728aca3e668ab3a9de08e",
-          "commit": "25da0acdeb77a23d18a7d2c8a476f472b1de02ca"
+          "commit": "25da0acdeb77a23d18a7d2c8a476f472b1de02ca",
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group01",
@@ -128,7 +133,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "e9f65f0aaab39e18632d8767e52d149ea86522573103ff2629b51219449b09b5",
-          "commit": "25da0acdeb77a23d18a7d2c8a476f472b1de02ca"
+          "commit": "25da0acdeb77a23d18a7d2c8a476f472b1de02ca",
+          "skip_reason": "unchanged"
         }
       ]
     },
@@ -162,7 +168,8 @@
             "application_source_present": false,
             "video_report_present": false,
             "code_style_consistent": false
-          }
+          },
+          "skip_reason": "grade_5"
         },
         {
           "group_id": "group02",
@@ -191,7 +198,8 @@
             "application_source_present": false,
             "video_report_present": false,
             "code_style_consistent": false
-          }
+          },
+          "skip_reason": "grade_5"
         },
         {
           "group_id": "group02",
@@ -217,7 +225,8 @@
             "application_source_present": false,
             "video_report_present": false,
             "code_style_consistent": false
-          }
+          },
+          "skip_reason": "grade_5"
         },
         {
           "group_id": "group02",
@@ -243,7 +252,8 @@
             "application_source_present": false,
             "video_report_present": false,
             "code_style_consistent": false
-          }
+          },
+          "skip_reason": "grade_5"
         },
         {
           "group_id": "group02",
@@ -269,7 +279,8 @@
             "application_source_present": false,
             "video_report_present": false,
             "code_style_consistent": false
-          }
+          },
+          "skip_reason": "grade_5"
         },
         {
           "group_id": "group02",
@@ -298,7 +309,8 @@
             "application_source_present": true,
             "video_report_present": true,
             "code_style_consistent": true
-          }
+          },
+          "skip_reason": "grade_5"
         }
       ]
     },
@@ -357,7 +369,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "f2667a96c90f448e51c6f2a45bbb0829054df47a3a1a836dc8b527502cb3cabb",
-          "commit": "4f09ad038e3d1dd112f4be8231aa778909c2006a"
+          "commit": "4f09ad038e3d1dd112f4be8231aa778909c2006a",
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group03",
@@ -374,7 +387,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "a3546cd56ae263247f6fd6eed38432dd286bd22e8788bdd6710fb6a62fbefbc1",
-          "commit": "4f09ad038e3d1dd112f4be8231aa778909c2006a"
+          "commit": "4f09ad038e3d1dd112f4be8231aa778909c2006a",
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group03",
@@ -391,7 +405,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "1ed41829ab1a2cae09037a1ab221c7c12badeacb104ee11091c31a4c38ff7799",
-          "commit": "4f09ad038e3d1dd112f4be8231aa778909c2006a"
+          "commit": "4f09ad038e3d1dd112f4be8231aa778909c2006a",
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group03",
@@ -408,7 +423,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "2bf9ffcceef374a20f96f412382171a32acc786664aedb61b1216992755dcf08",
-          "commit": "4f09ad038e3d1dd112f4be8231aa778909c2006a"
+          "commit": "4f09ad038e3d1dd112f4be8231aa778909c2006a",
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group03",
@@ -425,7 +441,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "f36565338dbccf89c3173b0ce07f4cacf2ce7a859d3438c07136fdc0a96683c3",
-          "commit": "4f09ad038e3d1dd112f4be8231aa778909c2006a"
+          "commit": "4f09ad038e3d1dd112f4be8231aa778909c2006a",
+          "skip_reason": "unchanged"
         }
       ]
     },
@@ -459,7 +476,8 @@
             "application_source_present": false,
             "video_report_present": false,
             "code_style_consistent": false
-          }
+          },
+          "skip_reason": "grade_5"
         },
         {
           "group_id": "group04",
@@ -493,7 +511,8 @@
             "application_source_present": false,
             "video_report_present": false,
             "code_style_consistent": false
-          }
+          },
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group04",
@@ -510,7 +529,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "8a84f394f96ac286364882dc6d03440eb283e518ca07b126fd82072c3d263ac3",
-          "commit": "3afbdf00ba8778712c6f5158308f412781f06f0c"
+          "commit": "3afbdf00ba8778712c6f5158308f412781f06f0c",
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group04",
@@ -527,7 +547,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "994914c061813dd6673ec00160263b6d94f4b6d29ea95834042ceb055ab713b5",
-          "commit": "3afbdf00ba8778712c6f5158308f412781f06f0c"
+          "commit": "3afbdf00ba8778712c6f5158308f412781f06f0c",
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group04",
@@ -544,7 +565,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "5bf07fa1e3c1101f313acd506814fb634b7247269a015b57b19363c869b4138f",
-          "commit": "3afbdf00ba8778712c6f5158308f412781f06f0c"
+          "commit": "3afbdf00ba8778712c6f5158308f412781f06f0c",
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group04",
@@ -561,7 +583,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "cc80dc28c8f9bde8de361516c19089a55c367f49207ac217858973c37aa5efc8",
-          "commit": "3afbdf00ba8778712c6f5158308f412781f06f0c"
+          "commit": "3afbdf00ba8778712c6f5158308f412781f06f0c",
+          "skip_reason": "unchanged"
         }
       ]
     },
@@ -576,26 +599,28 @@
           "lab_id": "lab01",
           "title": "Диаграмма прецедентов",
           "deadline": "2026-10-30T23:59:59+05:00",
-          "status": "error",
-          "base_grade": null,
+          "status": "checked",
+          "base_grade": 4,
           "late_penalty": 0,
-          "grade": null,
+          "grade": 4,
           "comments": [
-            "Техническая ошибка проверки; требуется повторный запуск."
+            "Ключевые действия по получению патента, роли, доработка заявления и история отражены, пояснения содержательны. Требуется исправить связь подачи заявления с предварительной оплатой НДФЛ.",
+            "use_case.md, связь UC_Apply include UC_PayNDFL: подача заявления обязательно выполняет оплату, хотя по п. 6.1 платёж должен быть внесён заранее и может выполняться отдельным прецедентом. Уже оплатившему заявителю модель снова предписывает оплату. Уберите include оплаты и укажите подтверждённый платёж как предусловие подачи; включение прикрепления квитанции сохраните."
           ],
           "submitted_at": "2026-10-20T16:02:05+00:00",
-          "checked_at": "2026-11-01T11:39:29.250755+00:00",
+          "checked_at": "2026-11-02T04:13:39.307140+00:00",
           "fingerprint": "385344e0d62b3d0e1f8566de614e6288fa0460fc8f684bbba13b2bdbd0ee849e",
           "commit": "24000dbded34a29fc81fecff9759a8c3fc9416cd",
-          "technical_error": "Codex завершился с кодом 1: WARNING: proceeding, even though we could not create PATH aliases: Operation not permitted (os error 1)\nError: failed to initialize in-process app-server client: Operation not permitted (os error 1)\n",
-          "previous_result": {
-            "grade": 5,
-            "comments": [
-              "Лабораторная №1 соответствует требованиям: в use_case.md представлен один блок usecase-beta с ролями, границей системы, связями include/extend и пояснениями. Основные действия по подаче заявления и получению патента отражены."
+          "review": {
+            "status": "checked",
+            "major_errors": [
+              "use_case.md, связь UC_Apply include UC_PayNDFL: подача заявления обязательно выполняет оплату, хотя по п. 6.1 платёж должен быть внесён заранее и может выполняться отдельным прецедентом. Уже оплатившему заявителю модель снова предписывает оплату. Уберите include оплаты и укажите подтверждённый платёж как предусловие подачи; включение прикрепления квитанции сохраните."
             ],
-            "submitted_at": "2026-10-20T16:02:05+00:00",
-            "checked_at": "2026-10-21T04:17:39.173321+00:00",
-            "commit": "24000dbded34a29fc81fecff9759a8c3fc9416cd"
+            "minor_comments": [],
+            "summary": "Ключевые действия по получению патента, роли, доработка заявления и история отражены, пояснения содержательны. Требуется исправить связь подачи заявления с предварительной оплатой НДФЛ.",
+            "application_source_present": false,
+            "video_report_present": false,
+            "code_style_consistent": false
           }
         },
         {
@@ -613,7 +638,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "84001376b411ccb279458ce8bb104742bc64ca0ffc6d61bc5d1541417bb2539a",
-          "commit": "24000dbded34a29fc81fecff9759a8c3fc9416cd"
+          "commit": "24000dbded34a29fc81fecff9759a8c3fc9416cd",
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group05",
@@ -630,7 +656,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "565dea5acc36f011e10a6741d6455b26aa0405c165e7119a6b68683a85f54d08",
-          "commit": "24000dbded34a29fc81fecff9759a8c3fc9416cd"
+          "commit": "24000dbded34a29fc81fecff9759a8c3fc9416cd",
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group05",
@@ -647,7 +674,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "b5f2b3c81570eef303e058bc9970c1c9d423472b4f50900986972d7aaa4af552",
-          "commit": "24000dbded34a29fc81fecff9759a8c3fc9416cd"
+          "commit": "24000dbded34a29fc81fecff9759a8c3fc9416cd",
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group05",
@@ -664,7 +692,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "fa0d80a5ff3e215a8adcbc9c7572966f815a12e7eaea4452d212b6e38a7c8ae0",
-          "commit": "24000dbded34a29fc81fecff9759a8c3fc9416cd"
+          "commit": "24000dbded34a29fc81fecff9759a8c3fc9416cd",
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group05",
@@ -681,7 +710,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "98895217c26877d4ebddf24812ef70acbcf77f957d7503ea6c97a7e2d52aa613",
-          "commit": "24000dbded34a29fc81fecff9759a8c3fc9416cd"
+          "commit": "24000dbded34a29fc81fecff9759a8c3fc9416cd",
+          "skip_reason": "unchanged"
         }
       ]
     },
