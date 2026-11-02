@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T04:13:39.700709+00:00",
+  "generated_at": "2026-11-02T12:30:24.769897+00:00",
   "groups": [
     {
       "id": "group01",
@@ -621,7 +621,8 @@
             "application_source_present": false,
             "video_report_present": false,
             "code_style_consistent": false
-          }
+          },
+          "skip_reason": "grade_5"
         },
         {
           "group_id": "group05",
