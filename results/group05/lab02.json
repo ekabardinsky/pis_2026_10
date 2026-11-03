@@ -3,16 +3,24 @@
   "lab_id": "lab02",
   "title": "ER-диаграмма предметной области",
   "deadline": "2026-11-13T23:59:59+05:00",
-  "status": "not_submitted",
-  "base_grade": null,
+  "status": "checked",
+  "base_grade": 5,
   "late_penalty": 0,
-  "grade": null,
+  "grade": 5,
   "comments": [
-    "Файлы лабораторной отсутствуют."
+    "ER-диаграмма соответствует разделу 6 дорожной карты: отражены авансовый платёж НДФЛ, заявление и документы, доработка, история статусов, выдача патента и проверка его данных. Сущности имеют атрибуты и ключи, связи и предметные ограничения подробно объяснены. Грубых ошибок не выявлено."
   ],
-  "submitted_at": null,
-  "checked_at": null,
-  "fingerprint": "84001376b411ccb279458ce8bb104742bc64ca0ffc6d61bc5d1541417bb2539a",
-  "commit": "24000dbded34a29fc81fecff9759a8c3fc9416cd",
-  "skip_reason": "unchanged"
+  "submitted_at": "2026-11-02T21:17:56+05:00",
+  "checked_at": "2026-11-03T04:47:50.116600+00:00",
+  "fingerprint": "79371f1fa68f4b37edc8e862d34d940fb8c0df1f4548ed95887545b0a2576175",
+  "commit": "4cda5ed32edf564ebacceb00f71cf8f669b68f17",
+  "review": {
+    "status": "checked",
+    "major_errors": [],
+    "minor_comments": [],
+    "summary": "ER-диаграмма соответствует разделу 6 дорожной карты: отражены авансовый платёж НДФЛ, заявление и документы, доработка, история статусов, выдача патента и проверка его данных. Сущности имеют атрибуты и ключи, связи и предметные ограничения подробно объяснены. Грубых ошибок не выявлено.",
+    "application_source_present": false,
+    "video_report_present": false,
+    "code_style_consistent": false
+  }
 }

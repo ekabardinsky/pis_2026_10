@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T12:30:24.769897+00:00",
+  "generated_at": "2026-11-03T04:47:50.449307+00:00",
   "groups": [
     {
       "id": "group01",
@@ -629,18 +629,26 @@
           "lab_id": "lab02",
           "title": "ER-диаграмма предметной области",
           "deadline": "2026-11-13T23:59:59+05:00",
-          "status": "not_submitted",
-          "base_grade": null,
+          "status": "checked",
+          "base_grade": 5,
           "late_penalty": 0,
-          "grade": null,
+          "grade": 5,
           "comments": [
-            "Файлы лабораторной отсутствуют."
+            "ER-диаграмма соответствует разделу 6 дорожной карты: отражены авансовый платёж НДФЛ, заявление и документы, доработка, история статусов, выдача патента и проверка его данных. Сущности имеют атрибуты и ключи, связи и предметные ограничения подробно объяснены. Грубых ошибок не выявлено."
           ],
-          "submitted_at": null,
-          "checked_at": null,
-          "fingerprint": "84001376b411ccb279458ce8bb104742bc64ca0ffc6d61bc5d1541417bb2539a",
-          "commit": "24000dbded34a29fc81fecff9759a8c3fc9416cd",
-          "skip_reason": "unchanged"
+          "submitted_at": "2026-11-02T21:17:56+05:00",
+          "checked_at": "2026-11-03T04:47:50.116600+00:00",
+          "fingerprint": "79371f1fa68f4b37edc8e862d34d940fb8c0df1f4548ed95887545b0a2576175",
+          "commit": "4cda5ed32edf564ebacceb00f71cf8f669b68f17",
+          "review": {
+            "status": "checked",
+            "major_errors": [],
+            "minor_comments": [],
+            "summary": "ER-диаграмма соответствует разделу 6 дорожной карты: отражены авансовый платёж НДФЛ, заявление и документы, доработка, история статусов, выдача патента и проверка его данных. Сущности имеют атрибуты и ключи, связи и предметные ограничения подробно объяснены. Грубых ошибок не выявлено.",
+            "application_source_present": false,
+            "video_report_present": false,
+            "code_style_consistent": false
+          }
         },
         {
           "group_id": "group05",
@@ -656,9 +664,8 @@
           ],
           "submitted_at": null,
           "checked_at": null,
-          "fingerprint": "565dea5acc36f011e10a6741d6455b26aa0405c165e7119a6b68683a85f54d08",
-          "commit": "24000dbded34a29fc81fecff9759a8c3fc9416cd",
-          "skip_reason": "unchanged"
+          "fingerprint": "a639149636323f8af69f5964a09ad3a96b9d8c5d1b50472f9a4047364ae0c8ea",
+          "commit": "4cda5ed32edf564ebacceb00f71cf8f669b68f17"
         },
         {
           "group_id": "group05",
@@ -674,9 +681,8 @@
           ],
           "submitted_at": null,
           "checked_at": null,
-          "fingerprint": "b5f2b3c81570eef303e058bc9970c1c9d423472b4f50900986972d7aaa4af552",
-          "commit": "24000dbded34a29fc81fecff9759a8c3fc9416cd",
-          "skip_reason": "unchanged"
+          "fingerprint": "7eab33dc00c8a79bb19c66a3e8d3a5f44104dbd2682943c337b1e387c01ffb32",
+          "commit": "4cda5ed32edf564ebacceb00f71cf8f669b68f17"
         },
         {
           "group_id": "group05",
@@ -692,9 +698,8 @@
           ],
           "submitted_at": null,
           "checked_at": null,
-          "fingerprint": "fa0d80a5ff3e215a8adcbc9c7572966f815a12e7eaea4452d212b6e38a7c8ae0",
-          "commit": "24000dbded34a29fc81fecff9759a8c3fc9416cd",
-          "skip_reason": "unchanged"
+          "fingerprint": "0709e99d31bb4d1b4f55d787a1862e3f0bf98c6c53a6e266e530ae4135a74226",
+          "commit": "4cda5ed32edf564ebacceb00f71cf8f669b68f17"
         },
         {
           "group_id": "group05",
@@ -710,9 +715,8 @@
           ],
           "submitted_at": null,
           "checked_at": null,
-          "fingerprint": "98895217c26877d4ebddf24812ef70acbcf77f957d7503ea6c97a7e2d52aa613",
-          "commit": "24000dbded34a29fc81fecff9759a8c3fc9416cd",
-          "skip_reason": "unchanged"
+          "fingerprint": "94de705ffa5e1d0a339c76b9f35b74f290b21784192ed3464765a50c51af09d1",
+          "commit": "4cda5ed32edf564ebacceb00f71cf8f669b68f17"
         }
       ]
     },
