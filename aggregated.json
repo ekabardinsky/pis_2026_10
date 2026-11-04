@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T04:47:50.449307+00:00",
+  "generated_at": "2026-11-04T06:32:23.829526+00:00",
   "groups": [
     {
       "id": "group01",
@@ -648,7 +648,8 @@
             "application_source_present": false,
             "video_report_present": false,
             "code_style_consistent": false
-          }
+          },
+          "skip_reason": "grade_5"
         },
         {
           "group_id": "group05",
@@ -665,7 +666,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "a639149636323f8af69f5964a09ad3a96b9d8c5d1b50472f9a4047364ae0c8ea",
-          "commit": "4cda5ed32edf564ebacceb00f71cf8f669b68f17"
+          "commit": "4cda5ed32edf564ebacceb00f71cf8f669b68f17",
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group05",
@@ -682,7 +684,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "7eab33dc00c8a79bb19c66a3e8d3a5f44104dbd2682943c337b1e387c01ffb32",
-          "commit": "4cda5ed32edf564ebacceb00f71cf8f669b68f17"
+          "commit": "4cda5ed32edf564ebacceb00f71cf8f669b68f17",
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group05",
@@ -699,7 +702,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "0709e99d31bb4d1b4f55d787a1862e3f0bf98c6c53a6e266e530ae4135a74226",
-          "commit": "4cda5ed32edf564ebacceb00f71cf8f669b68f17"
+          "commit": "4cda5ed32edf564ebacceb00f71cf8f669b68f17",
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group05",
@@ -716,7 +720,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "94de705ffa5e1d0a339c76b9f35b74f290b21784192ed3464765a50c51af09d1",
-          "commit": "4cda5ed32edf564ebacceb00f71cf8f669b68f17"
+          "commit": "4cda5ed32edf564ebacceb00f71cf8f669b68f17",
+          "skip_reason": "unchanged"
         }
       ]
     },
