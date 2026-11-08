@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T04:36:20.035814+00:00",
+  "generated_at": "2026-11-08T10:04:54.429049+00:00",
   "groups": [
     {
       "id": "group01",
@@ -359,18 +359,34 @@
           "lab_id": "lab02",
           "title": "ER-диаграмма предметной области",
           "deadline": "2026-11-13T23:59:59+05:00",
-          "status": "not_submitted",
-          "base_grade": null,
+          "status": "checked",
+          "base_grade": 4,
           "late_penalty": 0,
-          "grade": null,
+          "grade": 4,
           "comments": [
-            "Файлы лабораторной отсутствуют."
+            "ER-модель охватывает заявку на дактилоскопию, документы, проверку, запись, результат и историю статусов. Для расчёта дедлайна при подаче на патент не хватает даты подачи.",
+            "student/er.md, сущность APPLICATION: для расчёта дедлайна при трудовой цели нужен срок подачи на патент, если он наступает раньше 30 дней, но дата подачи на патент не хранится. Добавьте это поле, иначе срок услуги нельзя рассчитать по описанному правилу.",
+            "Пояснения подробно описывают связи и правила модели.",
+            "Видеоотчёт отсутствует (context.json: video_files пуст); содержимое видео не проверялось."
           ],
-          "submitted_at": null,
-          "checked_at": null,
-          "fingerprint": "f2667a96c90f448e51c6f2a45bbb0829054df47a3a1a836dc8b527502cb3cabb",
-          "commit": "4f09ad038e3d1dd112f4be8231aa778909c2006a",
-          "skip_reason": "unchanged"
+          "submitted_at": "2026-11-07T19:31:12+05:00",
+          "checked_at": "2026-11-08T10:04:07.502195+00:00",
+          "fingerprint": "12ff3639582ac2c3e3158dd32a3e77c78bb8630b6f4d0d79da5ad6a5b87b9342",
+          "commit": "a45d4d1b5df20d6e0a14b4253b595c4e6a0b4e5a",
+          "review": {
+            "status": "checked",
+            "major_errors": [
+              "student/er.md, сущность APPLICATION: для расчёта дедлайна при трудовой цели нужен срок подачи на патент, если он наступает раньше 30 дней, но дата подачи на патент не хранится. Добавьте это поле, иначе срок услуги нельзя рассчитать по описанному правилу."
+            ],
+            "minor_comments": [
+              "Пояснения подробно описывают связи и правила модели.",
+              "Видеоотчёт отсутствует (context.json: video_files пуст); содержимое видео не проверялось."
+            ],
+            "summary": "ER-модель охватывает заявку на дактилоскопию, документы, проверку, запись, результат и историю статусов. Для расчёта дедлайна при подаче на патент не хватает даты подачи.",
+            "application_source_present": false,
+            "video_report_present": false,
+            "code_style_consistent": false
+          }
         },
         {
           "group_id": "group03",
@@ -386,8 +402,8 @@
           ],
           "submitted_at": null,
           "checked_at": null,
-          "fingerprint": "a3546cd56ae263247f6fd6eed38432dd286bd22e8788bdd6710fb6a62fbefbc1",
-          "commit": "4f09ad038e3d1dd112f4be8231aa778909c2006a",
+          "fingerprint": "1af37d025bbed9a7e2e125470e55af42823ac510c3aeaa6f8e1ce0baafd9ab8c",
+          "commit": "a45d4d1b5df20d6e0a14b4253b595c4e6a0b4e5a",
           "skip_reason": "unchanged"
         },
         {
@@ -404,8 +420,8 @@
           ],
           "submitted_at": null,
           "checked_at": null,
-          "fingerprint": "1ed41829ab1a2cae09037a1ab221c7c12badeacb104ee11091c31a4c38ff7799",
-          "commit": "4f09ad038e3d1dd112f4be8231aa778909c2006a",
+          "fingerprint": "af2831164a5aeff4cba7936233f1e442359044a3d6a6c5e56f9a38dcc489b590",
+          "commit": "a45d4d1b5df20d6e0a14b4253b595c4e6a0b4e5a",
           "skip_reason": "unchanged"
         },
         {
@@ -422,8 +438,8 @@
           ],
           "submitted_at": null,
           "checked_at": null,
-          "fingerprint": "2bf9ffcceef374a20f96f412382171a32acc786664aedb61b1216992755dcf08",
-          "commit": "4f09ad038e3d1dd112f4be8231aa778909c2006a",
+          "fingerprint": "d7434f0976f18e467b645131020d6fded08ad7624b21353fa9c0a6f4c70f44eb",
+          "commit": "a45d4d1b5df20d6e0a14b4253b595c4e6a0b4e5a",
           "skip_reason": "unchanged"
         },
         {
@@ -440,8 +456,8 @@
           ],
           "submitted_at": null,
           "checked_at": null,
-          "fingerprint": "f36565338dbccf89c3173b0ce07f4cacf2ce7a859d3438c07136fdc0a96683c3",
-          "commit": "4f09ad038e3d1dd112f4be8231aa778909c2006a",
+          "fingerprint": "f98374c43b46fcceee5a9ecf6ab0359dd4776e78083bf40967160363ea18a545",
+          "commit": "a45d4d1b5df20d6e0a14b4253b595c4e6a0b4e5a",
           "skip_reason": "unchanged"
         }
       ]
@@ -833,103 +849,135 @@
       "id": "group07",
       "name": "ПИСMAKER (миротворец)",
       "assignment_number": 4,
-      "repository": null,
+      "repository": "https://github.com/maynotnerd/peacemaker",
       "labs": [
         {
           "group_id": "group07",
           "lab_id": "lab01",
           "title": "Диаграмма прецедентов",
           "deadline": "2026-10-30T23:59:59+05:00",
-          "status": "no_repository",
-          "base_grade": null,
-          "late_penalty": 0,
-          "grade": null,
+          "status": "checked",
+          "base_grade": 4,
+          "late_penalty": 1,
+          "grade": 3,
           "comments": [
-            "Репозиторий команды не указан."
+            "Тема, роли и основные цели участников соответствуют разделу 4 дорожной карты; ER-модель содержит сущности заявок, документов, запросов, истории статусов и результатов с пояснёнными связями. В диаграмме прецедентов исправьте порядок цели и метки у связей include/extend.",
+            "В `student/use_case.md`, связи `Register ..> : include ConfirmPhone` и аналогичные для `Login`, `Submit`, `Supplement`, `Complete`, `Request` записаны с целью после двоеточия: например, `ConfirmPhone` стоит после метки `include`. Это нарушает синтаксис связей Mermaid и делает диаграмму непригодной для отображения. Переставьте цель перед меткой, например `Register ..> ConfirmPhone : include`.",
+            "−1 балл: просрочка больше трёх дней."
           ],
-          "submitted_at": null,
-          "checked_at": null,
-          "fingerprint": null
+          "submitted_at": "2026-11-08T14:40:41+05:00",
+          "checked_at": "2026-11-08T10:04:33.712684+00:00",
+          "fingerprint": "ba343b2ff6ce16bbc3655507da06da44d44138fbb2959c1ef5b7e87759785869",
+          "commit": "91ee60a9c2ae6a27532353ead5f84210ff9fec9a",
+          "review": {
+            "status": "checked",
+            "major_errors": [
+              "В `student/use_case.md`, связи `Register ..> : include ConfirmPhone` и аналогичные для `Login`, `Submit`, `Supplement`, `Complete`, `Request` записаны с целью после двоеточия: например, `ConfirmPhone` стоит после метки `include`. Это нарушает синтаксис связей Mermaid и делает диаграмму непригодной для отображения. Переставьте цель перед меткой, например `Register ..> ConfirmPhone : include`."
+            ],
+            "minor_comments": [],
+            "summary": "Тема, роли и основные цели участников соответствуют разделу 4 дорожной карты; ER-модель содержит сущности заявок, документов, запросов, истории статусов и результатов с пояснёнными связями. В диаграмме прецедентов исправьте порядок цели и метки у связей include/extend.",
+            "application_source_present": false,
+            "video_report_present": false,
+            "code_style_consistent": false
+          }
         },
         {
           "group_id": "group07",
           "lab_id": "lab02",
           "title": "ER-диаграмма предметной области",
           "deadline": "2026-11-13T23:59:59+05:00",
-          "status": "no_repository",
-          "base_grade": null,
+          "status": "checked",
+          "base_grade": 5,
           "late_penalty": 0,
-          "grade": null,
+          "grade": 5,
           "comments": [
-            "Репозиторий команды не указан."
+            "ER-модель отражает заявку на выбор маршрута трудоустройства, документы, запросы дополнений, историю статусов и результат. Атрибутов достаточно для данных анкеты и хранения результата по теме 4.1–4.2 дорожной карты."
           ],
-          "submitted_at": null,
-          "checked_at": null,
-          "fingerprint": null
+          "submitted_at": "2026-11-08T14:52:39+05:00",
+          "checked_at": "2026-11-08T10:04:54.150639+00:00",
+          "fingerprint": "0f9c7e1f689266a7a243790b122a2414d3bfe474b9e5d5a4d2039b0234d460b5",
+          "commit": "91ee60a9c2ae6a27532353ead5f84210ff9fec9a",
+          "review": {
+            "status": "checked",
+            "major_errors": [],
+            "minor_comments": [],
+            "summary": "ER-модель отражает заявку на выбор маршрута трудоустройства, документы, запросы дополнений, историю статусов и результат. Атрибутов достаточно для данных анкеты и хранения результата по теме 4.1–4.2 дорожной карты.",
+            "application_source_present": false,
+            "video_report_present": false,
+            "code_style_consistent": false
+          }
         },
         {
           "group_id": "group07",
           "lab_id": "lab03",
           "title": "Системная диаграмма последовательностей",
           "deadline": "2026-11-27T23:59:59+05:00",
-          "status": "no_repository",
+          "status": "not_submitted",
           "base_grade": null,
           "late_penalty": 0,
           "grade": null,
           "comments": [
-            "Репозиторий команды не указан."
+            "Файлы лабораторной отсутствуют."
           ],
           "submitted_at": null,
           "checked_at": null,
-          "fingerprint": null
+          "fingerprint": "c2aa4c077889ba02b1bc82ed24323c7daba285d331462b9d0242ff5053755c90",
+          "commit": "91ee60a9c2ae6a27532353ead5f84210ff9fec9a",
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group07",
           "lab_id": "lab04",
           "title": "Диаграмма последовательностей на уровне классов",
           "deadline": "2026-12-11T23:59:59+05:00",
-          "status": "no_repository",
+          "status": "not_submitted",
           "base_grade": null,
           "late_penalty": 0,
           "grade": null,
           "comments": [
-            "Репозиторий команды не указан."
+            "Файлы лабораторной отсутствуют."
           ],
           "submitted_at": null,
           "checked_at": null,
-          "fingerprint": null
+          "fingerprint": "7ede3d8805d004ba9b40698f2daf762063d5a8fb32a3e0b9ab89595e1e61d28b",
+          "commit": "91ee60a9c2ae6a27532353ead5f84210ff9fec9a",
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group07",
           "lab_id": "lab05",
           "title": "Диаграмма классов приложения",
           "deadline": "2026-12-18T23:59:59+05:00",
-          "status": "no_repository",
+          "status": "not_submitted",
           "base_grade": null,
           "late_penalty": 0,
           "grade": null,
           "comments": [
-            "Репозиторий команды не указан."
+            "Файлы лабораторной отсутствуют."
           ],
           "submitted_at": null,
           "checked_at": null,
-          "fingerprint": null
+          "fingerprint": "267c04b5bbc3d9b00107c319bd36cd86b14be323e9d9b2c23a30d676c49738f3",
+          "commit": "91ee60a9c2ae6a27532353ead5f84210ff9fec9a",
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group07",
           "lab_id": "lab06",
           "title": "Работающее приложение и видеоотчёт",
           "deadline": "2026-12-25T23:59:59+05:00",
-          "status": "no_repository",
+          "status": "not_submitted",
           "base_grade": null,
           "late_penalty": 0,
           "grade": null,
           "comments": [
-            "Репозиторий команды не указан."
+            "Проверка задания 6 пропущена: нет файлов результатов в solution/, report/."
           ],
           "submitted_at": null,
           "checked_at": null,
-          "fingerprint": null
+          "fingerprint": "1e8da0730a1b112a69df87ad513f0b98579ae068b7038cc3444a424bac19e8cf",
+          "commit": "91ee60a9c2ae6a27532353ead5f84210ff9fec9a",
+          "skip_reason": "unchanged"
         }
       ]
     }

@@ -3,14 +3,28 @@
   "lab_id": "lab01",
   "title": "Диаграмма прецедентов",
   "deadline": "2026-10-30T23:59:59+05:00",
-  "status": "no_repository",
-  "base_grade": null,
-  "late_penalty": 0,
-  "grade": null,
+  "status": "checked",
+  "base_grade": 4,
+  "late_penalty": 1,
+  "grade": 3,
   "comments": [
-    "Репозиторий команды не указан."
+    "Тема, роли и основные цели участников соответствуют разделу 4 дорожной карты; ER-модель содержит сущности заявок, документов, запросов, истории статусов и результатов с пояснёнными связями. В диаграмме прецедентов исправьте порядок цели и метки у связей include/extend.",
+    "В `student/use_case.md`, связи `Register ..> : include ConfirmPhone` и аналогичные для `Login`, `Submit`, `Supplement`, `Complete`, `Request` записаны с целью после двоеточия: например, `ConfirmPhone` стоит после метки `include`. Это нарушает синтаксис связей Mermaid и делает диаграмму непригодной для отображения. Переставьте цель перед меткой, например `Register ..> ConfirmPhone : include`.",
+    "−1 балл: просрочка больше трёх дней."
   ],
-  "submitted_at": null,
-  "checked_at": null,
-  "fingerprint": null
+  "submitted_at": "2026-11-08T14:40:41+05:00",
+  "checked_at": "2026-11-08T10:04:33.712684+00:00",
+  "fingerprint": "ba343b2ff6ce16bbc3655507da06da44d44138fbb2959c1ef5b7e87759785869",
+  "commit": "91ee60a9c2ae6a27532353ead5f84210ff9fec9a",
+  "review": {
+    "status": "checked",
+    "major_errors": [
+      "В `student/use_case.md`, связи `Register ..> : include ConfirmPhone` и аналогичные для `Login`, `Submit`, `Supplement`, `Complete`, `Request` записаны с целью после двоеточия: например, `ConfirmPhone` стоит после метки `include`. Это нарушает синтаксис связей Mermaid и делает диаграмму непригодной для отображения. Переставьте цель перед меткой, например `Register ..> ConfirmPhone : include`."
+    ],
+    "minor_comments": [],
+    "summary": "Тема, роли и основные цели участников соответствуют разделу 4 дорожной карты; ER-модель содержит сущности заявок, документов, запросов, истории статусов и результатов с пояснёнными связями. В диаграмме прецедентов исправьте порядок цели и метки у связей include/extend.",
+    "application_source_present": false,
+    "video_report_present": false,
+    "code_style_consistent": false
+  }
 }

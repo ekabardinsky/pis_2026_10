@@ -3,14 +3,24 @@
   "lab_id": "lab02",
   "title": "ER-диаграмма предметной области",
   "deadline": "2026-11-13T23:59:59+05:00",
-  "status": "no_repository",
-  "base_grade": null,
+  "status": "checked",
+  "base_grade": 5,
   "late_penalty": 0,
-  "grade": null,
+  "grade": 5,
   "comments": [
-    "Репозиторий команды не указан."
+    "ER-модель отражает заявку на выбор маршрута трудоустройства, документы, запросы дополнений, историю статусов и результат. Атрибутов достаточно для данных анкеты и хранения результата по теме 4.1–4.2 дорожной карты."
   ],
-  "submitted_at": null,
-  "checked_at": null,
-  "fingerprint": null
+  "submitted_at": "2026-11-08T14:52:39+05:00",
+  "checked_at": "2026-11-08T10:04:54.150639+00:00",
+  "fingerprint": "0f9c7e1f689266a7a243790b122a2414d3bfe474b9e5d5a4d2039b0234d460b5",
+  "commit": "91ee60a9c2ae6a27532353ead5f84210ff9fec9a",
+  "review": {
+    "status": "checked",
+    "major_errors": [],
+    "minor_comments": [],
+    "summary": "ER-модель отражает заявку на выбор маршрута трудоустройства, документы, запросы дополнений, историю статусов и результат. Атрибутов достаточно для данных анкеты и хранения результата по теме 4.1–4.2 дорожной карты.",
+    "application_source_present": false,
+    "video_report_present": false,
+    "code_style_consistent": false
+  }
 }
