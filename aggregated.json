@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T10:04:54.429049+00:00",
+  "generated_at": "2026-11-09T03:42:23.122072+00:00",
   "groups": [
     {
       "id": "group01",
@@ -386,7 +386,8 @@
             "application_source_present": false,
             "video_report_present": false,
             "code_style_consistent": false
-          }
+          },
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group03",
@@ -861,21 +862,21 @@
           "late_penalty": 1,
           "grade": 3,
           "comments": [
-            "Тема, роли и основные цели участников соответствуют разделу 4 дорожной карты; ER-модель содержит сущности заявок, документов, запросов, истории статусов и результатов с пояснёнными связями. В диаграмме прецедентов исправьте порядок цели и метки у связей include/extend.",
-            "В `student/use_case.md`, связи `Register ..> : include ConfirmPhone` и аналогичные для `Login`, `Submit`, `Supplement`, `Complete`, `Request` записаны с целью после двоеточия: например, `ConfirmPhone` стоит после метки `include`. Это нарушает синтаксис связей Mermaid и делает диаграмму непригодной для отображения. Переставьте цель перед меткой, например `Register ..> ConfirmPhone : include`.",
+            "Роли, граница системы и ключевой процесс выбора порядка трудоустройства описаны. Однако связи include/extend записаны некорректно, поэтому диаграмма не передаёт заявленные зависимости прецедентов.",
+            "student/use_case.md, связи include/extend: записи вида `Register ..> : include ConfirmPhone` ставят цель связи после двоеточия; так связи не задают корректно, и диаграмма не отображает обязательные включения и условное расширение. Исправьте все такие записи, указав целевой прецедент и метку связи в синтаксисе usecase-beta.",
             "−1 балл: просрочка больше трёх дней."
           ],
-          "submitted_at": "2026-11-08T14:40:41+05:00",
-          "checked_at": "2026-11-08T10:04:33.712684+00:00",
-          "fingerprint": "ba343b2ff6ce16bbc3655507da06da44d44138fbb2959c1ef5b7e87759785869",
-          "commit": "91ee60a9c2ae6a27532353ead5f84210ff9fec9a",
+          "submitted_at": "2026-11-09T03:42:21+05:00",
+          "checked_at": "2026-11-09T03:42:00.408296+00:00",
+          "fingerprint": "99993fe5853d6aa3057298b6be79ced1b55c5f2d02db67bdae2dd9745d315dd1",
+          "commit": "8c35f6bd94cc762b7e5bb5a3dc4fa91d6ce7edee",
           "review": {
             "status": "checked",
             "major_errors": [
-              "В `student/use_case.md`, связи `Register ..> : include ConfirmPhone` и аналогичные для `Login`, `Submit`, `Supplement`, `Complete`, `Request` записаны с целью после двоеточия: например, `ConfirmPhone` стоит после метки `include`. Это нарушает синтаксис связей Mermaid и делает диаграмму непригодной для отображения. Переставьте цель перед меткой, например `Register ..> ConfirmPhone : include`."
+              "student/use_case.md, связи include/extend: записи вида `Register ..> : include ConfirmPhone` ставят цель связи после двоеточия; так связи не задают корректно, и диаграмма не отображает обязательные включения и условное расширение. Исправьте все такие записи, указав целевой прецедент и метку связи в синтаксисе usecase-beta."
             ],
             "minor_comments": [],
-            "summary": "Тема, роли и основные цели участников соответствуют разделу 4 дорожной карты; ER-модель содержит сущности заявок, документов, запросов, истории статусов и результатов с пояснёнными связями. В диаграмме прецедентов исправьте порядок цели и метки у связей include/extend.",
+            "summary": "Роли, граница системы и ключевой процесс выбора порядка трудоустройства описаны. Однако связи include/extend записаны некорректно, поэтому диаграмма не передаёт заявленные зависимости прецедентов.",
             "application_source_present": false,
             "video_report_present": false,
             "code_style_consistent": false
@@ -905,25 +906,34 @@
             "application_source_present": false,
             "video_report_present": false,
             "code_style_consistent": false
-          }
+          },
+          "skip_reason": "grade_5"
         },
         {
           "group_id": "group07",
           "lab_id": "lab03",
           "title": "Системная диаграмма последовательностей",
           "deadline": "2026-11-27T23:59:59+05:00",
-          "status": "not_submitted",
-          "base_grade": null,
+          "status": "checked",
+          "base_grade": 5,
           "late_penalty": 0,
-          "grade": null,
+          "grade": 5,
           "comments": [
-            "Файлы лабораторной отсутствуют."
+            "Диаграмма последовательностей показывает завершение рассмотрения: выбор маршрута 4.1/4.2 или отсутствие подходящего маршрута, сохранение результата и статуса, ответ специалисту. Выбранный юзкейс и его условия пояснены."
           ],
-          "submitted_at": null,
-          "checked_at": null,
-          "fingerprint": "c2aa4c077889ba02b1bc82ed24323c7daba285d331462b9d0242ff5053755c90",
-          "commit": "91ee60a9c2ae6a27532353ead5f84210ff9fec9a",
-          "skip_reason": "unchanged"
+          "submitted_at": "2026-11-09T00:23:53+05:00",
+          "checked_at": "2026-11-09T03:42:22.912246+00:00",
+          "fingerprint": "cd6c4b7687d6a85e12b8464f93f9457021510809e86200cb25bc8ece3167dc92",
+          "commit": "8c35f6bd94cc762b7e5bb5a3dc4fa91d6ce7edee",
+          "review": {
+            "status": "checked",
+            "major_errors": [],
+            "minor_comments": [],
+            "summary": "Диаграмма последовательностей показывает завершение рассмотрения: выбор маршрута 4.1/4.2 или отсутствие подходящего маршрута, сохранение результата и статуса, ответ специалисту. Выбранный юзкейс и его условия пояснены.",
+            "application_source_present": false,
+            "video_report_present": false,
+            "code_style_consistent": false
+          }
         },
         {
           "group_id": "group07",
@@ -939,9 +949,8 @@
           ],
           "submitted_at": null,
           "checked_at": null,
-          "fingerprint": "7ede3d8805d004ba9b40698f2daf762063d5a8fb32a3e0b9ab89595e1e61d28b",
-          "commit": "91ee60a9c2ae6a27532353ead5f84210ff9fec9a",
-          "skip_reason": "unchanged"
+          "fingerprint": "472d11ced29e8959588d3104a97449fb89792ba261e360c1400121c261187fb8",
+          "commit": "8c35f6bd94cc762b7e5bb5a3dc4fa91d6ce7edee"
         },
         {
           "group_id": "group07",
@@ -957,9 +966,8 @@
           ],
           "submitted_at": null,
           "checked_at": null,
-          "fingerprint": "267c04b5bbc3d9b00107c319bd36cd86b14be323e9d9b2c23a30d676c49738f3",
-          "commit": "91ee60a9c2ae6a27532353ead5f84210ff9fec9a",
-          "skip_reason": "unchanged"
+          "fingerprint": "8bf551eeb156682404e3ca394d5afd8c93a5b88e9539cd128d84928f2c808ba0",
+          "commit": "8c35f6bd94cc762b7e5bb5a3dc4fa91d6ce7edee"
         },
         {
           "group_id": "group07",
@@ -975,9 +983,8 @@
           ],
           "submitted_at": null,
           "checked_at": null,
-          "fingerprint": "1e8da0730a1b112a69df87ad513f0b98579ae068b7038cc3444a424bac19e8cf",
-          "commit": "91ee60a9c2ae6a27532353ead5f84210ff9fec9a",
-          "skip_reason": "unchanged"
+          "fingerprint": "7241edab326ba132fc6e9f74f537f1b55bd69a7ad5171b1c457320a56c296740",
+          "commit": "8c35f6bd94cc762b7e5bb5a3dc4fa91d6ce7edee"
         }
       ]
     }

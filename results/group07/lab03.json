@@ -3,16 +3,24 @@
   "lab_id": "lab03",
   "title": "Системная диаграмма последовательностей",
   "deadline": "2026-11-27T23:59:59+05:00",
-  "status": "not_submitted",
-  "base_grade": null,
+  "status": "checked",
+  "base_grade": 5,
   "late_penalty": 0,
-  "grade": null,
+  "grade": 5,
   "comments": [
-    "Файлы лабораторной отсутствуют."
+    "Диаграмма последовательностей показывает завершение рассмотрения: выбор маршрута 4.1/4.2 или отсутствие подходящего маршрута, сохранение результата и статуса, ответ специалисту. Выбранный юзкейс и его условия пояснены."
   ],
-  "submitted_at": null,
-  "checked_at": null,
-  "fingerprint": "c2aa4c077889ba02b1bc82ed24323c7daba285d331462b9d0242ff5053755c90",
-  "commit": "91ee60a9c2ae6a27532353ead5f84210ff9fec9a",
-  "skip_reason": "unchanged"
+  "submitted_at": "2026-11-09T00:23:53+05:00",
+  "checked_at": "2026-11-09T03:42:22.912246+00:00",
+  "fingerprint": "cd6c4b7687d6a85e12b8464f93f9457021510809e86200cb25bc8ece3167dc92",
+  "commit": "8c35f6bd94cc762b7e5bb5a3dc4fa91d6ce7edee",
+  "review": {
+    "status": "checked",
+    "major_errors": [],
+    "minor_comments": [],
+    "summary": "Диаграмма последовательностей показывает завершение рассмотрения: выбор маршрута 4.1/4.2 или отсутствие подходящего маршрута, сохранение результата и статуса, ответ специалисту. Выбранный юзкейс и его условия пояснены.",
+    "application_source_present": false,
+    "video_report_present": false,
+    "code_style_consistent": false
+  }
 }
