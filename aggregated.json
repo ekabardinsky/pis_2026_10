@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T03:42:23.122072+00:00",
+  "generated_at": "2026-11-10T04:04:21.922333+00:00",
   "groups": [
     {
       "id": "group01",
@@ -78,9 +78,8 @@
           ],
           "submitted_at": null,
           "checked_at": null,
-          "fingerprint": "1a2af6c6217a41885bba3c6700b6a7679028868d8d8d7ebb108a0e1e80bb005e",
-          "commit": "25da0acdeb77a23d18a7d2c8a476f472b1de02ca",
-          "skip_reason": "unchanged"
+          "fingerprint": "0124fa79b058efbe18565c4583a7c263189524cf87dc5896ba46e0f57ed2e18a",
+          "commit": "25da0acdeb77a23d18a7d2c8a476f472b1de02ca"
         },
         {
           "group_id": "group01",
@@ -96,9 +95,8 @@
           ],
           "submitted_at": null,
           "checked_at": null,
-          "fingerprint": "72d53be4434396632955a79f5e7e2d094d7827421eecd87cc95a88ac695631ac",
-          "commit": "25da0acdeb77a23d18a7d2c8a476f472b1de02ca",
-          "skip_reason": "unchanged"
+          "fingerprint": "32978d44a07b745346bdc4265501c4ef20ca68e1b8b47264f2fe9dec9eeb9eba",
+          "commit": "25da0acdeb77a23d18a7d2c8a476f472b1de02ca"
         },
         {
           "group_id": "group01",
@@ -114,9 +112,8 @@
           ],
           "submitted_at": null,
           "checked_at": null,
-          "fingerprint": "a6b54b3fb7df4ab75200b7f08a305b00b372f3312e9728aca3e668ab3a9de08e",
-          "commit": "25da0acdeb77a23d18a7d2c8a476f472b1de02ca",
-          "skip_reason": "unchanged"
+          "fingerprint": "de496d92bf9630b0d0da58872b425ebc797013f965ad31830933a58e49f88a60",
+          "commit": "25da0acdeb77a23d18a7d2c8a476f472b1de02ca"
         },
         {
           "group_id": "group01",
@@ -132,9 +129,8 @@
           ],
           "submitted_at": null,
           "checked_at": null,
-          "fingerprint": "e9f65f0aaab39e18632d8767e52d149ea86522573103ff2629b51219449b09b5",
-          "commit": "25da0acdeb77a23d18a7d2c8a476f472b1de02ca",
-          "skip_reason": "unchanged"
+          "fingerprint": "2826cb26a7163ef8da327f4a05dced12c72f771a725abac2b440086ead3de8f5",
+          "commit": "25da0acdeb77a23d18a7d2c8a476f472b1de02ca"
         }
       ]
     },
@@ -880,7 +876,8 @@
             "application_source_present": false,
             "video_report_present": false,
             "code_style_consistent": false
-          }
+          },
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group07",
@@ -933,7 +930,8 @@
             "application_source_present": false,
             "video_report_present": false,
             "code_style_consistent": false
-          }
+          },
+          "skip_reason": "grade_5"
         },
         {
           "group_id": "group07",
@@ -950,7 +948,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "472d11ced29e8959588d3104a97449fb89792ba261e360c1400121c261187fb8",
-          "commit": "8c35f6bd94cc762b7e5bb5a3dc4fa91d6ce7edee"
+          "commit": "8c35f6bd94cc762b7e5bb5a3dc4fa91d6ce7edee",
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group07",
@@ -967,7 +966,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "8bf551eeb156682404e3ca394d5afd8c93a5b88e9539cd128d84928f2c808ba0",
-          "commit": "8c35f6bd94cc762b7e5bb5a3dc4fa91d6ce7edee"
+          "commit": "8c35f6bd94cc762b7e5bb5a3dc4fa91d6ce7edee",
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group07",
@@ -984,7 +984,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "7241edab326ba132fc6e9f74f537f1b55bd69a7ad5171b1c457320a56c296740",
-          "commit": "8c35f6bd94cc762b7e5bb5a3dc4fa91d6ce7edee"
+          "commit": "8c35f6bd94cc762b7e5bb5a3dc4fa91d6ce7edee",
+          "skip_reason": "unchanged"
         }
       ]
     }

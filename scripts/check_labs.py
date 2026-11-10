@@ -6,7 +6,7 @@
 Кеш читается из aggregated.json: итоговая 5 замораживается, иначе сравниваются входы.
 Технические ошибки повторяются. --force отменяет оба условия пропуска.
 Дата сдачи — committer date последнего изменения артефактов этой лабораторной.
-Штраф — 1 при просрочке строго больше 72 часов. Для 3+ грубых ошибок диаграммы
+Штраф — 1, если сдача произошла позже дедлайна. Для 3+ грубых ошибок диаграммы
 оценка остаётся null (needs_teacher), пока преподаватель не определит шкалу.
 """
 
@@ -146,7 +146,7 @@ def calculate_grade(lab, review, submitted_at):
         raise ValueError("Не удалось определить дату сдачи")
     deadline = datetime.fromisoformat(lab["deadline"])
     submitted = datetime.fromisoformat(submitted_at)
-    penalty = int(submitted > deadline + timedelta(days=3))
+    penalty = int(submitted > deadline)
     return "checked", base, penalty, base - penalty
 
 
@@ -245,7 +245,7 @@ def review_lab(base, group, lab, previous, domains, prompt, schema, args):
         if status == "not_submitted":
             comments.append("Для сдачи обязательны и код приложения, и видеоотчёт.")
         if penalty:
-            comments.append("−1 балл: просрочка больше трёх дней.")
+            comments.append("−1 балл: работа сдана после дедлайна.")
         result.update(status=status, base_grade=base_grade, late_penalty=penalty, grade=grade,
                       comments=list(dict.fromkeys(comments)), review=review, checked_at=now())
     except RepositoryStateError as error:

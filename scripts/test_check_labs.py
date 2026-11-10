@@ -178,9 +178,9 @@ class CheckerTests(unittest.TestCase):
         lab = {"id": "lab01", "deadline": "2026-10-30T23:59:59+05:00"}
         for errors, score in [(0, 5), (1, 4), (2, 3)]:
             self.assertEqual(checker.calculate_grade(lab, response(errors),
-                             "2026-11-02T23:59:59+05:00"), ("checked", score, 0, score))
+                             "2026-10-30T23:59:59+05:00"), ("checked", score, 0, score))
         self.assertEqual(checker.calculate_grade(lab, response(0),
-                         "2026-11-03T00:00:00+05:00"), ("checked", 5, 1, 4))
+                         "2026-10-31T00:00:00+05:00"), ("checked", 5, 1, 4))
         self.assertEqual(checker.calculate_grade(lab, response(3),
                          "2026-10-30T23:59:59+05:00")[0], "needs_teacher")
         for errors, style, score in [(1, True, 3), (0, False, 4), (0, True, 5)]:
