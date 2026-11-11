@@ -3,15 +3,27 @@
   "lab_id": "lab05",
   "title": "Диаграмма классов приложения",
   "deadline": "2026-12-18T23:59:59+05:00",
-  "status": "not_submitted",
-  "base_grade": null,
+  "status": "checked",
+  "base_grade": 5,
   "late_penalty": 0,
-  "grade": null,
+  "grade": 5,
   "comments": [
-    "Файлы лабораторной отсутствуют."
+    "Диаграмма моделирует классы сервиса выбора маршрута трудоустройства, их связи и ключевое поведение: подачу, рассмотрение, запрос дополнений и выдачу результата. Существенных противоречий требованиям темы не обнаружено.",
+    "В `classes.md`, в сигнатурах `RoutePolicy.determine()` и `ReviewService.complete()` используются `RouteDecision` и `OperationResult`, но это типы не представлены на диаграмме как классы; их смысл пояснён в тексте."
   ],
-  "submitted_at": null,
-  "checked_at": null,
-  "fingerprint": "53b203ec5f161cfc95a18f4274749076bc12db08fa58cb46e369b846109b4c62",
-  "commit": "8c35f6bd94cc762b7e5bb5a3dc4fa91d6ce7edee"
+  "submitted_at": "2026-11-10T19:31:45+05:00",
+  "checked_at": "2026-11-11T03:55:35.338475+00:00",
+  "fingerprint": "84ac9fc8ef5133f1d12684083c7b318437da5d23ecc2f5b972067788c4143ea6",
+  "commit": "b1b8e6509ec9a9ef3e122726de99e505fe190f56",
+  "review": {
+    "status": "checked",
+    "major_errors": [],
+    "minor_comments": [
+      "В `classes.md`, в сигнатурах `RoutePolicy.determine()` и `ReviewService.complete()` используются `RouteDecision` и `OperationResult`, но это типы не представлены на диаграмме как классы; их смысл пояснён в тексте."
+    ],
+    "summary": "Диаграмма моделирует классы сервиса выбора маршрута трудоустройства, их связи и ключевое поведение: подачу, рассмотрение, запрос дополнений и выдачу результата. Существенных противоречий требованиям темы не обнаружено.",
+    "application_source_present": false,
+    "video_report_present": false,
+    "code_style_consistent": false
+  }
 }

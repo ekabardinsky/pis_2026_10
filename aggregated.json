@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T04:06:33.972206+00:00",
+  "generated_at": "2026-11-11T03:55:35.420338+00:00",
   "groups": [
     {
       "id": "group01",
@@ -79,7 +79,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "0124fa79b058efbe18565c4583a7c263189524cf87dc5896ba46e0f57ed2e18a",
-          "commit": "25da0acdeb77a23d18a7d2c8a476f472b1de02ca"
+          "commit": "25da0acdeb77a23d18a7d2c8a476f472b1de02ca",
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group01",
@@ -96,7 +97,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "32978d44a07b745346bdc4265501c4ef20ca68e1b8b47264f2fe9dec9eeb9eba",
-          "commit": "25da0acdeb77a23d18a7d2c8a476f472b1de02ca"
+          "commit": "25da0acdeb77a23d18a7d2c8a476f472b1de02ca",
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group01",
@@ -113,7 +115,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "de496d92bf9630b0d0da58872b425ebc797013f965ad31830933a58e49f88a60",
-          "commit": "25da0acdeb77a23d18a7d2c8a476f472b1de02ca"
+          "commit": "25da0acdeb77a23d18a7d2c8a476f472b1de02ca",
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group01",
@@ -130,7 +133,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "2826cb26a7163ef8da327f4a05dced12c72f771a725abac2b440086ead3de8f5",
-          "commit": "25da0acdeb77a23d18a7d2c8a476f472b1de02ca"
+          "commit": "25da0acdeb77a23d18a7d2c8a476f472b1de02ca",
+          "skip_reason": "unchanged"
         }
       ]
     },
@@ -221,7 +225,8 @@
             "application_source_present": false,
             "video_report_present": false,
             "code_style_consistent": false
-          }
+          },
+          "skip_reason": "grade_5"
         },
         {
           "group_id": "group02",
@@ -247,7 +252,8 @@
             "application_source_present": false,
             "video_report_present": false,
             "code_style_consistent": false
-          }
+          },
+          "skip_reason": "grade_5"
         },
         {
           "group_id": "group02",
@@ -276,7 +282,8 @@
             "application_source_present": false,
             "video_report_present": false,
             "code_style_consistent": false
-          }
+          },
+          "skip_reason": "grade_5"
         },
         {
           "group_id": "group02",
@@ -305,7 +312,8 @@
             "application_source_present": true,
             "video_report_present": true,
             "code_style_consistent": true
-          }
+          },
+          "skip_reason": "grade_5"
         }
       ]
     },
@@ -359,30 +367,29 @@
           "late_penalty": 0,
           "grade": 4,
           "comments": [
-            "ER-модель охватывает заявку на дактилоскопию, документы, проверку, запись, результат и историю статусов. Для расчёта дедлайна при подаче на патент не хватает даты подачи.",
-            "student/er.md, сущность APPLICATION: для расчёта дедлайна при трудовой цели нужен срок подачи на патент, если он наступает раньше 30 дней, но дата подачи на патент не хранится. Добавьте это поле, иначе срок услуги нельзя рассчитать по описанному правилу.",
-            "Пояснения подробно описывают связи и правила модели.",
-            "Видеоотчёт отсутствует (context.json: video_files пуст); содержимое видео не проверялось."
+            "ER-модель охватывает заявки на дактилоскопию, документы, проверки, запись и результат, но в данных заявки не хватает полей для проверки применимости услуги и расчёта срока по дорожной карте.",
+            "В `student/er.md`, сущность `APPLICATION` не хранит планируемую длительность пребывания и дату подачи на патент. По пунктам 2.1–2.2 дорожной карты эти данные нужны, чтобы определить применимость дактилоскопии и рассчитать срок: для нетрудовой цели — проверить пребывание свыше 90 дней, для работы — учесть более раннюю дату подачи на патент. Добавьте необходимые поля, иначе правила из пояснений нельзя проверить по данным модели.",
+            "В `student/er.md`, пример прохождения содержит опечатку «значить срок соблюдён»; замените на «значит, срок соблюдён».",
+            "Содержание видео не проверяется; наличие видеофайла в `report/` по переданному контексту не подтверждено."
           ],
           "submitted_at": "2026-11-07T19:31:12+05:00",
-          "checked_at": "2026-11-08T10:04:07.502195+00:00",
-          "fingerprint": "12ff3639582ac2c3e3158dd32a3e77c78bb8630b6f4d0d79da5ad6a5b87b9342",
+          "checked_at": "2026-11-11T03:53:50.783707+00:00",
+          "fingerprint": "97975cadb09fe08e569a3b3a53279fe1f1599f7d9b95368707a6930157b46692",
           "commit": "a45d4d1b5df20d6e0a14b4253b595c4e6a0b4e5a",
           "review": {
             "status": "checked",
             "major_errors": [
-              "student/er.md, сущность APPLICATION: для расчёта дедлайна при трудовой цели нужен срок подачи на патент, если он наступает раньше 30 дней, но дата подачи на патент не хранится. Добавьте это поле, иначе срок услуги нельзя рассчитать по описанному правилу."
+              "В `student/er.md`, сущность `APPLICATION` не хранит планируемую длительность пребывания и дату подачи на патент. По пунктам 2.1–2.2 дорожной карты эти данные нужны, чтобы определить применимость дактилоскопии и рассчитать срок: для нетрудовой цели — проверить пребывание свыше 90 дней, для работы — учесть более раннюю дату подачи на патент. Добавьте необходимые поля, иначе правила из пояснений нельзя проверить по данным модели."
             ],
             "minor_comments": [
-              "Пояснения подробно описывают связи и правила модели.",
-              "Видеоотчёт отсутствует (context.json: video_files пуст); содержимое видео не проверялось."
+              "В `student/er.md`, пример прохождения содержит опечатку «значить срок соблюдён»; замените на «значит, срок соблюдён».",
+              "Содержание видео не проверяется; наличие видеофайла в `report/` по переданному контексту не подтверждено."
             ],
-            "summary": "ER-модель охватывает заявку на дактилоскопию, документы, проверку, запись, результат и историю статусов. Для расчёта дедлайна при подаче на патент не хватает даты подачи.",
+            "summary": "ER-модель охватывает заявки на дактилоскопию, документы, проверки, запись и результат, но в данных заявки не хватает полей для проверки применимости услуги и расчёта срока по дорожной карте.",
             "application_source_present": false,
             "video_report_present": false,
             "code_style_consistent": false
-          },
-          "skip_reason": "unchanged"
+          }
         },
         {
           "group_id": "group03",
@@ -399,7 +406,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "9227bd3ccfa0c58e836bccbb1487cebf50a74d28bcd397c93e5175a70f20ffde",
-          "commit": "a45d4d1b5df20d6e0a14b4253b595c4e6a0b4e5a"
+          "commit": "a45d4d1b5df20d6e0a14b4253b595c4e6a0b4e5a",
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group03",
@@ -416,7 +424,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "4af59a98fe8c4e037fedce17eb5db92f5654bdd25accf017b657a9565b6433db",
-          "commit": "a45d4d1b5df20d6e0a14b4253b595c4e6a0b4e5a"
+          "commit": "a45d4d1b5df20d6e0a14b4253b595c4e6a0b4e5a",
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group03",
@@ -433,7 +442,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "4c2ae0fd6a2e7c96a8f58b3f83e7b37a8a1ec3a5e59b414703418de91f823294",
-          "commit": "a45d4d1b5df20d6e0a14b4253b595c4e6a0b4e5a"
+          "commit": "a45d4d1b5df20d6e0a14b4253b595c4e6a0b4e5a",
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group03",
@@ -450,7 +460,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "2f8e54ec11e93c08449a8df6a1ad4649985387dc48b59e81a0d81e79fc6b1b79",
-          "commit": "a45d4d1b5df20d6e0a14b4253b595c4e6a0b4e5a"
+          "commit": "a45d4d1b5df20d6e0a14b4253b595c4e6a0b4e5a",
+          "skip_reason": "unchanged"
         }
       ]
     },
@@ -493,34 +504,28 @@
           "title": "ER-диаграмма предметной области",
           "deadline": "2026-11-13T23:59:59+05:00",
           "status": "checked",
-          "base_grade": 3,
+          "base_grade": 4,
           "late_penalty": 0,
-          "grade": 3,
+          "grade": 4,
           "comments": [
-            "Модель раскрывает медицинское освидетельствование и страхование, хранение документов, результатов и запросов на доработку. Требуется добавить историю статусов и исправить связь сотрудников с организациями. Нотация и пояснения соответствуют заданию.",
-            "er.md, APPLICATION.status: хранится только текущий статус, отсутствуют данные о предыдущих статусах и времени переходов. Обязательную историю статусов восстановить нельзя. Добавьте хранение изменений статуса с привязкой к заявке и датами.",
-            "er.md, USER ||--o{ ORGANIZATION «работает в»: связь означает, что у организации ровно один пользователь, а пользователь может иметь несколько организаций. Это исключает нескольких сотрудников в одной организации. Исправьте кардинальности и задайте связь сотрудника с организацией.",
-            "er.md: связи USER—APPLICATION и ORGANIZATION—APPLICATION продублированы с разными подписями. Удалите повторные связи, чтобы схема читалась однозначно."
+            "Основные сущности и связи позволяют хранить заявки на медосвидетельствование и страхование, документы, историю статусов и результаты. Не хватает данных для определения применимости услуг и сроков по дорожной карте.",
+            "В `er.md`, в сущностях `USER` и `APPLICATION`, нет гражданства, цели и даты въезда заявителя. Поэтому по модели нельзя определить, применимы ли пункты 3.1–3.3 дорожной карты, и рассчитать срок медосвидетельствования (30 или 90 дней) и страхования (до начала работы). Добавьте необходимые исходные данные, чтобы система могла определить применимые действия и сроки."
           ],
-          "submitted_at": "2026-10-24T20:49:30+05:00",
-          "checked_at": "2026-11-01T11:46:15.730341+00:00",
-          "fingerprint": "73d7303c8da4e591d55321118ef3cf292535e610b8e0cfdfce4b7f9388798fc4",
-          "commit": "3afbdf00ba8778712c6f5158308f412781f06f0c",
+          "submitted_at": "2026-11-10T20:35:58+05:00",
+          "checked_at": "2026-11-11T03:54:16.085813+00:00",
+          "fingerprint": "0a7acff74497891c23e06252deed704f081a6d5607348ae60340d778ea6325f8",
+          "commit": "63bc1529991322c6a51197a1953203b6e13f8ebb",
           "review": {
             "status": "checked",
             "major_errors": [
-              "er.md, APPLICATION.status: хранится только текущий статус, отсутствуют данные о предыдущих статусах и времени переходов. Обязательную историю статусов восстановить нельзя. Добавьте хранение изменений статуса с привязкой к заявке и датами.",
-              "er.md, USER ||--o{ ORGANIZATION «работает в»: связь означает, что у организации ровно один пользователь, а пользователь может иметь несколько организаций. Это исключает нескольких сотрудников в одной организации. Исправьте кардинальности и задайте связь сотрудника с организацией."
+              "В `er.md`, в сущностях `USER` и `APPLICATION`, нет гражданства, цели и даты въезда заявителя. Поэтому по модели нельзя определить, применимы ли пункты 3.1–3.3 дорожной карты, и рассчитать срок медосвидетельствования (30 или 90 дней) и страхования (до начала работы). Добавьте необходимые исходные данные, чтобы система могла определить применимые действия и сроки."
             ],
-            "minor_comments": [
-              "er.md: связи USER—APPLICATION и ORGANIZATION—APPLICATION продублированы с разными подписями. Удалите повторные связи, чтобы схема читалась однозначно."
-            ],
-            "summary": "Модель раскрывает медицинское освидетельствование и страхование, хранение документов, результатов и запросов на доработку. Требуется добавить историю статусов и исправить связь сотрудников с организациями. Нотация и пояснения соответствуют заданию.",
+            "minor_comments": [],
+            "summary": "Основные сущности и связи позволяют хранить заявки на медосвидетельствование и страхование, документы, историю статусов и результаты. Не хватает данных для определения применимости услуг и сроков по дорожной карте.",
             "application_source_present": false,
             "video_report_present": false,
             "code_style_consistent": false
-          },
-          "skip_reason": "unchanged"
+          }
         },
         {
           "group_id": "group04",
@@ -536,8 +541,8 @@
           ],
           "submitted_at": null,
           "checked_at": null,
-          "fingerprint": "735d97b09ba3be666fd00329a84077cea0b87c505cc64bccdbf97a6bd53d6438",
-          "commit": "3afbdf00ba8778712c6f5158308f412781f06f0c"
+          "fingerprint": "2b2899d57b288df8cae541524c3fc8fb7398817b9b783964597b2144b1439502",
+          "commit": "63bc1529991322c6a51197a1953203b6e13f8ebb"
         },
         {
           "group_id": "group04",
@@ -553,8 +558,8 @@
           ],
           "submitted_at": null,
           "checked_at": null,
-          "fingerprint": "da431549c80631397a1e4cdbae63a467eec88992543714e7cf3a2ed6f2312c2a",
-          "commit": "3afbdf00ba8778712c6f5158308f412781f06f0c"
+          "fingerprint": "55eef1d1ee76bb583e271e059cc09f342f8e7831d32e8da3734c3134d1b67349",
+          "commit": "63bc1529991322c6a51197a1953203b6e13f8ebb"
         },
         {
           "group_id": "group04",
@@ -570,8 +575,8 @@
           ],
           "submitted_at": null,
           "checked_at": null,
-          "fingerprint": "81d97af0b4741ce36ae3df09de68f94dd5c1f8465ac01d2259ffcc3ffbbf5c61",
-          "commit": "3afbdf00ba8778712c6f5158308f412781f06f0c"
+          "fingerprint": "201deb89721ed62e32f25f0e4f066d24bad19066856192f08af80c5a5abbcd0c",
+          "commit": "63bc1529991322c6a51197a1953203b6e13f8ebb"
         },
         {
           "group_id": "group04",
@@ -587,8 +592,8 @@
           ],
           "submitted_at": null,
           "checked_at": null,
-          "fingerprint": "13c841088287c67c4aa7ac933f57ddc85d66120867dc988931a5d3b7b605e717",
-          "commit": "3afbdf00ba8778712c6f5158308f412781f06f0c"
+          "fingerprint": "0a99092174206ac1763c2169ea1b059374d1d241c835d7d18e1ab00efe362f32",
+          "commit": "63bc1529991322c6a51197a1953203b6e13f8ebb"
         }
       ]
     },
@@ -670,7 +675,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "483d2bfcfc6a936960d8052eef8b03740cadcfe6517921b07a694c74ee2f7793",
-          "commit": "4cda5ed32edf564ebacceb00f71cf8f669b68f17"
+          "commit": "4cda5ed32edf564ebacceb00f71cf8f669b68f17",
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group05",
@@ -687,7 +693,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "ef6f4c12422220c038e16afc4fc703d2111ec913f2c418d83ff82b40c7dd3123",
-          "commit": "4cda5ed32edf564ebacceb00f71cf8f669b68f17"
+          "commit": "4cda5ed32edf564ebacceb00f71cf8f669b68f17",
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group05",
@@ -704,7 +711,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "88c17a0520198d31ae073e4234cbbb03e2a174fb3e97f354e3dcca71a6c640eb",
-          "commit": "4cda5ed32edf564ebacceb00f71cf8f669b68f17"
+          "commit": "4cda5ed32edf564ebacceb00f71cf8f669b68f17",
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group05",
@@ -721,7 +729,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "acb7b2d37f371db7747dfa29d2f209d21f8c05ec476f02d762f8dfc42ac13b01",
-          "commit": "4cda5ed32edf564ebacceb00f71cf8f669b68f17"
+          "commit": "4cda5ed32edf564ebacceb00f71cf8f669b68f17",
+          "skip_reason": "unchanged"
         }
       ]
     },
@@ -845,26 +854,25 @@
           "late_penalty": 1,
           "grade": 3,
           "comments": [
-            "Роли, граница системы и ключевой процесс выбора порядка трудоустройства описаны. Однако связи include/extend записаны некорректно, поэтому диаграмма не передаёт заявленные зависимости прецедентов.",
-            "student/use_case.md, связи include/extend: записи вида `Register ..> : include ConfirmPhone` ставят цель связи после двоеточия; так связи не задают корректно, и диаграмма не отображает обязательные включения и условное расширение. Исправьте все такие записи, указав целевой прецедент и метку связи в синтаксисе usecase-beta.",
-            "−1 балл: просрочка больше трёх дней."
+            "Роли и основные действия сервиса выбора порядка трудоустройства соответствуют теме; пояснения раскрывают правила маршрутов и основной сценарий. Связи include/extend записаны с нарушением синтаксиса, поэтому часть модели не отображается.",
+            "student/use_case.md, строки связей include/extend: записи вроде `Register ..> : include ConfirmPhone` не указывают целевой прецедент перед меткой связи. Из-за этого связи регистрации, входа, подачи, дополнения и рассмотрения не отображаются; исправьте их, указав целевой прецедент в синтаксисе usecase-beta.",
+            "−1 балл: работа сдана после дедлайна."
           ],
           "submitted_at": "2026-11-09T03:42:21+05:00",
-          "checked_at": "2026-11-09T03:42:00.408296+00:00",
-          "fingerprint": "99993fe5853d6aa3057298b6be79ced1b55c5f2d02db67bdae2dd9745d315dd1",
-          "commit": "8c35f6bd94cc762b7e5bb5a3dc4fa91d6ce7edee",
+          "checked_at": "2026-11-11T03:54:41.241312+00:00",
+          "fingerprint": "8a13a19593c253499af96322d7e30130283df9193f5f3330aedb2b0b7a352933",
+          "commit": "b1b8e6509ec9a9ef3e122726de99e505fe190f56",
           "review": {
             "status": "checked",
             "major_errors": [
-              "student/use_case.md, связи include/extend: записи вида `Register ..> : include ConfirmPhone` ставят цель связи после двоеточия; так связи не задают корректно, и диаграмма не отображает обязательные включения и условное расширение. Исправьте все такие записи, указав целевой прецедент и метку связи в синтаксисе usecase-beta."
+              "student/use_case.md, строки связей include/extend: записи вроде `Register ..> : include ConfirmPhone` не указывают целевой прецедент перед меткой связи. Из-за этого связи регистрации, входа, подачи, дополнения и рассмотрения не отображаются; исправьте их, указав целевой прецедент в синтаксисе usecase-beta."
             ],
             "minor_comments": [],
-            "summary": "Роли, граница системы и ключевой процесс выбора порядка трудоустройства описаны. Однако связи include/extend записаны некорректно, поэтому диаграмма не передаёт заявленные зависимости прецедентов.",
+            "summary": "Роли и основные действия сервиса выбора порядка трудоустройства соответствуют теме; пояснения раскрывают правила маршрутов и основной сценарий. Связи include/extend записаны с нарушением синтаксиса, поэтому часть модели не отображается.",
             "application_source_present": false,
             "video_report_present": false,
             "code_style_consistent": false
-          },
-          "skip_reason": "unchanged"
+          }
         },
         {
           "group_id": "group07",
@@ -922,41 +930,66 @@
             "application_source_present": false,
             "video_report_present": false,
             "code_style_consistent": false
-          }
+          },
+          "skip_reason": "grade_5"
         },
         {
           "group_id": "group07",
           "lab_id": "lab04",
           "title": "Диаграмма последовательностей на уровне классов",
           "deadline": "2026-12-11T23:59:59+05:00",
-          "status": "not_submitted",
-          "base_grade": null,
+          "status": "checked",
+          "base_grade": 5,
           "late_penalty": 0,
-          "grade": null,
+          "grade": 5,
           "comments": [
-            "Файлы лабораторной отсутствуют."
+            "Диаграмма показывает завершение рассмотрения заявки, выбор маршрута по применимым пунктам дорожной карты, сохранение результата и отказ при открытом запросе дополнений или неподходящем статусе.",
+            "class_sequence.md: выбранный сценарий, участники, сообщения и результат объяснены; проверка роли указана как предусловие. Содержимое видео не проверялось; по context.json видеофайла в report/ нет."
           ],
-          "submitted_at": null,
-          "checked_at": null,
-          "fingerprint": "5d2f318ef5049cf9579b1d0f0ba2aa1ea8697dd2e117969de6b9f6f915ae7374",
-          "commit": "8c35f6bd94cc762b7e5bb5a3dc4fa91d6ce7edee"
+          "submitted_at": "2026-11-10T19:21:14+05:00",
+          "checked_at": "2026-11-11T03:55:02.909476+00:00",
+          "fingerprint": "f0b108da83f2e348ddc984670bf5c6b38714ef19a6f5f6c1cbb2c0fc362d52a7",
+          "commit": "b1b8e6509ec9a9ef3e122726de99e505fe190f56",
+          "review": {
+            "status": "checked",
+            "major_errors": [],
+            "minor_comments": [
+              "class_sequence.md: выбранный сценарий, участники, сообщения и результат объяснены; проверка роли указана как предусловие. Содержимое видео не проверялось; по context.json видеофайла в report/ нет."
+            ],
+            "summary": "Диаграмма показывает завершение рассмотрения заявки, выбор маршрута по применимым пунктам дорожной карты, сохранение результата и отказ при открытом запросе дополнений или неподходящем статусе.",
+            "application_source_present": false,
+            "video_report_present": false,
+            "code_style_consistent": false
+          }
         },
         {
           "group_id": "group07",
           "lab_id": "lab05",
           "title": "Диаграмма классов приложения",
           "deadline": "2026-12-18T23:59:59+05:00",
-          "status": "not_submitted",
-          "base_grade": null,
+          "status": "checked",
+          "base_grade": 5,
           "late_penalty": 0,
-          "grade": null,
+          "grade": 5,
           "comments": [
-            "Файлы лабораторной отсутствуют."
+            "Диаграмма моделирует классы сервиса выбора маршрута трудоустройства, их связи и ключевое поведение: подачу, рассмотрение, запрос дополнений и выдачу результата. Существенных противоречий требованиям темы не обнаружено.",
+            "В `classes.md`, в сигнатурах `RoutePolicy.determine()` и `ReviewService.complete()` используются `RouteDecision` и `OperationResult`, но это типы не представлены на диаграмме как классы; их смысл пояснён в тексте."
           ],
-          "submitted_at": null,
-          "checked_at": null,
-          "fingerprint": "53b203ec5f161cfc95a18f4274749076bc12db08fa58cb46e369b846109b4c62",
-          "commit": "8c35f6bd94cc762b7e5bb5a3dc4fa91d6ce7edee"
+          "submitted_at": "2026-11-10T19:31:45+05:00",
+          "checked_at": "2026-11-11T03:55:35.338475+00:00",
+          "fingerprint": "84ac9fc8ef5133f1d12684083c7b318437da5d23ecc2f5b972067788c4143ea6",
+          "commit": "b1b8e6509ec9a9ef3e122726de99e505fe190f56",
+          "review": {
+            "status": "checked",
+            "major_errors": [],
+            "minor_comments": [
+              "В `classes.md`, в сигнатурах `RoutePolicy.determine()` и `ReviewService.complete()` используются `RouteDecision` и `OperationResult`, но это типы не представлены на диаграмме как классы; их смысл пояснён в тексте."
+            ],
+            "summary": "Диаграмма моделирует классы сервиса выбора маршрута трудоустройства, их связи и ключевое поведение: подачу, рассмотрение, запрос дополнений и выдачу результата. Существенных противоречий требованиям темы не обнаружено.",
+            "application_source_present": false,
+            "video_report_present": false,
+            "code_style_consistent": false
+          }
         },
         {
           "group_id": "group07",
@@ -972,8 +1005,8 @@
           ],
           "submitted_at": null,
           "checked_at": null,
-          "fingerprint": "c4458552530375b5d759e61710cd272757ea89217ce76000dc18c8732f893381",
-          "commit": "8c35f6bd94cc762b7e5bb5a3dc4fa91d6ce7edee"
+          "fingerprint": "95607bfe236bbf20d568cf817ac9bd0437ce12cb8c054e9ddac01b48004b6be3",
+          "commit": "b1b8e6509ec9a9ef3e122726de99e505fe190f56"
         }
       ]
     }
