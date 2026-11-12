@@ -142,12 +142,13 @@ def calculate_grade(lab, review, submitted_at):
         if errors > 2:
             return "needs_teacher", None, 0, None
         base = 5 - errors
+    base = max(0, base - len(review["minor_comments"]))
     if submitted_at is None:
         raise ValueError("Не удалось определить дату сдачи")
     deadline = datetime.fromisoformat(lab["deadline"])
     submitted = datetime.fromisoformat(submitted_at)
     penalty = int(submitted > deadline)
-    return "checked", base, penalty, base - penalty
+    return "checked", base, penalty, max(0, base - penalty)
 
 
 def run_codex(repo, commit, entries, group, lab, domains, args, prompt):

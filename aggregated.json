@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T03:55:35.420338+00:00",
+  "generated_at": "2026-11-12T04:46:17.059054+00:00",
   "groups": [
     {
       "id": "group01",
@@ -11,7 +11,7 @@
           "group_id": "group01",
           "lab_id": "lab01",
           "title": "Диаграмма прецедентов",
-          "deadline": "2026-10-30T23:59:59+05:00",
+          "deadline": "2026-11-19T23:59:59+05:00",
           "status": "checked",
           "base_grade": 5,
           "late_penalty": 0,
@@ -31,18 +31,17 @@
             "application_source_present": false,
             "video_report_present": false,
             "code_style_consistent": false
-          },
-          "skip_reason": "grade_5"
+          }
         },
         {
           "group_id": "group01",
           "lab_id": "lab02",
           "title": "ER-диаграмма предметной области",
-          "deadline": "2026-11-13T23:59:59+05:00",
+          "deadline": "2026-11-26T23:59:59+05:00",
           "status": "checked",
-          "base_grade": 5,
+          "base_grade": 4,
           "late_penalty": 0,
-          "grade": 5,
+          "grade": 4,
           "comments": [
             "ER-модель раскрывает миграционный учёт: подачу уведомления собственником, рассмотрение сотрудником, доработку, документы и результат. Предусмотрены роли, SMS-подтверждение и история статусов. Существенных ошибок не выявлено; требуется уточнить представление сроков.",
             "er.md, DEADLINE_RULE: в подсказке deadline_days пропущен срок 5 дней, а тип дней не указан. Для п. 1.5 дорожной карты нужны 5 рабочих дней; дополните описание срока и способ различать рабочие и календарные дни."
@@ -61,14 +60,13 @@
             "application_source_present": false,
             "video_report_present": false,
             "code_style_consistent": false
-          },
-          "skip_reason": "grade_5"
+          }
         },
         {
           "group_id": "group01",
           "lab_id": "lab03",
           "title": "Системная диаграмма последовательностей",
-          "deadline": "2026-11-27T23:59:59+05:00",
+          "deadline": "2026-12-03T23:59:59+05:00",
           "status": "not_submitted",
           "base_grade": null,
           "late_penalty": 0,
@@ -86,7 +84,7 @@
           "group_id": "group01",
           "lab_id": "lab04",
           "title": "Диаграмма последовательностей на уровне классов",
-          "deadline": "2026-12-11T23:59:59+05:00",
+          "deadline": "2026-12-10T23:59:59+05:00",
           "status": "not_submitted",
           "base_grade": null,
           "late_penalty": 0,
@@ -104,7 +102,7 @@
           "group_id": "group01",
           "lab_id": "lab05",
           "title": "Диаграмма классов приложения",
-          "deadline": "2026-12-18T23:59:59+05:00",
+          "deadline": "2026-12-17T23:59:59+05:00",
           "status": "not_submitted",
           "base_grade": null,
           "late_penalty": 0,
@@ -148,7 +146,7 @@
           "group_id": "group02",
           "lab_id": "lab01",
           "title": "Диаграмма прецедентов",
-          "deadline": "2026-10-30T23:59:59+05:00",
+          "deadline": "2026-11-19T23:59:59+05:00",
           "status": "checked",
           "base_grade": 5,
           "late_penalty": 0,
@@ -168,18 +166,17 @@
             "application_source_present": false,
             "video_report_present": false,
             "code_style_consistent": false
-          },
-          "skip_reason": "grade_5"
+          }
         },
         {
           "group_id": "group02",
           "lab_id": "lab02",
           "title": "ER-диаграмма предметной области",
-          "deadline": "2026-11-13T23:59:59+05:00",
+          "deadline": "2026-11-26T23:59:59+05:00",
           "status": "checked",
-          "base_grade": 5,
+          "base_grade": 4,
           "late_penalty": 0,
-          "grade": 5,
+          "grade": 4,
           "comments": [
             "ER-модель соответствует разделу 5 дорожной карты: представлены анкета, индивидуальный перечень документов, проверка, дополнения, заключение и история статусов. Атрибуты, кратности и дополнительные ограничения позволяют хранить обязательные данные процесса. Грубых ошибок не выявлено.",
             "student/er.md, таблицы «Сущности и атрибуты» и «Связи и кратности»: разделители `| ..- | ..- |` не соответствуют Markdown, поэтому таблицы не отобразятся. Замените их на `| --- | --- |`."
@@ -198,14 +195,13 @@
             "application_source_present": false,
             "video_report_present": false,
             "code_style_consistent": false
-          },
-          "skip_reason": "grade_5"
+          }
         },
         {
           "group_id": "group02",
           "lab_id": "lab03",
           "title": "Системная диаграмма последовательностей",
-          "deadline": "2026-11-27T23:59:59+05:00",
+          "deadline": "2026-12-03T23:59:59+05:00",
           "status": "checked",
           "base_grade": 5,
           "late_penalty": 0,
@@ -225,14 +221,13 @@
             "application_source_present": false,
             "video_report_present": false,
             "code_style_consistent": false
-          },
-          "skip_reason": "grade_5"
+          }
         },
         {
           "group_id": "group02",
           "lab_id": "lab04",
           "title": "Диаграмма последовательностей на уровне классов",
-          "deadline": "2026-12-11T23:59:59+05:00",
+          "deadline": "2026-12-10T23:59:59+05:00",
           "status": "checked",
           "base_grade": 5,
           "late_penalty": 0,
@@ -252,18 +247,17 @@
             "application_source_present": false,
             "video_report_present": false,
             "code_style_consistent": false
-          },
-          "skip_reason": "grade_5"
+          }
         },
         {
           "group_id": "group02",
           "lab_id": "lab05",
           "title": "Диаграмма классов приложения",
-          "deadline": "2026-12-18T23:59:59+05:00",
+          "deadline": "2026-12-17T23:59:59+05:00",
           "status": "checked",
-          "base_grade": 5,
+          "base_grade": 4,
           "late_penalty": 0,
-          "grade": 5,
+          "grade": 4,
           "comments": [
             "Модель предметно согласована с подготовкой документов для патента: отражены заявка, версии, проверка, исправления, заключение и история. Ответственность ключевых классов и ограничения процесса пояснены.",
             "В пояснениях указан вычисляемый срок `dueAt`, но в диаграмме нет класса или метода, который его рассчитывает или предоставляет."
@@ -282,8 +276,7 @@
             "application_source_present": false,
             "video_report_present": false,
             "code_style_consistent": false
-          },
-          "skip_reason": "grade_5"
+          }
         },
         {
           "group_id": "group02",
@@ -291,9 +284,9 @@
           "title": "Работающее приложение и видеоотчёт",
           "deadline": "2026-12-25T23:59:59+05:00",
           "status": "checked",
-          "base_grade": 5,
+          "base_grade": 4,
           "late_penalty": 0,
-          "grade": 5,
+          "grade": 4,
           "comments": [
             "Исходный код приложения присутствует. По статическому чтению реализованы вход по телефону, подача комплекта для подготовки документов на патент, проверка специалистом, запрос дополнения, повторная подача, выдача заключения, история и хранение данных в SQLite. Код выдержан в читаемом едином стиле.",
             "Видеоотчёт отмечен как присутствующий по данным context.json; его содержание не проверялось."
@@ -312,8 +305,7 @@
             "application_source_present": true,
             "video_report_present": true,
             "code_style_consistent": true
-          },
-          "skip_reason": "grade_5"
+          }
         }
       ]
     },
@@ -327,11 +319,11 @@
           "group_id": "group03",
           "lab_id": "lab01",
           "title": "Диаграмма прецедентов",
-          "deadline": "2026-10-30T23:59:59+05:00",
+          "deadline": "2026-11-19T23:59:59+05:00",
           "status": "checked",
-          "base_grade": 5,
+          "base_grade": 2,
           "late_penalty": 0,
-          "grade": 5,
+          "grade": 2,
           "comments": [
             "Представлена одна диаграмма usecase-beta с пояснениями. Роли, граница системы и основные действия по выбранной услуге отражены, включая дополнение заявления, результат и историю. Грубых ошибок не выявлено; есть уточнения к семантике связей и описанию правил.",
             "student/use_case.md, связи UC8 include UC6 и UC11 include UC10: пояснения описывают предусловия, а include означает обязательное выполнение другого прецедента. Уточните связи: заполненное заявление и завершённая заявка могут быть предусловиями.",
@@ -354,18 +346,17 @@
             "application_source_present": false,
             "video_report_present": false,
             "code_style_consistent": false
-          },
-          "skip_reason": "grade_5"
+          }
         },
         {
           "group_id": "group03",
           "lab_id": "lab02",
           "title": "ER-диаграмма предметной области",
-          "deadline": "2026-11-13T23:59:59+05:00",
+          "deadline": "2026-11-26T23:59:59+05:00",
           "status": "checked",
-          "base_grade": 4,
+          "base_grade": 2,
           "late_penalty": 0,
-          "grade": 4,
+          "grade": 2,
           "comments": [
             "ER-модель охватывает заявки на дактилоскопию, документы, проверки, запись и результат, но в данных заявки не хватает полей для проверки применимости услуги и расчёта срока по дорожной карте.",
             "В `student/er.md`, сущность `APPLICATION` не хранит планируемую длительность пребывания и дату подачи на патент. По пунктам 2.1–2.2 дорожной карты эти данные нужны, чтобы определить применимость дактилоскопии и рассчитать срок: для нетрудовой цели — проверить пребывание свыше 90 дней, для работы — учесть более раннюю дату подачи на патент. Добавьте необходимые поля, иначе правила из пояснений нельзя проверить по данным модели.",
@@ -395,7 +386,7 @@
           "group_id": "group03",
           "lab_id": "lab03",
           "title": "Системная диаграмма последовательностей",
-          "deadline": "2026-11-27T23:59:59+05:00",
+          "deadline": "2026-12-03T23:59:59+05:00",
           "status": "not_submitted",
           "base_grade": null,
           "late_penalty": 0,
@@ -413,7 +404,7 @@
           "group_id": "group03",
           "lab_id": "lab04",
           "title": "Диаграмма последовательностей на уровне классов",
-          "deadline": "2026-12-11T23:59:59+05:00",
+          "deadline": "2026-12-10T23:59:59+05:00",
           "status": "not_submitted",
           "base_grade": null,
           "late_penalty": 0,
@@ -431,7 +422,7 @@
           "group_id": "group03",
           "lab_id": "lab05",
           "title": "Диаграмма классов приложения",
-          "deadline": "2026-12-18T23:59:59+05:00",
+          "deadline": "2026-12-17T23:59:59+05:00",
           "status": "not_submitted",
           "base_grade": null,
           "late_penalty": 0,
@@ -475,7 +466,7 @@
           "group_id": "group04",
           "lab_id": "lab01",
           "title": "Диаграмма прецедентов",
-          "deadline": "2026-10-30T23:59:59+05:00",
+          "deadline": "2026-11-19T23:59:59+05:00",
           "status": "checked",
           "base_grade": 5,
           "late_penalty": 0,
@@ -495,33 +486,32 @@
             "application_source_present": false,
             "video_report_present": false,
             "code_style_consistent": false
-          },
-          "skip_reason": "grade_5"
+          }
         },
         {
           "group_id": "group04",
           "lab_id": "lab02",
           "title": "ER-диаграмма предметной области",
-          "deadline": "2026-11-13T23:59:59+05:00",
+          "deadline": "2026-11-26T23:59:59+05:00",
           "status": "checked",
           "base_grade": 4,
           "late_penalty": 0,
           "grade": 4,
           "comments": [
-            "Основные сущности и связи позволяют хранить заявки на медосвидетельствование и страхование, документы, историю статусов и результаты. Не хватает данных для определения применимости услуг и сроков по дорожной карте.",
-            "В `er.md`, в сущностях `USER` и `APPLICATION`, нет гражданства, цели и даты въезда заявителя. Поэтому по модели нельзя определить, применимы ли пункты 3.1–3.3 дорожной карты, и рассчитать срок медосвидетельствования (30 или 90 дней) и страхования (до начала работы). Добавьте необходимые исходные данные, чтобы система могла определить применимые действия и сроки."
+            "ER-модель охватывает заявки на медосвидетельствование и страхование, документы, запросы на исправление, результаты и историю статусов. Исправьте неверное условие применимости п. 3.3 в пояснении.",
+            "В student/er.md в разделе 5 указано, что статус ВКС или участника программы переселения исключает применение п. 3.3. По дорожной карте п. 3.3 зависит от гражданства и отсутствия полиса, таких исключений там нет. Это может ошибочно исключить нуждающегося заявителя; уберите это правило или скорректируйте модель и пояснение."
           ],
-          "submitted_at": "2026-11-10T20:35:58+05:00",
-          "checked_at": "2026-11-11T03:54:16.085813+00:00",
-          "fingerprint": "0a7acff74497891c23e06252deed704f081a6d5607348ae60340d778ea6325f8",
-          "commit": "63bc1529991322c6a51197a1953203b6e13f8ebb",
+          "submitted_at": "2026-11-11T19:34:26+05:00",
+          "checked_at": "2026-11-12T04:39:45.832424+00:00",
+          "fingerprint": "095f560a8177f00a1e56511a56dbf202a70ac0addfe7a27a468ef4219ae01b2f",
+          "commit": "087ef53dacfe53331925bffd066f8b453b07b2a9",
           "review": {
             "status": "checked",
             "major_errors": [
-              "В `er.md`, в сущностях `USER` и `APPLICATION`, нет гражданства, цели и даты въезда заявителя. Поэтому по модели нельзя определить, применимы ли пункты 3.1–3.3 дорожной карты, и рассчитать срок медосвидетельствования (30 или 90 дней) и страхования (до начала работы). Добавьте необходимые исходные данные, чтобы система могла определить применимые действия и сроки."
+              "В student/er.md в разделе 5 указано, что статус ВКС или участника программы переселения исключает применение п. 3.3. По дорожной карте п. 3.3 зависит от гражданства и отсутствия полиса, таких исключений там нет. Это может ошибочно исключить нуждающегося заявителя; уберите это правило или скорректируйте модель и пояснение."
             ],
             "minor_comments": [],
-            "summary": "Основные сущности и связи позволяют хранить заявки на медосвидетельствование и страхование, документы, историю статусов и результаты. Не хватает данных для определения применимости услуг и сроков по дорожной карте.",
+            "summary": "ER-модель охватывает заявки на медосвидетельствование и страхование, документы, запросы на исправление, результаты и историю статусов. Исправьте неверное условие применимости п. 3.3 в пояснении.",
             "application_source_present": false,
             "video_report_present": false,
             "code_style_consistent": false
@@ -531,7 +521,7 @@
           "group_id": "group04",
           "lab_id": "lab03",
           "title": "Системная диаграмма последовательностей",
-          "deadline": "2026-11-27T23:59:59+05:00",
+          "deadline": "2026-12-03T23:59:59+05:00",
           "status": "not_submitted",
           "base_grade": null,
           "late_penalty": 0,
@@ -541,14 +531,14 @@
           ],
           "submitted_at": null,
           "checked_at": null,
-          "fingerprint": "2b2899d57b288df8cae541524c3fc8fb7398817b9b783964597b2144b1439502",
-          "commit": "63bc1529991322c6a51197a1953203b6e13f8ebb"
+          "fingerprint": "8c00d2d8c2224c168e6b12b39cb0d8b05bbd8fcd89d5ad6950bd117d4ff54f75",
+          "commit": "087ef53dacfe53331925bffd066f8b453b07b2a9"
         },
         {
           "group_id": "group04",
           "lab_id": "lab04",
           "title": "Диаграмма последовательностей на уровне классов",
-          "deadline": "2026-12-11T23:59:59+05:00",
+          "deadline": "2026-12-10T23:59:59+05:00",
           "status": "not_submitted",
           "base_grade": null,
           "late_penalty": 0,
@@ -558,14 +548,14 @@
           ],
           "submitted_at": null,
           "checked_at": null,
-          "fingerprint": "55eef1d1ee76bb583e271e059cc09f342f8e7831d32e8da3734c3134d1b67349",
-          "commit": "63bc1529991322c6a51197a1953203b6e13f8ebb"
+          "fingerprint": "67e15a6ef1f3cada406819602594797fae9c69d4b081f4803c7f0285014710a6",
+          "commit": "087ef53dacfe53331925bffd066f8b453b07b2a9"
         },
         {
           "group_id": "group04",
           "lab_id": "lab05",
           "title": "Диаграмма классов приложения",
-          "deadline": "2026-12-18T23:59:59+05:00",
+          "deadline": "2026-12-17T23:59:59+05:00",
           "status": "not_submitted",
           "base_grade": null,
           "late_penalty": 0,
@@ -575,8 +565,8 @@
           ],
           "submitted_at": null,
           "checked_at": null,
-          "fingerprint": "201deb89721ed62e32f25f0e4f066d24bad19066856192f08af80c5a5abbcd0c",
-          "commit": "63bc1529991322c6a51197a1953203b6e13f8ebb"
+          "fingerprint": "3a66915f7b8f85d45ccbfa4d28535527169380066e552af8178c61cfdc7a7d55",
+          "commit": "087ef53dacfe53331925bffd066f8b453b07b2a9"
         },
         {
           "group_id": "group04",
@@ -592,8 +582,8 @@
           ],
           "submitted_at": null,
           "checked_at": null,
-          "fingerprint": "0a99092174206ac1763c2169ea1b059374d1d241c835d7d18e1ab00efe362f32",
-          "commit": "63bc1529991322c6a51197a1953203b6e13f8ebb"
+          "fingerprint": "23c51cba63d2b4cc48d24f065a49a1af008ef9a0261c848a9d6651e922b8a3a5",
+          "commit": "087ef53dacfe53331925bffd066f8b453b07b2a9"
         }
       ]
     },
@@ -607,11 +597,11 @@
           "group_id": "group05",
           "lab_id": "lab01",
           "title": "Диаграмма прецедентов",
-          "deadline": "2026-10-30T23:59:59+05:00",
+          "deadline": "2026-11-19T23:59:59+05:00",
           "status": "checked",
-          "base_grade": 5,
+          "base_grade": 4,
           "late_penalty": 0,
-          "grade": 5,
+          "grade": 4,
           "comments": [
             "Ключевые действия по получению патента, роли, доработка заявления и история отражены, пояснения содержательны. Требуется исправить связь подачи заявления с предварительной оплатой НДФЛ.",
             "use_case.md, связь UC_Apply include UC_PayNDFL: подача заявления обязательно выполняет оплату, хотя по п. 6.1 платёж должен быть внесён заранее и может выполняться отдельным прецедентом. Уже оплатившему заявителю модель снова предписывает оплату. Уберите include оплаты и укажите подтверждённый платёж как предусловие подачи; включение прикрепления квитанции сохраните."
@@ -630,14 +620,13 @@
             "application_source_present": false,
             "video_report_present": false,
             "code_style_consistent": false
-          },
-          "skip_reason": "grade_5"
+          }
         },
         {
           "group_id": "group05",
           "lab_id": "lab02",
           "title": "ER-диаграмма предметной области",
-          "deadline": "2026-11-13T23:59:59+05:00",
+          "deadline": "2026-11-26T23:59:59+05:00",
           "status": "checked",
           "base_grade": 5,
           "late_penalty": 0,
@@ -657,14 +646,13 @@
             "application_source_present": false,
             "video_report_present": false,
             "code_style_consistent": false
-          },
-          "skip_reason": "grade_5"
+          }
         },
         {
           "group_id": "group05",
           "lab_id": "lab03",
           "title": "Системная диаграмма последовательностей",
-          "deadline": "2026-11-27T23:59:59+05:00",
+          "deadline": "2026-12-03T23:59:59+05:00",
           "status": "not_submitted",
           "base_grade": null,
           "late_penalty": 0,
@@ -682,7 +670,7 @@
           "group_id": "group05",
           "lab_id": "lab04",
           "title": "Диаграмма последовательностей на уровне классов",
-          "deadline": "2026-12-11T23:59:59+05:00",
+          "deadline": "2026-12-10T23:59:59+05:00",
           "status": "not_submitted",
           "base_grade": null,
           "late_penalty": 0,
@@ -700,7 +688,7 @@
           "group_id": "group05",
           "lab_id": "lab05",
           "title": "Диаграмма классов приложения",
-          "deadline": "2026-12-18T23:59:59+05:00",
+          "deadline": "2026-12-17T23:59:59+05:00",
           "status": "not_submitted",
           "base_grade": null,
           "late_penalty": 0,
@@ -744,7 +732,7 @@
           "group_id": "group06",
           "lab_id": "lab01",
           "title": "Диаграмма прецедентов",
-          "deadline": "2026-10-30T23:59:59+05:00",
+          "deadline": "2026-11-19T23:59:59+05:00",
           "status": "no_repository",
           "base_grade": null,
           "late_penalty": 0,
@@ -760,7 +748,7 @@
           "group_id": "group06",
           "lab_id": "lab02",
           "title": "ER-диаграмма предметной области",
-          "deadline": "2026-11-13T23:59:59+05:00",
+          "deadline": "2026-11-26T23:59:59+05:00",
           "status": "no_repository",
           "base_grade": null,
           "late_penalty": 0,
@@ -776,7 +764,7 @@
           "group_id": "group06",
           "lab_id": "lab03",
           "title": "Системная диаграмма последовательностей",
-          "deadline": "2026-11-27T23:59:59+05:00",
+          "deadline": "2026-12-03T23:59:59+05:00",
           "status": "no_repository",
           "base_grade": null,
           "late_penalty": 0,
@@ -792,7 +780,7 @@
           "group_id": "group06",
           "lab_id": "lab04",
           "title": "Диаграмма последовательностей на уровне классов",
-          "deadline": "2026-12-11T23:59:59+05:00",
+          "deadline": "2026-12-10T23:59:59+05:00",
           "status": "no_repository",
           "base_grade": null,
           "late_penalty": 0,
@@ -808,7 +796,7 @@
           "group_id": "group06",
           "lab_id": "lab05",
           "title": "Диаграмма классов приложения",
-          "deadline": "2026-12-18T23:59:59+05:00",
+          "deadline": "2026-12-17T23:59:59+05:00",
           "status": "no_repository",
           "base_grade": null,
           "late_penalty": 0,
@@ -848,15 +836,14 @@
           "group_id": "group07",
           "lab_id": "lab01",
           "title": "Диаграмма прецедентов",
-          "deadline": "2026-10-30T23:59:59+05:00",
+          "deadline": "2026-11-19T23:59:59+05:00",
           "status": "checked",
           "base_grade": 4,
-          "late_penalty": 1,
-          "grade": 3,
+          "late_penalty": 0,
+          "grade": 4,
           "comments": [
             "Роли и основные действия сервиса выбора порядка трудоустройства соответствуют теме; пояснения раскрывают правила маршрутов и основной сценарий. Связи include/extend записаны с нарушением синтаксиса, поэтому часть модели не отображается.",
-            "student/use_case.md, строки связей include/extend: записи вроде `Register ..> : include ConfirmPhone` не указывают целевой прецедент перед меткой связи. Из-за этого связи регистрации, входа, подачи, дополнения и рассмотрения не отображаются; исправьте их, указав целевой прецедент в синтаксисе usecase-beta.",
-            "−1 балл: работа сдана после дедлайна."
+            "student/use_case.md, строки связей include/extend: записи вроде `Register ..> : include ConfirmPhone` не указывают целевой прецедент перед меткой связи. Из-за этого связи регистрации, входа, подачи, дополнения и рассмотрения не отображаются; исправьте их, указав целевой прецедент в синтаксисе usecase-beta."
           ],
           "submitted_at": "2026-11-09T03:42:21+05:00",
           "checked_at": "2026-11-11T03:54:41.241312+00:00",
@@ -878,7 +865,7 @@
           "group_id": "group07",
           "lab_id": "lab02",
           "title": "ER-диаграмма предметной области",
-          "deadline": "2026-11-13T23:59:59+05:00",
+          "deadline": "2026-11-26T23:59:59+05:00",
           "status": "checked",
           "base_grade": 5,
           "late_penalty": 0,
@@ -898,18 +885,17 @@
             "application_source_present": false,
             "video_report_present": false,
             "code_style_consistent": false
-          },
-          "skip_reason": "grade_5"
+          }
         },
         {
           "group_id": "group07",
           "lab_id": "lab03",
           "title": "Системная диаграмма последовательностей",
-          "deadline": "2026-11-27T23:59:59+05:00",
+          "deadline": "2026-12-03T23:59:59+05:00",
           "status": "checked",
-          "base_grade": 5,
+          "base_grade": 3,
           "late_penalty": 0,
-          "grade": 5,
+          "grade": 3,
           "comments": [
             "Диаграмма показывает выбранный сценарий выдачи результата: специалист запускает завершение рассмотрения, система выбирает маршрут по условиям раздела 4 и сохраняет итог. Пояснения описывают участников, предусловия и варианты результата.",
             "В system_sequence.md результат лишь обозначен как доступный заявителю; добавьте шаг, показывающий, как заявитель его получает или просматривает.",
@@ -930,18 +916,17 @@
             "application_source_present": false,
             "video_report_present": false,
             "code_style_consistent": false
-          },
-          "skip_reason": "grade_5"
+          }
         },
         {
           "group_id": "group07",
           "lab_id": "lab04",
           "title": "Диаграмма последовательностей на уровне классов",
-          "deadline": "2026-12-11T23:59:59+05:00",
+          "deadline": "2026-12-10T23:59:59+05:00",
           "status": "checked",
-          "base_grade": 5,
+          "base_grade": 4,
           "late_penalty": 0,
-          "grade": 5,
+          "grade": 4,
           "comments": [
             "Диаграмма показывает завершение рассмотрения заявки, выбор маршрута по применимым пунктам дорожной карты, сохранение результата и отказ при открытом запросе дополнений или неподходящем статусе.",
             "class_sequence.md: выбранный сценарий, участники, сообщения и результат объяснены; проверка роли указана как предусловие. Содержимое видео не проверялось; по context.json видеофайла в report/ нет."
@@ -966,11 +951,11 @@
           "group_id": "group07",
           "lab_id": "lab05",
           "title": "Диаграмма классов приложения",
-          "deadline": "2026-12-18T23:59:59+05:00",
+          "deadline": "2026-12-17T23:59:59+05:00",
           "status": "checked",
-          "base_grade": 5,
+          "base_grade": 4,
           "late_penalty": 0,
-          "grade": 5,
+          "grade": 4,
           "comments": [
             "Диаграмма моделирует классы сервиса выбора маршрута трудоустройства, их связи и ключевое поведение: подачу, рассмотрение, запрос дополнений и выдачу результата. Существенных противоречий требованиям темы не обнаружено.",
             "В `classes.md`, в сигнатурах `RoutePolicy.determine()` и `ReviewService.complete()` используются `RouteDecision` и `OperationResult`, но это типы не представлены на диаграмме как классы; их смысл пояснён в тексте."
@@ -1006,7 +991,8 @@
           "submitted_at": null,
           "checked_at": null,
           "fingerprint": "95607bfe236bbf20d568cf817ac9bd0437ce12cb8c054e9ddac01b48004b6be3",
-          "commit": "b1b8e6509ec9a9ef3e122726de99e505fe190f56"
+          "commit": "b1b8e6509ec9a9ef3e122726de99e505fe190f56",
+          "skip_reason": "unchanged"
         }
       ]
     }

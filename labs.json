@@ -7,7 +7,7 @@
       "id": "lab01",
       "title": "Диаграмма прецедентов",
       "required": true,
-      "deadline": "2026-10-30T23:59:59+05:00",
+      "deadline": "2026-11-19T23:59:59+05:00",
       "artifacts": [
         { "path": "use_case.md", "type": "mermaid", "diagram_type": "usecase-beta", "description_required": true }
       ]
@@ -16,7 +16,7 @@
       "id": "lab02",
       "title": "ER-диаграмма предметной области",
       "required": true,
-      "deadline": "2026-11-13T23:59:59+05:00",
+      "deadline": "2026-11-26T23:59:59+05:00",
       "artifacts": [
         { "path": "er.md", "type": "mermaid", "diagram_type": "erDiagram", "description_required": true }
       ]
@@ -26,7 +26,7 @@
       "title": "Системная диаграмма последовательностей",
       "description": "Выберите любой один юзкейс и покажите взаимодействие внешних участников и систем при его выполнении. Укажите выбранный юзкейс в пояснениях. Диаграмма не обязана охватывать остальные юзкейсы; взаимодействие внутренних классов здесь не требуется.",
       "required": true,
-      "deadline": "2026-11-27T23:59:59+05:00",
+      "deadline": "2026-12-03T23:59:59+05:00",
       "artifacts": [
         { "path": "system_sequence.md", "type": "mermaid", "diagram_type": "sequenceDiagram", "description_required": true }
       ]
@@ -36,7 +36,7 @@
       "title": "Диаграмма последовательностей на уровне классов",
       "description": "Выберите любой один юзкейс и покажите взаимодействие классов приложения при его выполнении: объекты-участники и сообщения между ними. Укажите выбранный юзкейс в пояснениях. Диаграмма не обязана охватывать остальные юзкейсы или наиболее сложную операцию.",
       "required": true,
-      "deadline": "2026-12-11T23:59:59+05:00",
+      "deadline": "2026-12-10T23:59:59+05:00",
       "artifacts": [
         { "path": "class_sequence.md", "type": "mermaid", "diagram_type": "sequenceDiagram", "description_required": true }
       ]
@@ -45,7 +45,7 @@
       "id": "lab05",
       "title": "Диаграмма классов приложения",
       "required": true,
-      "deadline": "2026-12-18T23:59:59+05:00",
+      "deadline": "2026-12-17T23:59:59+05:00",
       "artifacts": [
         { "path": "classes.md", "type": "mermaid", "diagram_type": "classDiagram", "description_required": true }
       ]

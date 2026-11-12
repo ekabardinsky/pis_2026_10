@@ -2,7 +2,7 @@
   "group_id": "group05",
   "lab_id": "lab02",
   "title": "ER-диаграмма предметной области",
-  "deadline": "2026-11-13T23:59:59+05:00",
+  "deadline": "2026-11-26T23:59:59+05:00",
   "status": "checked",
   "base_grade": 5,
   "late_penalty": 0,
@@ -22,6 +22,5 @@
     "application_source_present": false,
     "video_report_present": false,
     "code_style_consistent": false
-  },
-  "skip_reason": "grade_5"
+  }
 }

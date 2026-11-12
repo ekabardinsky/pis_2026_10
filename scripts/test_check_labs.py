@@ -187,6 +187,16 @@ class CheckerTests(unittest.TestCase):
             self.assertEqual(checker.calculate_grade(self.labs[5], response(errors, style),
                              "2026-10-30T23:59:59+05:00")[3], score)
 
+    def test_minor_comments_reduce_grade(self):
+        for lab in (self.lab, self.labs[5]):
+            for count in (1, 2, 6):
+                review = response(0)
+                review["minor_comments"] = [f"Улучшение {i}" for i in range(count)]
+                status, base, penalty, grade = checker.calculate_grade(
+                    lab, review, lab["deadline"])
+                self.assertEqual((status, base, penalty, grade),
+                                 ("checked", max(0, 5-count), 0, max(0, 5-count)))
+
     def test_aggregation_and_cache_on_second_run(self):
         self.commit()
         checker.write_json(self.base / "groups.json", {"groups": [self.group]})

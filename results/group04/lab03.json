@@ -2,7 +2,7 @@
   "group_id": "group04",
   "lab_id": "lab03",
   "title": "Системная диаграмма последовательностей",
-  "deadline": "2026-11-27T23:59:59+05:00",
+  "deadline": "2026-12-03T23:59:59+05:00",
   "status": "not_submitted",
   "base_grade": null,
   "late_penalty": 0,
@@ -12,6 +12,6 @@
   ],
   "submitted_at": null,
   "checked_at": null,
-  "fingerprint": "2b2899d57b288df8cae541524c3fc8fb7398817b9b783964597b2144b1439502",
-  "commit": "63bc1529991322c6a51197a1953203b6e13f8ebb"
+  "fingerprint": "8c00d2d8c2224c168e6b12b39cb0d8b05bbd8fcd89d5ad6950bd117d4ff54f75",
+  "commit": "087ef53dacfe53331925bffd066f8b453b07b2a9"
 }
