@@ -3,16 +3,29 @@
   "lab_id": "lab06",
   "title": "Работающее приложение и видеоотчёт",
   "deadline": "2026-12-25T23:59:59+05:00",
-  "status": "not_submitted",
-  "base_grade": null,
+  "status": "checked",
+  "base_grade": 3,
   "late_penalty": 0,
-  "grade": null,
+  "grade": 3,
   "comments": [
-    "Проверка задания 6 пропущена: нет файлов результатов в solution/, report/."
+    "По статическому чтению исходников грубых ошибок не выявлено. Реализованы выбор маршрута по пунктам 4.1–4.2, вход по телефону и коду, роли, исправление анкеты, дополнительные документы, результат, история и сохранение в SQLite. Стиль кода согласован. Приложение не запускалось.",
+    "README.md, раздел «Структура»: указан report/demo.webm, но в manifest видео находится по пути report/video-report.mp4. Исправьте ссылку.",
+    "report/video-report.mp4: наличие непустого видео подтверждено context.json; содержание видео не проверялось."
   ],
-  "submitted_at": null,
-  "checked_at": null,
-  "fingerprint": "95607bfe236bbf20d568cf817ac9bd0437ce12cb8c054e9ddac01b48004b6be3",
-  "commit": "b1b8e6509ec9a9ef3e122726de99e505fe190f56",
-  "skip_reason": "unchanged"
+  "submitted_at": "2026-11-12T14:53:19+05:00",
+  "checked_at": "2026-11-13T04:12:16.639337+00:00",
+  "fingerprint": "5c13d0eee9548a685a61a2405f54db17516ed518d2cec5bbd9caf0a4638b19ec",
+  "commit": "1151460d5f4482813bf7f397018bec67f3ab2765",
+  "review": {
+    "status": "checked",
+    "major_errors": [],
+    "minor_comments": [
+      "README.md, раздел «Структура»: указан report/demo.webm, но в manifest видео находится по пути report/video-report.mp4. Исправьте ссылку.",
+      "report/video-report.mp4: наличие непустого видео подтверждено context.json; содержание видео не проверялось."
+    ],
+    "summary": "По статическому чтению исходников грубых ошибок не выявлено. Реализованы выбор маршрута по пунктам 4.1–4.2, вход по телефону и коду, роли, исправление анкеты, дополнительные документы, результат, история и сохранение в SQLite. Стиль кода согласован. Приложение не запускалось.",
+    "application_source_present": true,
+    "video_report_present": true,
+    "code_style_consistent": true
+  }
 }

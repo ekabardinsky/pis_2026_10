@@ -12,7 +12,6 @@
   ],
   "submitted_at": null,
   "checked_at": null,
-  "fingerprint": "de496d92bf9630b0d0da58872b425ebc797013f965ad31830933a58e49f88a60",
-  "commit": "25da0acdeb77a23d18a7d2c8a476f472b1de02ca",
-  "skip_reason": "unchanged"
+  "fingerprint": "aa8992ebee581a38f6620bc09d8c07ad04631a7194d3c7c15685abb120c3296b",
+  "commit": "25da0acdeb77a23d18a7d2c8a476f472b1de02ca"
 }
