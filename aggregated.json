@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T04:02:55.877614+00:00",
+  "generated_at": "2026-11-17T07:25:00.926231+00:00",
   "groups": [
     {
       "id": "group01",
@@ -285,31 +285,28 @@
           "title": "Работающее приложение и видеоотчёт",
           "deadline": "2026-12-25T23:59:59+05:00",
           "status": "checked",
-          "base_grade": 3,
+          "base_grade": 4,
           "late_penalty": 0,
-          "grade": 3,
+          "grade": 4,
           "comments": [
-            "Статическое чтение подтверждает реализацию входа по SMS, двух ролей, подачи и исправления заявки, передачи документов, получения заключения и истории с сохранением в SQLite. Грубых ошибок не выявлено, стиль кода согласован. Приложение и тесты не запускались.",
-            "solution/domain.py, ChecklistPolicy.calculate(): для пункта 5.1 перечень не поясняет получение сертификата через экзамен в образовательной организации до подачи заявления на патент. Добавьте эти сведения из дорожной карты.",
+            "Статическая проверка исходников завершена. Реализованы условия раздела 5, вход по телефону и SMS, роли, подача и дополнение заявки, проверка, получение заключения, история и сохранение в БД. Грубых ошибок не выявлено, стиль кода единообразный. Приложение и тесты не запускались.",
             "report/lab06-demo.mp4: наличие непустого видео подтверждено context.json; содержание видео не проверялось."
           ],
-          "submitted_at": "2026-11-12T11:12:17+05:00",
-          "checked_at": "2026-11-13T04:03:36.472295+00:00",
-          "fingerprint": "6931014b13f9662872094c744890db5c39d1f3a3c021967f27457ed117acf517",
-          "commit": "b1ad9428d2c9eb0dc4e12b0d937c53f9022d991f",
+          "submitted_at": "2026-11-16T19:23:44+05:00",
+          "checked_at": "2026-11-17T07:24:32.475953+00:00",
+          "fingerprint": "95baa1926378eb44aeffee74d55de8e5a1effd3e0e806e66f41b51b3448a236a",
+          "commit": "056bfaf88126476ad7afa42e69b35fd96539b3c9",
           "review": {
             "status": "checked",
             "major_errors": [],
             "minor_comments": [
-              "solution/domain.py, ChecklistPolicy.calculate(): для пункта 5.1 перечень не поясняет получение сертификата через экзамен в образовательной организации до подачи заявления на патент. Добавьте эти сведения из дорожной карты.",
               "report/lab06-demo.mp4: наличие непустого видео подтверждено context.json; содержание видео не проверялось."
             ],
-            "summary": "Статическое чтение подтверждает реализацию входа по SMS, двух ролей, подачи и исправления заявки, передачи документов, получения заключения и истории с сохранением в SQLite. Грубых ошибок не выявлено, стиль кода согласован. Приложение и тесты не запускались.",
+            "summary": "Статическая проверка исходников завершена. Реализованы условия раздела 5, вход по телефону и SMS, роли, подача и дополнение заявки, проверка, получение заключения, история и сохранение в БД. Грубых ошибок не выявлено, стиль кода единообразный. Приложение и тесты не запускались.",
             "application_source_present": true,
             "video_report_present": true,
             "code_style_consistent": true
-          },
-          "skip_reason": "unchanged"
+          }
         }
       ]
     },
@@ -349,7 +346,8 @@
             "application_source_present": false,
             "video_report_present": false,
             "code_style_consistent": false
-          }
+          },
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group03",
@@ -378,7 +376,8 @@
             "application_source_present": false,
             "video_report_present": false,
             "code_style_consistent": false
-          }
+          },
+          "skip_reason": "unchanged"
         },
         {
           "group_id": "group03",
@@ -628,7 +627,8 @@
             "application_source_present": false,
             "video_report_present": false,
             "code_style_consistent": false
-          }
+          },
+          "skip_reason": "grade_5"
         },
         {
           "group_id": "group05",
@@ -681,25 +681,37 @@
             "application_source_present": false,
             "video_report_present": false,
             "code_style_consistent": false
-          }
+          },
+          "skip_reason": "grade_5"
         },
         {
           "group_id": "group05",
           "lab_id": "lab04",
           "title": "Диаграмма последовательностей на уровне классов",
           "deadline": "2026-12-10T23:59:59+05:00",
-          "status": "not_submitted",
-          "base_grade": null,
+          "status": "checked",
+          "base_grade": 4,
           "late_penalty": 0,
-          "grade": null,
+          "grade": 4,
           "comments": [
-            "Файлы лабораторной отсутствуют."
+            "Прецедент подачи заявления раскрыт от запроса до результата через взаимодействие объектов классов. Показаны проверка роли, условия применимости услуги, платеж НДФЛ, документы, срок подачи и сохранение данных. Грубых ошибок нет; есть небольшое расхождение в описании проверки платежа.",
+            "class_sequence.md: строки 37 и 118 расходятся в правилах повторного использования платежа. Диаграмма исключает только платеж за выданный патент, а пояснение разрешает повторное использование лишь после отклонения заявления. Уточните проверку платежа, связанного с заявлением на рассмотрении, и согласуйте оба описания."
           ],
-          "submitted_at": null,
-          "checked_at": null,
-          "fingerprint": "676595047cae43f64275193e78088ddd8317da2160503601700c6cd6d9540130",
-          "commit": "e0fe845567dc19e56c966144e7682f8cee15426d",
-          "skip_reason": "unchanged"
+          "submitted_at": "2026-11-17T01:18:56+05:00",
+          "checked_at": "2026-11-17T07:25:00.639508+00:00",
+          "fingerprint": "3c6b05db58013dc2d4cb602cc49aa4872979a0cb54da186cc3b9e917a9376cad",
+          "commit": "972275a1e2b82acfd583ffc592ede33843ebb539",
+          "review": {
+            "status": "checked",
+            "major_errors": [],
+            "minor_comments": [
+              "class_sequence.md: строки 37 и 118 расходятся в правилах повторного использования платежа. Диаграмма исключает только платеж за выданный патент, а пояснение разрешает повторное использование лишь после отклонения заявления. Уточните проверку платежа, связанного с заявлением на рассмотрении, и согласуйте оба описания."
+            ],
+            "summary": "Прецедент подачи заявления раскрыт от запроса до результата через взаимодействие объектов классов. Показаны проверка роли, условия применимости услуги, платеж НДФЛ, документы, срок подачи и сохранение данных. Грубых ошибок нет; есть небольшое расхождение в описании проверки платежа.",
+            "application_source_present": false,
+            "video_report_present": false,
+            "code_style_consistent": false
+          }
         },
         {
           "group_id": "group05",
@@ -715,9 +727,8 @@
           ],
           "submitted_at": null,
           "checked_at": null,
-          "fingerprint": "44303aa656f2c73822113ff4faccd5b04a0b11c91dc61f9fb20e52d23f6e87d1",
-          "commit": "e0fe845567dc19e56c966144e7682f8cee15426d",
-          "skip_reason": "unchanged"
+          "fingerprint": "167f7b3c8157f4795fb7adc4957b9482017b3b31ba1fcbd6cfb1b1acae7c96e1",
+          "commit": "972275a1e2b82acfd583ffc592ede33843ebb539"
         },
         {
           "group_id": "group05",
@@ -733,9 +744,8 @@
           ],
           "submitted_at": null,
           "checked_at": null,
-          "fingerprint": "6d23c6c778c67a401da70cc32fba8251efbffdba7650831dc7ae0da3c536000a",
-          "commit": "e0fe845567dc19e56c966144e7682f8cee15426d",
-          "skip_reason": "unchanged"
+          "fingerprint": "90a3de1319195a18be5fb354ef22f58b2164a99d6f00b30522fe062a03a9e045",
+          "commit": "972275a1e2b82acfd583ffc592ede33843ebb539"
         }
       ]
     },
@@ -1011,7 +1021,8 @@
             "application_source_present": true,
             "video_report_present": true,
             "code_style_consistent": true
-          }
+          },
+          "skip_reason": "unchanged"
         }
       ]
     }
