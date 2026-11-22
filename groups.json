@@ -41,6 +41,12 @@
       "name": "ПИСMAKER (миротворец)",
       "assignment_number": 4,
       "repository": "https://github.com/maynotnerd/peacemaker"
+    },
+    {
+      "id": "group08",
+      "name": "Stake",
+      "assignment_number": 8,
+      "repository": "https://github.com/IurSer/PIS.git"
     }
   ]
 }
