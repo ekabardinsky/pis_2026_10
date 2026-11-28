@@ -3,14 +3,15 @@
   "lab_id": "lab01",
   "title": "Диаграмма прецедентов",
   "deadline": "2026-11-19T23:59:59+05:00",
-  "status": "no_repository",
+  "status": "not_submitted",
   "base_grade": null,
   "late_penalty": 0,
   "grade": null,
   "comments": [
-    "Репозиторий команды не указан."
+    "Файлы лабораторной отсутствуют."
   ],
   "submitted_at": null,
   "checked_at": null,
-  "fingerprint": null
+  "fingerprint": "71e1efd5074250e16e09b161df11a1d1d7107cb2a0fe00f1d46aa11c10496879",
+  "commit": "6e8b3ad28a182d1be9afe969aa573fe41dc0d4bc"
 }

@@ -3,14 +3,15 @@
   "lab_id": "lab05",
   "title": "Диаграмма классов приложения",
   "deadline": "2026-12-17T23:59:59+05:00",
-  "status": "no_repository",
+  "status": "not_submitted",
   "base_grade": null,
   "late_penalty": 0,
   "grade": null,
   "comments": [
-    "Репозиторий команды не указан."
+    "Файлы лабораторной отсутствуют."
   ],
   "submitted_at": null,
   "checked_at": null,
-  "fingerprint": null
+  "fingerprint": "fe6a4391898558fe4d5521429d9baac9b0aa36226d2d109e2cc7629f3eeeaea8",
+  "commit": "6e8b3ad28a182d1be9afe969aa573fe41dc0d4bc"
 }

@@ -3,14 +3,15 @@
   "lab_id": "lab03",
   "title": "Системная диаграмма последовательностей",
   "deadline": "2026-12-03T23:59:59+05:00",
-  "status": "no_repository",
+  "status": "not_submitted",
   "base_grade": null,
   "late_penalty": 0,
   "grade": null,
   "comments": [
-    "Репозиторий команды не указан."
+    "Файлы лабораторной отсутствуют."
   ],
   "submitted_at": null,
   "checked_at": null,
-  "fingerprint": null
+  "fingerprint": "71957c6f5a4d4c7d4232ca4f126b352b7d63640d054b84faae3a232b487f0902",
+  "commit": "6e8b3ad28a182d1be9afe969aa573fe41dc0d4bc"
 }

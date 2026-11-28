@@ -3,14 +3,15 @@
   "lab_id": "lab04",
   "title": "Диаграмма последовательностей на уровне классов",
   "deadline": "2026-12-10T23:59:59+05:00",
-  "status": "no_repository",
+  "status": "not_submitted",
   "base_grade": null,
   "late_penalty": 0,
   "grade": null,
   "comments": [
-    "Репозиторий команды не указан."
+    "Файлы лабораторной отсутствуют."
   ],
   "submitted_at": null,
   "checked_at": null,
-  "fingerprint": null
+  "fingerprint": "05d3141ca7710cea23e98d921ea4ba71a300e9d45de68dbf8137f9475fd52493",
+  "commit": "6e8b3ad28a182d1be9afe969aa573fe41dc0d4bc"
 }

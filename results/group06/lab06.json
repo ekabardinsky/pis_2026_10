@@ -3,14 +3,15 @@
   "lab_id": "lab06",
   "title": "Работающее приложение и видеоотчёт",
   "deadline": "2026-12-25T23:59:59+05:00",
-  "status": "no_repository",
+  "status": "not_submitted",
   "base_grade": null,
   "late_penalty": 0,
   "grade": null,
   "comments": [
-    "Репозиторий команды не указан."
+    "Проверка задания 6 пропущена: нет файлов результатов в solution/, report/."
   ],
   "submitted_at": null,
   "checked_at": null,
-  "fingerprint": null
+  "fingerprint": "05a443dda3936e799c17021b7a0ace0a9f71dbcf4f10acda2d39d965429bde74",
+  "commit": "6e8b3ad28a182d1be9afe969aa573fe41dc0d4bc"
 }
